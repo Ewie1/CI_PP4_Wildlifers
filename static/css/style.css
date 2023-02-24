@@ -1,0 +1,9 @@
+/*Import google font */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Racing+Sans+One&family=Raleway:wght@100;400&display=swap');
+
+
+/*Remove default values*/
+* {
+    margin: 0;
+    padding: 0;
+}
