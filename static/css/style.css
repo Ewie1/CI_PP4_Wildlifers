@@ -38,3 +38,45 @@ h2 {
 #hero-image h1 {
     margin-top: 250px;
 }
+
+/* Style accompany images in home page description section*/
+.accompany-image1 {
+    height: 400px;
+    width: 500px;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677238747/samples/animals/giantpanda_sjl5v9.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.accompany-image2 {
+    height: 400px;
+    width: 500px;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677234626/samples/animals/homepage-image_o86p9d.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 300px;
+}
+
+/*Style home page paragraphs*/
+.home-text1 {
+    height: 400px;
+    width: 500px;
+}
+
+.home-text2 {
+    height: 400px;
+    width: 500px;
+}
+
+/*Style home page buttons*/
+.join-us {
+    text-align: center;
+}
+
+.join-us h2 {
+    font-style: normal;
+}
+
+.homepage-program-link {
+    text-align: center;
+}
