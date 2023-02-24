@@ -72,6 +72,8 @@ h2 {
 /*Style home page buttons*/
 .join-us {
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .join-us h2 {
@@ -80,6 +82,20 @@ h2 {
 
 .homepage-program-link {
     text-align: center;
+}
+
+.homepage-program-link a, .join-us a {
+    background: rgb(0, 82, 0);
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Style home page bottom image*/
+.home-bottom-image {
+    height: 200px;
+    width: 100%;
+    margin-top: 60px;
 }
 
 /*Stlye footer contents*/
