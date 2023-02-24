@@ -1,9 +1,40 @@
 /*Import google font */
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Racing+Sans+One&family=Raleway:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Raleway:wght@100;400&display=swap');
 
 
 /*Remove default values*/
 * {
     margin: 0;
     padding: 0;
+}
+
+/*Add website font-family */
+body {
+    
+}
+
+/*Stlye homepage headings*/
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 900;
+    font-style: italic;
+}
+
+/*Style hero image*/
+#hero-image {
+    height: 600px;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677247794/samples/landscapes/rainforest-sunset2_mv4rtl.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #FFFF;
+    text-align: center;
+}
+
+#hero-image h1 {
+    margin-top: 250px;
 }
