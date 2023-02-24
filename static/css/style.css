@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 /*Add website font-family */
@@ -79,4 +80,40 @@ h2 {
 
 .homepage-program-link {
     text-align: center;
+}
+
+/*Stlye footer contents*/
+footer {
+    height: 300px;
+    color: #fff;
+    background: black;
+}
+
+.media-links a {
+    text-decoration: none;
+}
+
+.media-links i {
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    padding: 10px; 
+}
+
+.contact-us {
+    line-height: 1.5rem;
+}
+
+.contact-us h3 {
+    margin-bottom: 20px;
+}
+
+.contact-us i {
+    font-size: 1.5rem;
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+    background: black;
 }
