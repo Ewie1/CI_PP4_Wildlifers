@@ -1,5 +1,7 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
+from django_countries.fields import CountryField
+
 
 # Create your models here.
 
@@ -51,9 +53,15 @@ class Programs(models.Model):
     Class for program list
     """
 
-    name = models.CharField(
-        max_length=50, unique=True)
+    animal_name = models.ForeignKey(
+        Animal,
+        on_delete=models.CASCADE
+        )
+    animal_cateogory = models.ForeignKey(
+        Survival_cateogory,
+        on_delete=models.CASCADE)
     description = models.TextField()
-    country = models.CharField(max_length=50)
-    image = models.CloudinaryField(
-        'image', default='placeholder')
+    country = CountryField(blank=True)
+    image = CloudinaryField(
+        'image',
+        default='placeholder')
