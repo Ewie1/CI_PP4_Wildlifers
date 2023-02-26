@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django_countries',
     'django.contrib.staticfiles',
     'django_summernote',
+    'django_filters',
     'cloudinary',
     'home',
     'programs',
