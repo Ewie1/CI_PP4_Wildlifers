@@ -48,7 +48,7 @@ class Survival_cateogory (models.Model):
         return self.country
 
 
-class Programs(models.Model):
+class Program(models.Model):
     """
     Class for program list
     """
