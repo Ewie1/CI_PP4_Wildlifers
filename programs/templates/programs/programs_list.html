@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <form action="GET">
+                    {{ filtered_programs.form.as_p }}
+
+                    <div class="search-button">
+                        <button type="submit" class="button">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    {% for program in filtered_programs %}
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ program.name }}</h5>
+                        <p class="card-text">{{ program.category }}</p>
+                        <p class="card-text"><small class="text-muted">{{ program.country }}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</section>
+{% endblock %}
