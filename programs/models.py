@@ -37,16 +37,16 @@ class Country (models.Model):
         return self.country
 
 
-class Survival_cateogory (models.Model):
+class Survival_category (models.Model):
     """
     Class for animal's country
     """
-    cateogory = models.CharField(
+    category = models.CharField(
         max_length=50, unique=True)
 
     def __str__(self):
         """
-        Return animal's cateogory
+        Return animal's category
         """
         return self.cateogory
 
@@ -60,8 +60,8 @@ class Program(models.Model):
         Animal,
         on_delete=models.CASCADE
         )
-    animal_cateogory = models.ForeignKey(
-        Survival_cateogory,
+    animal_category = models.ForeignKey(
+        Survival_category,
         on_delete=models.CASCADE)
     description = models.TextField()
     country = CountryField(blank=True)
