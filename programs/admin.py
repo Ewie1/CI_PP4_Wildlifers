@@ -24,5 +24,5 @@ class ProgramAdmin(SummernoteModelAdmin):
         'animal_category',
         'country',
     )
-    search_fields = ('name')
+    search_fields = ('name',)
     summernote_fields = ('description')
