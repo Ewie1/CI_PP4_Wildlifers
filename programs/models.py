@@ -24,8 +24,7 @@ class Country (models.Model):
     """
     Class for animal's country
     """
-    country = models.CharField(
-        max_length=50, unique=True)
+    country = CountryField(blank=True)
 
     def __str__(self):
         """
@@ -45,7 +44,7 @@ class Survival_cateogory (models.Model):
         """
         Return animal's cateogory
         """
-        return self.country
+        return self.cateogory
 
 
 class Program(models.Model):
