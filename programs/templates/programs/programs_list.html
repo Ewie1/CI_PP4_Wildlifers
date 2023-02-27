@@ -29,7 +29,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ program.animal_name }}</h5>
                         <p class="card-text">
-                            Category: {{ program.animal_category }}<br>
+                            Category: {{ program.animal_category }}<br> 
                             Country: {{ program.country.name }}
 
                         </p>
@@ -40,4 +40,47 @@
         </div>
     {% endfor %}
 </section>
+
+<!--<section style="background-color: aquamarine;">
+    <div class="comtainer">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="pagination">
+                    <span>
+                        {% if program_page_obj.has_previous %}
+                        <a href="?page=1">&laquo; First</a>
+                        <a href="?page={{ program_page_obj.previous_page_number }}">Previous</a>
+                        {% endif %}
+
+                        <span>
+                            page {{ program_page_obj.number }} of {{ program_page_obj.paginator.num_page }}
+                        </span>
+
+                        {% if program_page_obj.has_previous %}
+                        <a href="?page={{ program_page_obj.next_page_number }}"> Next</a>
+                        <a href="?page={{ program_page_obj.paginator.num_pages }}">&raquo; Last</a>
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        {% if program_page_obj.has_previous %}
+      <li class="page-item"><a class="page-link" href="#">First</a></li>
+      <li class="page-item"><a class="page-link" href="#">&laquo;</a>
+        {% endif %}
+      <li class="page-item" class="page-link">
+        page {{ program_page_obj.number }} of {{ program_page_obj.paginator.num_page }}
+      </li>
+      {% if program_page_obj.has_next %}
+      <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+      <li class="page-item"><a class="page-link" href="#">Last</a>
+        {% endif %}
+    </ul>
+  </nav>
+  
+
 {% endblock %}
