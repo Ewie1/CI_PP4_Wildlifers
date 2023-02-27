@@ -4,7 +4,7 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 m-3">
                 <form action="GET">
                     {{ filtered_programs.form.as_p }}
 
@@ -19,17 +19,21 @@
 
 
 <section>
-    {% for program in filtered_programs %}
+    {% for program in program_page_obj %}
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
+                    <img src="{{ program.image.url }}" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">{{ program.name }}</h5>
-                        <p class="card-text">{{ program.category }}</p>
-                        <p class="card-text"><small class="text-muted">{{ program.country }}</small></p>
+                        <h5 class="card-title">{{ program.animal_name }}</h5>
+                        <p class="card-text">
+                            Category: {{ program.animal_category }}<br>
+                            Country: {{ program.country.name }}
+
+                        </p>
+                        <p class="card-text"><small class="text-muted"></small></p>
                     </div>
                 </div>
             </div>

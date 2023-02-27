@@ -30,25 +30,19 @@ class Country (models.Model):
     """
     country = CountryField(blank=True)
 
-    def __str__(self):
-        """
-        Return animal's country name
-        """
-        return self.country
-
 
 class Survival_category (models.Model):
     """
     Class for animal's country
     """
     category = models.CharField(
-        max_length=50, unique=True)
+        max_length=50)
 
     def __str__(self):
         """
         Return animal's category
         """
-        return self.cateogory
+        return self.category
 
 
 class Program(models.Model):
@@ -64,7 +58,7 @@ class Program(models.Model):
         Survival_category,
         on_delete=models.CASCADE)
     description = models.TextField()
-    country = CountryField(blank=True)
+    country = CountryField()
     image = CloudinaryField(
         'image',
         default='placeholder')
