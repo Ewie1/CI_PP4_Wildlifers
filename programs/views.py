@@ -28,17 +28,26 @@ from .models import Program
 #   return render(request, 'programs/programs_list.html', context)
 
 
-#class SingleProgram(View):
-#    def get(self, request, program_id):
-#        program = Program.objects.get(pk=program_id)
-
-#        return render(request, '', {'program': program})
-
 def show_all_programs_page(request):
-    
+    """
+    Function to show 
+    and paginte all programs
+    """
     program_paginator = Paginator(Program.objects.all(), 2)
     page = request.GET.get('page')
     program_list = program_paginator.get_page(page)
 
     return render(request, 'programs/programs_list.html',
         {'program_list': program_list})
+
+
+class SingleProgram(View):
+    """
+    Class to view more information
+    for programs
+    """
+    def get(self, request, program_id):
+        program = Program.objects.get(pk=program_id)
+
+        return render(request, 'programs/programs.html', {'program': program})
+
