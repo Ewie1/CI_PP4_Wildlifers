@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+{% load programapp_tags %}
 <section>
     <div class="container">
         <div class="row">
@@ -18,8 +20,8 @@
 </section>
 
 
-<section>
-    {% for program in program_page_obj %}
+<section class="container">
+    {% for program in program_list %}
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
@@ -66,18 +68,36 @@
         </div>
     </div>
 </section>-->
-<nav aria-label="Page navigation example">
+ <!--Pagination with filter-->
+<!--<nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
         {% if program_page_obj.has_previous %}
-      <li class="page-item"><a class="page-link" href="#">First</a></li>
-      <li class="page-item"><a class="page-link" href="#">&laquo;</a>
+      <li class="page-item"><a class="page-link" href="{%  my_url 1 'page' request.GET.urlencode %}">First</a></li>
+      <li class="page-item"><a class="page-link" href="{% my_url program_page_obj.previous_page_number 'page' request.GET.urlencode %}">&laquo;</a>
         {% endif %}
       <li class="page-item" class="page-link">
-        page {{ program_page_obj.number }} of {{ program_page_obj.paginator.num_page }}
+        page {{ program_page_obj.number }} of {{ program_page_obj.paginator.num_pages }}
       </li>
       {% if program_page_obj.has_next %}
-      <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-      <li class="page-item"><a class="page-link" href="#">Last</a>
+      <li class="page-item"><a class="page-link" href="{% my_url program_page_obj.next_page_number 'page' request.GET.urlencode %}">&raquo;</a></li>
+      <li class="page-item"><a class="page-link" href="{% my_url program_page_obj.paginator.num_pages 'page' request.GET.urlencode %}">Last</a>
+        {% endif %}
+    </ul>
+  </nav>-->
+
+  <!--Pgaination without filter-->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        {% if program_list.has_previous %}
+      <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+      <li class="page-item"><a class="page-link" href="?page={{ program_list.previous_page_number }}">&laquo;</a>
+        {% endif %}
+      <li class="page-item" class="page-link">
+        page {{ program_list.number }} of {{ program_list.paginator.num_pages }}
+      </li>
+      {% if program_list.has_next %}
+      <li class="page-item"><a class="page-link" href="?page={{ program_list.next_page_number }}">&raquo;</a></li>
+      <li class="page-item"><a class="page-link" href="?page={{ program_list.paginator.num_pages}}">Last</a>
         {% endif %}
     </ul>
   </nav>
