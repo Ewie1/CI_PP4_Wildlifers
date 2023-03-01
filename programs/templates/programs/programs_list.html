@@ -3,12 +3,13 @@
 {% block content %}
 
 {% load programapp_tags %}
-<section>
+<!--<section>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 m-3">
                 <form action="GET">
                     {{ filtered_programs.form.as_p }}
+                    {{ csrf }}
 
                     <div class="search-button">
                         <button type="submit" class="button">Search</button>
@@ -17,10 +18,10 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 
-<section class="container">
+<section class="container m-3">
     {% for program in program_list %}
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">

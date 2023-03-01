@@ -33,7 +33,7 @@ def show_all_programs_page(request):
     Function to show 
     and paginte all programs
     """
-    program_paginator = Paginator(Program.objects.all(), 2)
+    program_paginator = Paginator(Program.objects.all(), 3)
     page = request.GET.get('page')
     program_list = program_paginator.get_page(page)
 
@@ -41,7 +41,7 @@ def show_all_programs_page(request):
         {'program_list': program_list})
 
 
-class SingleProgram(View):
+class ProgramDetails(View):
     """
     Class to view more information
     for programs
