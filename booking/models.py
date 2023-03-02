@@ -1,4 +1,5 @@
 from django.db import models
+from django_countries.fields import CountryField
 
 
 #class ProgramSelection(models.Model):
@@ -26,19 +27,32 @@ class ProgramBooking(models.Model):
         )
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="", null=True)
-    animal_name = models.CharField()
+    animal_name = models.CharField(unique=True)
+    animal_country = CountryField()
     email = models.EmailField(
         max_length=254,
         default=""
         )
     start_date = models.DateField()
 
+    class Meta(self):
+        ordering = ('-created_on')
+        
+        def __str__(self):
+            return self.name
+
 
 class ProgramCheckIn(models.Model):
-    check_in_date = models.DateField()
-    check_in_time = modesl.CharField(
+    check_in_date = models.DateField(unique=True)
+    check_in_time = models.CharField(
         max_length=20,
         choices=available_times,
-        default='08:00'
+        default='08:00',
+        unique=True
         )
     
+    class Meta (self):
+        ordering = ('-created-on')
+
+    def __str__(self):
+        return self.check_in_time
