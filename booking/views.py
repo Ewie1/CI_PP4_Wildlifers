@@ -19,5 +19,5 @@ class Booking(View):
         'program_booking_form': program_booking_form
         }
 
-    return render(request, '', context)
+    return render(request, 'booking/bookings.html', context)
 
