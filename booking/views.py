@@ -20,4 +20,3 @@ class Booking(View):
         }
 
     return render(request, 'booking/bookings.html', context)
-
