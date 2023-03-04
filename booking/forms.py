@@ -35,4 +35,10 @@ from .models import Enroll
 class EnrollForm(forms.ModelForm):
     class Meta:
         model = Enroll
-        fields = ['name', 'date', 'time']
+        fields = [
+            'name',
+            'start_date',
+            'email',
+            'volunteer_job',
+            'work_time'
+            ]
