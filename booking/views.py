@@ -7,32 +7,39 @@ from booking.models import Enroll
 from .forms import EnrollForm
 
 
-#class Booking(View):
-#    def post(self, request):
-#        program_booking_form = ProgramBookingForm(data=request.POST)
-#        
-#        if program_booking_form.is_valid():
-#            reservation = program_booking_form.save(commit=True)
-#            reservation.save()
-#            messages.success(request, 'Your are booked in!')
-#    context = {
-#        'program_booking_form': program_booking_form
-#        }
-#
-#    return render(request, 'booking/bookings.html', context)
+class EnrollView(View):
 
-def EnrollView(request):
-    booking = EnrollForm()
+    def get(self, request, *args, **kwargs):
+        program_booking_form = EnrollForm()
 
-    if request.method == 'POST':
-        booking = EnrollForm(request.POST)
+        return render(request, 'booking/bookings.html', 
+                        {'program_booking_form': program_booking_form})
 
-        if booking.is_valid():
-            reservation = booking.save(commit=True)
+    def post(self, request):
+        program_booking_form = EnrollForm(data=request.POST)
+        
+        if program_booking_form.is_valid():
+            reservation = program_booking_form.save(commit=True)
             reservation.save()
             messages.success(request, 'Your are booked in!')
+            context = {
+                'program_booking_form': program_booking_form
+            }
+
+        return render(request, 'booking/bookings.html', context)
+
+#def EnrollView(request):
+#    booking = EnrollForm()
+
+#    if request.method == 'POST':
+#        booking = EnrollForm(request.POST)
+
+#        if booking.is_valid():
+ #           reservation = booking.save(commit=True)
+#            reservation.save()
+#            messages.success(request, 'Your are booked in!')
             
-    context = {
-        'booking': booking
-    }
-    return render(request, 'booking/bookings.html', context)
+#    context = {
+#        'booking': booking
+#    }
+#    return render(request, 'booking/bookings.html', context)
