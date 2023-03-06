@@ -83,7 +83,7 @@ class Enrollments(generic.ListView):
             return redirect('accounts/login')
 
 
-class EditEnrolments(SuccessMessageMixin, UpdateView):
+class EditEnrollments(SuccessMessageMixin, UpdateView):
     """
     Class to allow user to
     edit thier enrollments
@@ -94,7 +94,25 @@ class EditEnrolments(SuccessMessageMixin, UpdateView):
     success_message = 'hey'
 
     def get_success_url(self, **kwargs):
-        return reverse('enrollments') 
+        return redirect('enrollments') 
+
+
+def CancelEnrollments(request, pk):
+    """
+    Function to delete user
+    enrollment individually
+    """
+    delete_enrollment = Enroll.objects.get(pk=pk)
+
+    if request.method == 'POST':
+        delete_enrollment.delete()
+        messages.success(request, "Your plan has been deleted.")
+        return redirect('enrollments')
+    else:
+        messages.error(request,
+                        'An error occurred when deleting your plan.')   
+    return redirect('enrollments')
+
 
 
 

@@ -25,6 +25,7 @@
                         {{ booking.work_time }}
                     </p>
                     <a href="{% url 'enrollment_editing' booking.pk  %}" class="btn btn-success">Edit</a>
+                    <a href="{% url 'enrollment_cancel' booking.pk  %}" class="btn btn-danger">Cancel</a>
                 </div>
             </div>
         </div>
