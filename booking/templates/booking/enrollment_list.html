@@ -15,6 +15,16 @@
                     <p>
                         {{ booking.start_date }}
                     </p>
+                    <p>
+                        {{ booking.name }}
+                    </p>
+                    <p>
+                        {{ booking.volunteer_job }}
+                    </p>
+                    <p>
+                        {{ booking.work_time }}
+                    </p>
+                    <a href="{% url 'enrollment_editing' booking.pk  %}" class="btn btn-success">Edit</a>
                 </div>
             </div>
         </div>

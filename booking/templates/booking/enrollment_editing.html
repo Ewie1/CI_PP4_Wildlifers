@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <p>Hello</p>
+    <div class="container">
+        {% if not user.is_authenticated %}
+        <p>Please login</p>
+        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
+                Page</a></button>
+        {% else %}
+        {% if user.is_authenticated %}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="{% url 'enrollment_editing' enroll.pk %}" method="POST" enctype="multipart/form-data">
+                        
+                        {% csrf_token %}
+                        
+                        <div>
+                            {{ form }}
+                        </div>
+                        <div>
+                            <button class="btn btn-success" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

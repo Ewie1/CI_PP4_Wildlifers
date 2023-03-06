@@ -1,12 +1,14 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.views import generic, View
 from django.views.generic import ListView, View
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.core.paginator import Paginator
+from django.views.generic.edit import UpdateView
+from django.contrib.messages.views import SuccessMessageMixin
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
 from booking.models import Enroll
@@ -55,7 +57,7 @@ class Enrollments(generic.ListView):
     of the logged in user
     """
     model = Enroll
-    queryset = Enroll.objects.filter() 
+    queryset = Enroll.objects.filter()
     template_name = 'enrollment_list.html'
     paginate_by = 3
 
@@ -65,7 +67,8 @@ class Enrollments(generic.ListView):
         paginated by 3 per page
         """
         booking = Enroll.objects.all()
-        paginator = Paginator(Enroll.objects.filter(), 3)
+        paginator = Paginator(Enroll.objects.filter(), 3) 
+        #(user=request.user)
         page = request.GET.get('page')
         booking_list = paginator.get_page(page)
 
@@ -79,7 +82,19 @@ class Enrollments(generic.ListView):
         else:
             return redirect('accounts/login')
 
-        
+
+class EditEnrolments(SuccessMessageMixin, UpdateView):
+    """
+    Class to allow user to
+    edit thier enrollments
+    """
+    model = Enroll
+    form_class = EnrollForm
+    template_name = 'booking/enrollment_editing.html'
+    success_message = 'hey'
+
+    def get_success_url(self, **kwargs):
+        return reverse('enrollments') 
 
 
 
