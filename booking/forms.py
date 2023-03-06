@@ -1,7 +1,11 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django import forms
-
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Internal:
 from .models import Enroll
-
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #class ProgramBookingForm(forms.ModelForm):
 #    start_date = forms.DateField(
@@ -32,9 +36,17 @@ from .models import Enroll
 #            'check_in_time'
 #        )
 
-class EnrollForm(forms.ModelForm):
+class DateInput(forms.DateInput):
+    """
+    Class for date input
+    """
+    input_type = 'date'
 
-    
+
+class EnrollForm(forms.ModelForm):
+    """
+    Class for Enrollment form
+    """
     class Meta:
         model = Enroll
         fields = [
@@ -44,3 +56,7 @@ class EnrollForm(forms.ModelForm):
             'volunteer_job',
             'work_time'
             ]
+        widgets = {
+            'start_date': DateInput(),
+        }
+
