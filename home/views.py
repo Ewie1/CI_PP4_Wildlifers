@@ -1,7 +1,9 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import render
-
-# Create your views here.
-
+from django.core.mail import send_mail
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 def home(request):
     """
@@ -16,9 +18,17 @@ def contact(request):
     """
 
     if request.method == 'POST':
-        your_name = request.POST['your_name']
-        your_email = request.POST['your_email']
-        your_message = request.POST['tour_message']
-        return render(request, 'home/contact.html', {})
+        your_name = request.POST['your-name']
+        your_email = request.POST['your-email']
+        your_message = request.POST['your-message']
+
+        send_mail(
+            'Message from' + your_name,  # subject
+            your_message,  # message 
+            your_email,  # from_email 
+            [os.environ.get('EMAIL_HOST_USER')] # recipient_list
+             )
+
+        return render(request, 'home/contact.html', {'your_name': your_name})
     else:
         return render(request, 'home/contact.html', {})
