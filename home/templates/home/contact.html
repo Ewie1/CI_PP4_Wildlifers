@@ -1,0 +1,28 @@
+{% load base.html %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>Contact Us</h1>
+        <form action="">
+            <div class="col-sm-12">
+                <div class="col-md-6">
+                    <label for="your-email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="your-email" name="your-email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="your-subject" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="your-subject" name="your-subject">
+                </div>
+                <div class="col-12">
+                    <label for="your-message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
