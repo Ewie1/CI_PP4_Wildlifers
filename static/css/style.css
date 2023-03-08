@@ -216,6 +216,18 @@ footer {
     color: rgb(0, 82, 0);
 }
 
+/*Style for program view page*/
+.view-page {
+    width: 100%;
+}
+
+.program-view-image, 
+.program-view-text {
+    height: 400px;
+    width: 500px;
+}
+
+
 /*Style for contact page image*/
 .contact-image {
     height: 250px;
@@ -224,15 +236,6 @@ footer {
 
 .contact-page-map {
     height: 150px;
-}
-
-.view-page {
-    width: 100%;
-}
-
-.program-view-image {
-    height: 400px;
-    width: 500px;
 }
 
 /* Style for signup, login and logout forms*/

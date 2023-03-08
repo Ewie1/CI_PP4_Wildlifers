@@ -11,16 +11,16 @@
                 </div>
             </div>
             <div class="container">
-            <div class="row">
+            <div class="row" style="background: #EFEBE9;">
                 <div class="col-md-6 col-sm-12" style="text-align: center;">
                     <img src="{{ program.image.url }}" class=" image-fluid program-view-image" alt="...">
-                    <p>
+                   <!--- <p>
                         Category: {{ program.animal_category }}<br>
                         Country: {{ program.country.name }}
-                    </p>
+                    </p>-->
                 </div>
 
-                <div class="col-md-6 col-sm-12" style="background: #EFEBE9;">
+                <div class="col-md-6 col-sm-12 program-view-text">
                     <p>
                         {{ program.description|safe }}
                     </p>

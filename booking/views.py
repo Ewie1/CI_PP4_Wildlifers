@@ -2,7 +2,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
 from django.shortcuts import render, redirect, reverse
-from django.views import generic, View
+from django.views import generic
 from django.views.generic import ListView, View
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -30,7 +30,10 @@ class EnrollView(View):
     Class view to display booking form
     if user is logged in
     """
-    def get(self, request):
+
+    template_name = 'booking/bookings.html'
+
+    def get(self, request, *args, **kwargs):
         """
         Redirect to login page
         if user is not logged in
@@ -69,7 +72,7 @@ class Enrollments(generic.ListView):
     """
     model = Enroll
     queryset = Enroll.objects.filter().order_by('id')
-    template_name = 'enrollment_list.html'
+    template_name = 'booking/enrollment_list.html'
     paginate_by = 3
 
     def get(self, request):
@@ -78,12 +81,13 @@ class Enrollments(generic.ListView):
         paginated by 3 per page
         """
         booking = Enroll.objects.all()
+        user = request.user
         paginator = Paginator(Enroll.objects.filter(user=request.user), 3)
         page = request.GET.get('page')
         booking_page = paginator.get_page(page)
 
         if request.user.is_authenticated:
-            enrollments = Enroll.objects.filter(user=request.user)
+            enrollments = Enroll.objects.filter(user=self.request.user)
             return render(request, 'booking/enrollment_list.html',
             {
                 'booking': booking,
