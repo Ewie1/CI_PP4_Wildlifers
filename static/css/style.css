@@ -28,6 +28,12 @@ body {
     color: black;
 }
 
+/* Style for signup and log in messages*/
+#msg {
+    z-index: 2;
+    background-color: rgba(240, 240, 240, 0.888);
+    position: absolute;
+}
 
 /*Stlye homepage headings*/
 h1 {
@@ -154,7 +160,7 @@ footer {
    /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677212059/backgd1_oznmf0.jpg')no-repeat center center fixed;*/
     background-size: cover;
    /* height: calc(100vh - 164px);*/
-   background: #EFEBE9;;
+   background: #EFEBE9;
 }
 
 .overlay {
@@ -228,4 +234,56 @@ footer {
     height: 400px;
     width: 500px;
 }
+
+/* Style for signup, login and logout forms*/
+.register-form,
+.login-form {
+    height: 600px;
+    background: #EFEBE9;;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.logout-form {
+    height: 600px;
+    background: #EFEBE9;;
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.register-form h1,
+.login-form h1,
+.logout-form h3,
+.booking-header h3 {
+    font-weight: 900;
+}
+
+.register-form a,
+.login-form a {
+    text-decoration: none;
+    color: rgb(0, 82, 0);
+    ;
+}
+
+.register-form a:hover,
+.login-form a:hover {
+    color: rgb(0, 82, 0);
+    border-bottom: 1px solid rgb(0, 82, 0);
+    transition: 0.5s;
+}
+
+.btn-signup,
+.primaryAction,
+.btn-logout {
+    height: 40px;
+    width: 200px;
+    background: rgb(0, 82, 0);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid black;
+}
+
 
