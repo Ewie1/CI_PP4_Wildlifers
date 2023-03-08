@@ -16,6 +16,15 @@ from .forms import EnrollForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+def get_user_instance(request):
+    """
+    Get logged in user details
+    """
+    user_email = request.user.email
+    user = User.objects.filter(email=user_email).first()
+    return user
+
+
 class EnrollView(View):
     """
     Class view to display booking form
@@ -27,7 +36,8 @@ class EnrollView(View):
         if user is not logged in
         """
         if request.user.is_authenticated:
-            program_booking_form = EnrollForm()
+            email = request.user.email
+            program_booking_form = EnrollForm(initial={'email': email})
             return render(request, 'booking/bookings.html', 
                         {'program_booking_form': program_booking_form})
         else:
@@ -41,7 +51,8 @@ class EnrollView(View):
         program_booking_form = EnrollForm(data=request.POST)
         
         if program_booking_form.is_valid():
-            booking = program_booking_form.save(commit=True)
+            booking = program_booking_form.save(commit=False)
+            booking.user = request.user
             booking.save()
             messages.success(request, 'Your are booked in!')
             context = {
@@ -57,7 +68,7 @@ class Enrollments(generic.ListView):
     of the logged in user
     """
     model = Enroll
-    queryset = Enroll.objects.filter()
+    queryset = Enroll.objects.filter().order_by('id')
     template_name = 'enrollment_list.html'
     paginate_by = 3
 
@@ -67,10 +78,9 @@ class Enrollments(generic.ListView):
         paginated by 3 per page
         """
         booking = Enroll.objects.all()
-        paginator = Paginator(Enroll.objects.filter(), 3) 
-        #(user=request.user)
+        paginator = Paginator(Enroll.objects.filter(user=request.user), 3)
         page = request.GET.get('page')
-        booking_list = paginator.get_page(page)
+        booking_page = paginator.get_page(page)
 
         if request.user.is_authenticated:
             enrollments = Enroll.objects.filter(user=request.user)
@@ -78,7 +88,7 @@ class Enrollments(generic.ListView):
             {
                 'booking': booking,
                 'enrollments': enrollments,
-                'booking_list': booking_list})
+                'booking_page': booking_page})
         else:
             return redirect('accounts/login')
 
@@ -112,22 +122,3 @@ def CancelEnrollments(request, pk):
         messages.error(request,
                         'An error occurred when deleting your plan.')   
     return redirect('enrollments')
-
-
-
-
-#def EnrollView(request):
-#    booking = EnrollForm()
-
-#    if request.method == 'POST':
-#        booking = EnrollForm(request.POST)
-
-#        if booking.is_valid():
- #           reservation = booking.save(commit=True)
-#            reservation.save()
-#            messages.success(request, 'Your are booked in!')
-            
-#    context = {
-#        'booking': booking
-#    }
-#    return render(request, 'booking/bookings.html', context)
