@@ -33,7 +33,7 @@ def show_all_programs_page(request):
     Function to show 
     and paginte all programs
     """
-    program_paginator = Paginator(Program.objects.all(), 3)
+    program_paginator = Paginator(Program.objects.all(), 5)
     page = request.GET.get('page')
     program_list = program_paginator.get_page(page)
 

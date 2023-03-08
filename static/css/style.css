@@ -151,7 +151,7 @@ footer {
 
 /* Style for program background*/
 .program-background {
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677212059/backgd1_oznmf0.jpg')no-repeat center center fixed;
+   /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677212059/backgd1_oznmf0.jpg')no-repeat center center fixed;*/
     background-size: cover;
    /* height: calc(100vh - 164px);*/
 }
@@ -164,9 +164,10 @@ footer {
 
 /* Style for program card display*/
 .card {
+    margin-left: 250px;
     border: none;
     box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.2);
-    /*margin-top: 50px;*/
+    margin-top: 100px;
 }
 
 .card-image {
