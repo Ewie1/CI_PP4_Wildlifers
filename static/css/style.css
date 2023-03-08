@@ -198,6 +198,23 @@ footer {
     color: #fff;
 }
 
+/*Style for program pagination nav bar*/
 .pagination {
     margin-bottom: -17px;
+}
+
+.page-link {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(0, 82, 0);
+}
+
+/*Style for contact page image*/
+.contact-image {
+    height: 250px;
+    background:rgba(1, 9, 62, 0.5);
+}
+
+.contact-page-map {
+    height: 150px;
 }
