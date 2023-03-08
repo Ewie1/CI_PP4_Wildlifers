@@ -1,41 +1,35 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
-    <div class="row justify-content-center">
+<section class="bg-light">
+<div class="container view-page">
+    <div class="row " style="text-align: center;">
         <div class="col-sm-12">
             <div class="row">
-                <div class="col-sm-12">
+                <div>
                     <h1>{{ program.animal_name }}</h1>
                 </div>
             </div>
+            <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <img src="{{ program.image.url }}" class="img-fluid rounded-start" alt="...">
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-6 col-sm-12" style="text-align: center;">
+                    <img src="{{ program.image.url }}" class=" image-fluid program-view-image" alt="...">
                     <p>
                         Category: {{ program.animal_category }}<br>
                         Country: {{ program.country.name }}
                     </p>
                 </div>
-            </div>
 
-            <br>
-
-            <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-6 col-sm-12" style="background: #EFEBE9;">
                     <p>
                         {{ program.description|safe }}
                     </p>
                 </div>
             </div>
+            </div>
         </div>
     </div>
 </div>
+</section>
 
 {% endblock %}

@@ -33,7 +33,7 @@
 </section>-->
 
 
-<div class="container  py-5 bg-light ">
+<div class="container program-container py-5 bg-light ">
     {% for program in program_list %}
    
         <div class="card mb-3" style="max-width: 600px;">
@@ -50,7 +50,7 @@
                         </p>
                         <div class="program-view-button">
                             <!-- <h2>Join the fight</h2>-->
-                             <a href="{% url 'show_program' program.id %}" class="">View</a>
+                             <a href="{% url 'show_program' program.id %}">View</a>
                         </div>
                     </div>
                 </div>

@@ -150,10 +150,11 @@ footer {
 }
 
 /* Style for program background*/
-.program-background {
+.program-container {
    /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677212059/backgd1_oznmf0.jpg')no-repeat center center fixed;*/
     background-size: cover;
    /* height: calc(100vh - 164px);*/
+   background: #EFEBE9;;
 }
 
 .overlay {
@@ -218,3 +219,13 @@ footer {
 .contact-page-map {
     height: 150px;
 }
+
+.view-page {
+    width: 100%;
+}
+
+.program-view-image {
+    height: 400px;
+    width: 500px;
+}
+

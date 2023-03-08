@@ -6,8 +6,10 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-
-<h1>{% trans "Sign In" %}</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 login-form">
+      <h1>{% trans "Sign In" %}</h1>
 
 {% get_providers as socialaccount_providers %}
 
@@ -43,4 +45,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
 </form>
 
+    </div>
+  </div>
+</div>
 {% endblock %}

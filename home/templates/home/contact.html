@@ -13,7 +13,7 @@
 <div class="container">
     <div class="row">
         <h1>Contact Us</h1>
-        <form method="POST" action="{% url 'contact' %}" class="justify-content-center">
+        <form method="POST" action="{% url 'contact' %}">
             {% csrf_token %}
 
             <div class="col-sm-12">
