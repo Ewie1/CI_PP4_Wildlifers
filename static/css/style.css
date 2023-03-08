@@ -148,3 +148,55 @@ footer {
     color: #fff;
     background: black;
 }
+
+/* Style for program background*/
+.program-background {
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677212059/backgd1_oznmf0.jpg')no-repeat center center fixed;
+    background-size: cover;
+   /* height: calc(100vh - 164px);*/
+}
+
+.overlay {
+    z-index: -1;
+    height: 100%;
+    background: rgba(1, 9, 62, 0.5);
+}
+
+/* Style for program card display*/
+.card {
+    border: none;
+    box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.2);
+    /*margin-top: 50px;*/
+}
+
+.card-image {
+    height: 225px;
+    width:300px
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.program-view-button  {
+    margin-top: 50px;
+    margin-left: 60px;
+    background: rgb(0, 82, 0);
+    padding: 8px;
+    width: 120px;
+}
+
+.program-view-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pagination {
+    margin-bottom: -17px;
+}

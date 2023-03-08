@@ -2,7 +2,10 @@
 
 {% block content %}
 
+<div class="program-background">
+    <div class="overlay"></div>
 {% load programapp_tags %}
+<!--Code for filter input-->
 <!--<section>
     <div class="container">
         <div class="row">
@@ -21,91 +24,49 @@
 </section>-->
 
 
-<section class="container m-3">
+<div class="container justify-content-center ">
     {% for program in program_list %}
-        <div class="card mb-3" style="max-width: 540px;">
+   
+        <div class="card mb-3" style="max-width: 600px;">
             <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="{{ program.image.url }}" class="img-fluid rounded-start" alt="...">
+                <div class="col-md-6">
+                    <img src="{{ program.image.url }}" class="img-fluid rounded-start card-image" alt="...">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <div class="card-body">
-                        <h5 class="card-title">{{ program.animal_name }}</h5>
+                        <h4 class="card-title">{{ program.animal_name }}</h4>
                         <p class="card-text">
                             Category: {{ program.animal_category }}<br> 
                             Country: {{ program.country.name }}
-
                         </p>
-                        <div class="join-us">
+                        <div class="program-view-button">
                             <!-- <h2>Join the fight</h2>-->
-                             <a href="{% url 'show_program' program.id %}" class="homepage-button">View</a>
+                             <a href="{% url 'show_program' program.id %}" class="">View</a>
                         </div>
-                        <p class="card-text"><small class="text-muted"></small></p>
                     </div>
                 </div>
             </div>
         </div>
+    
     {% endfor %}
-</section>
-
-<!--<section style="background-color: aquamarine;">
-    <div class="comtainer">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="pagination">
-                    <span>
-                        {% if program_page_obj.has_previous %}
-                        <a href="?page=1">&laquo; First</a>
-                        <a href="?page={{ program_page_obj.previous_page_number }}">Previous</a>
-                        {% endif %}
-
-                        <span>
-                            page {{ program_page_obj.number }} of {{ program_page_obj.paginator.num_page }}
-                        </span>
-
-                        {% if program_page_obj.has_previous %}
-                        <a href="?page={{ program_page_obj.next_page_number }}"> Next</a>
-                        <a href="?page={{ program_page_obj.paginator.num_pages }}">&raquo; Last</a>
-                        {% endif %}
-                    </span>
-                </div>
-            </div>
-        </div>
     </div>
-</section>-->
- <!--Pagination with filter-->
-<!--<nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center">
-        {% if program_page_obj.has_previous %}
-      <li class="page-item"><a class="page-link" href="{%  my_url 1 'page' request.GET.urlencode %}">First</a></li>
-      <li class="page-item"><a class="page-link" href="{% my_url program_page_obj.previous_page_number 'page' request.GET.urlencode %}">&laquo;</a>
-        {% endif %}
-      <li class="page-item" class="page-link">
-        page {{ program_page_obj.number }} of {{ program_page_obj.paginator.num_pages }}
-      </li>
-      {% if program_page_obj.has_next %}
-      <li class="page-item"><a class="page-link" href="{% my_url program_page_obj.next_page_number 'page' request.GET.urlencode %}">&raquo;</a></li>
-      <li class="page-item"><a class="page-link" href="{% my_url program_page_obj.paginator.num_pages 'page' request.GET.urlencode %}">Last</a>
-        {% endif %}
-    </ul>
-  </nav>-->
+
 
   <!--Pgaination without filter-->
 <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
         {% if program_list.has_previous %}
       <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
-      <li class="page-item"><a class="page-link" href="?page={{ program_list.previous_page_number }}">&laquo;</a>
+      <li class="page-item"><a class="page-link" href="?page={{ program_list.previous_page_number }}">&laquo;</a></li>
         {% endif %}
       <li class="page-item" class="page-link">
         page {{ program_list.number }} of {{ program_list.paginator.num_pages }}
       </li>
       {% if program_list.has_next %}
       <li class="page-item"><a class="page-link" href="?page={{ program_list.next_page_number }}">&raquo;</a></li>
-      <li class="page-item"><a class="page-link" href="?page={{ program_list.paginator.num_pages}}">Last</a>
+      <li class="page-item"><a class="page-link" href="?page={{ program_list.paginator.num_pages}}">Last</a></li>
         {% endif %}
     </ul>
   </nav>
-  
-
+</div>
 {% endblock %}
