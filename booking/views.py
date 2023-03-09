@@ -75,7 +75,7 @@ class Enrollments(generic.ListView):
     template_name = 'booking/enrollment_list.html'
     paginate_by = 3
 
-    def get(self, request):
+    def get(self, request, *args, **kwargs):
         """
         Display logged in user bookings 
         paginated by 3 per page

@@ -36,9 +36,15 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/programs">Programs</a>
                   </li>
+                  {% if user.is_authenticated %}
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'enrollments' %}">Bookings</a>
+                    <a class="nav-link" href="{% url 'enrollments' %}"> My Bookings</a>
                   </li>
+                  {% else %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account_signup' %}"> My Bookings</a>
+                  </li>
+                  {% endif %}
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                   </li>
