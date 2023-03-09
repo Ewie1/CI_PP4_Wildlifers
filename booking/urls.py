@@ -10,7 +10,7 @@ from booking import views
 urlpatterns = [
     path('enrollview', views.EnrollView.as_view(), name='enrollview'),
     path('enrollments', views.Enrollments.as_view(), name='enrollments'),
-    path('enrollment_editing/<int:pk>',
+    path('enrollment_editing/<str:pk>',
           views.EditEnrollments.as_view(), name='enrollment_editing'),
     path('enrollment_cancel/<str:pk>',
             views.CancelEnrollments, name='enrollment_cancel'),
