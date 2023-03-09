@@ -116,17 +116,13 @@ def CancelEnrollments(request, pk):
     Function to delete user
     enrollment individually
     """
-    delete_enrollment = Enroll.objects.get(pk=pk)
+    enrollment = Enroll.objects.get(pk=pk)
 
     if request.method == 'POST':
-        delete_enrollment.delete()
+        enrollment.delete()
         messages.success(request, "Your plan has been deleted.")
-        return redirect('enrollments')
-    else:
-        messages.error(request,
-                        'An error occurred when deleting your plan.')
         return redirect('enrollments')
 
     return render(request, 'booking/enrollment_delete.html',
-                     {'obj': delete_enrollment})
+                     {'obj': enrollment})
     

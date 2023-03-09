@@ -5,13 +5,14 @@
     <div class="row">
         <div class="col-sm-12">
             <form action="" method="POST">
-            <h1>Are You Sure You Want To Delete This '{{ obj }}'</h1>
+                {% csrf_token %}
+            <h3>Are You Sure You Want To Delete This '{{ obj }}'</h3>
             <div class="row">
                 <div class="col-sm-6">
-                    <a href="{{ request.Meta.HTTP_REFERER }}"></a>
+                    <a href="{% url 'enrollments' %}">Go Back</a>
                 </div>
                 <div class="col-sm-6">
-                    <input type="submit" value="Confirm">Confirm</input>
+                    <input type="submit" value="Confirm"></input>
                 </div>
             </div>
             </form>
