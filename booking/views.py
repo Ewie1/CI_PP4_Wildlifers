@@ -105,10 +105,10 @@ class EditEnrollments(SuccessMessageMixin, UpdateView):
     model = Enroll
     form_class = EnrollForm
     template_name = 'booking/enrollment_editing.html'
-    success_message = 'hey'
+    success_message = 'Update have been successful!'
 
     def get_success_url(self, **kwargs):
-        return redirect('enrollments') 
+        return reverse('enrollments') 
 
 
 def CancelEnrollments(request, pk):
