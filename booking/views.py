@@ -124,5 +124,9 @@ def CancelEnrollments(request, pk):
         return redirect('enrollments')
     else:
         messages.error(request,
-                        'An error occurred when deleting your plan.')   
-    return redirect('enrollments')
+                        'An error occurred when deleting your plan.')
+        return redirect('enrollments')
+
+    return render(request, 'booking/enrollment_delete.html',
+                     {'obj': delete_enrollment})
+    

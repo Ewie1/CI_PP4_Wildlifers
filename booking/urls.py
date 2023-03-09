@@ -12,6 +12,6 @@ urlpatterns = [
     path('enrollments', views.Enrollments.as_view(), name='enrollments'),
     path('enrollment_editing/<int:pk>',
           views.EditEnrollments.as_view(), name='enrollment_editing'),
-    path('enrollment_cancel/<int:pk>',
+    path('enrollment_cancel/<str:pk>',
             views.CancelEnrollments, name='enrollment_cancel'),
 ]

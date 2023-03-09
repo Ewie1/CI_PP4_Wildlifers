@@ -4,15 +4,17 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h1>Are You Sure You Want To Delete This Enrollment</h1>
+            <form action="" method="POST">
+            <h1>Are You Sure You Want To Delete This '{{ obj }}'</h1>
             <div class="row">
                 <div class="col-sm-6">
-                    <a href=""></a>
+                    <a href="{{ request.Meta.HTTP_REFERER }}"></a>
                 </div>
                 <div class="col-sm-6">
-                    <button></button>
+                    <input type="submit" value="Confirm">Confirm</input>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </div>
