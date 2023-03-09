@@ -57,12 +57,12 @@ class EnrollView(View):
             booking = program_booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
-            messages.success(request, 'Your are booked in!')
+            messages.success(request, 'Your are booking was Successful!')
             context = {
                 'program_booking_form': program_booking_form
             }
 
-        return render(request, 'booking/bookings.html', context)
+            return render(request, 'booking/bookings.html', context)
 
 
 class Enrollments(generic.ListView):
@@ -71,7 +71,7 @@ class Enrollments(generic.ListView):
     of the logged in user
     """
     model = Enroll
-    queryset = Enroll.objects.filter().order_by('id')
+    queryset = Enroll.objects.filter().order_by('-name')
     template_name = 'booking/enrollment_list.html'
     paginate_by = 3
 
@@ -87,7 +87,7 @@ class Enrollments(generic.ListView):
         booking_page = paginator.get_page(page)
 
         if request.user.is_authenticated:
-            enrollments = Enroll.objects.filter(user=self.request.user)
+            enrollments = Enroll.objects.filter(user=request.user)
             return render(request, 'booking/enrollment_list.html',
             {
                 'booking': booking,
