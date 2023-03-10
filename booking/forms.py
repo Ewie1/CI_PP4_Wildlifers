@@ -17,7 +17,7 @@ class DateInput(forms.DateInput):
 
 class EnrollForm(forms.ModelForm):
     """
-    Class for Enrollment form
+    Class for user detail form
     """
     class Meta:
         model = Enroll
@@ -25,10 +25,9 @@ class EnrollForm(forms.ModelForm):
             'name',
             'start_date',
             'email',
-            'volunteer_job',
+             'volunteer_job',
             'work_time'
             ]
         widgets = {
             'start_date': DateInput(),
         }
-        

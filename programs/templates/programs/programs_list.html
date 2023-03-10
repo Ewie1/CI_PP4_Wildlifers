@@ -6,11 +6,35 @@
     <div class="overlay"></div>
 {% load programapp_tags %}
 <div class="container">
-    <div class="row justify-content-center" style="text-align: center;">
-        <div class="col-sm-12">
-            <h2>Join a program</h2>
-            <h3>Give support near you!</h3>
-            <p> By supporting one or a few endangered species around the world or secies near you!</p>
+    <div class="program-text row" style="text-align: center;">
+        <div class="col-sm-6">
+            <h2>Take Action</h2>
+            <h3>Work with Us</h3>
+            <p>Hundreds of thousands of animals around the world are threatened by human action<br> 
+                and climate change and are in need of protection and conservation efforts. <br>As the list of 
+                animals distinction grows we challeng you to make a difference.<br> Help an animal in your
+                region. 
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <ul>
+                <li>
+                    <h4>Animal Identifier</h4>
+                    Search and send us photos/videos of endangered animals in your region
+                </li>
+                <li>
+                    <h4>Fund Raiser</h4>
+                    Give a small donation to help fund the Wildlifers efforts
+                 </li>
+                <li>
+                    <h4>Transcriber</h4>
+                    Help researchers with documentations by transcribing field notes 
+                </li>
+                <li>
+                    <h4>Reseacher Assitant</h4>
+                    Researcher Assistant: Answer calls, read and redirect email to your region researcher
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -45,7 +69,8 @@
                     <div class="card-body">
                         <h4 class="card-title">{{ program.animal_name }}</h4>
                         <p class="card-text">
-                            Category: {{ program.animal_category }}<br> 
+                            Endanger Status <br><hr>
+                            Classified: {{ program.animal_category }}<br> 
                             Country: {{ program.country.name }}
                         </p>
                         <div class="program-view-button">
