@@ -180,24 +180,48 @@ footer {
 }
 
 .overlay {
-    z-index: -1;
-    height: 100%;
+    z-index: 2;
+    height: 400px;
     background: rgba(1, 9, 62, 0.5);
 }
 
 /* Style for program card display*/
 .program-description {
     background:  rgba(240, 240, 240, 0.888);
+   /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678556874/Reindeer-In-Snow_pa6r49.jpg');*/
+    background-size: cover;
+    background-position: center;
+}
+
+.program-description h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: rgb(0, 82, 0);
+}
+
+
+
+.program-description h3 {
+    font-weight: 800;
+    font-style: italic;
 }
 
 .program-text {
     height: 400px;
     width: 500px;
+    line-height: 2rem;
 }
 
 .program-jobs {
     height: 400px;
     width: 500px;
+    line-height: 1.5rem;
+    
+}
+
+.program-jobs ul {
+    list-style-type:none;
 }
 
 .card {
@@ -324,7 +348,7 @@ footer {
 
 .enrollment-form {
     height: 600px;
-    background: #EFEBE9;;
+    background: #EFEBE9;
     text-align: center;
     padding-top: 100px; 
 }
