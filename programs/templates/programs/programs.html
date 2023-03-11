@@ -6,7 +6,7 @@
     <div class="row " style="text-align: center;">
         <div class="col-sm-12">
             <div class="row">
-                <div>
+                <div class="view-page-heading">
                     <h1>{{ program.animal_name }}</h1>
                 </div>
             </div>
@@ -32,9 +32,9 @@
     </div>
 </div>
 </section>
-<section class="join-us">
-    <a href="{% url 'enrollview' %}" class="program-button">Enroll</a>
+<section class="program-view-buttons">
     <a href="/programs" class="program-button">Go Back</a>
+    <a href="{% url 'enrollview' %}" class="program-button">Enroll</a>
  </section>
 
 {% endblock %}

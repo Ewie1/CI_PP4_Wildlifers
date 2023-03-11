@@ -180,7 +180,7 @@ footer {
 }
 
 .overlay {
-    z-index: 2;
+    z-index: -1;
     height: 400px;
     background: rgba(1, 9, 62, 0.5);
 }
@@ -199,8 +199,6 @@ footer {
     margin-bottom: 30px;
     color: rgb(0, 82, 0);
 }
-
-
 
 .program-description h3 {
     font-weight: 800;
@@ -259,6 +257,19 @@ footer {
     color: #fff;
 }
 
+.program-view-buttons a {
+    background: rgb(0, 82, 0);
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.program-view-buttons {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /*Style for program pagination nav bar*/
 .pagination {
     margin-bottom: -17px;
@@ -275,6 +286,15 @@ footer {
     width: 100%;
 }
 
+.view-page-heading {
+    text-align: center;
+    margin: 30px;
+}
+
+.program-view-image {
+    margin-left: -45px;
+}
+
 .program-view-image, 
 .program-view-text {
     height: 400px;
@@ -285,7 +305,16 @@ footer {
 /*Style for contact page image*/
 .contact-image {
     height: 250px;
-    background:rgba(1, 9, 62, 0.5);
+    /*background:rgba(1, 9, 62, 0.5);*/
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678561827/nature-landscape-animals-cheetahs_qg1pwm.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    z-index: -1;
+    height: 250px;
+    background: rgba(120, 120, 120, 0.5);
 }
 
 .contact-page-map {
