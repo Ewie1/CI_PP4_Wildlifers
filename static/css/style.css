@@ -24,7 +24,19 @@ body {
     color: white;
 }
 
+.nav-link:hover {
+    color: #fff;
+}
+
+.program-link::after {
+    color: white;
+}
+
 .dropdown-menu a {
+    color: black;
+}
+
+.dropdown-menu a:hover {
     color: black;
 }
 
@@ -176,7 +188,6 @@ footer {
 /* Style for program card display*/
 .program-description {
     background:  rgba(240, 240, 240, 0.888);
-    text-align: ;
 }
 
 .program-text {
