@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<div class="program-background">
-    <div class="overlay"></div>
+
 {% load programapp_tags %}
-<div class="container">
-    <div class="program-text row" style="text-align: center;">
-        <div class="col-sm-6">
+<section>
+<div class="container-fluid">
+    <div class="row program-description m-3">
+        <div class="col-sm-6 program-text" >
             <h2>Take Action</h2>
             <h3>Work with Us</h3>
             <p>Hundreds of thousands of animals around the world are threatened by human action<br> 
@@ -16,7 +16,7 @@
                 region. 
             </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 program-jobs">
             <ul>
                 <li>
                     <h4>Animal Identifier</h4>
@@ -38,6 +38,7 @@
         </div>
     </div>
 </div>
+</section>
 <!--Code for filter input-->
 <!--<section>
     <div class="container">
@@ -83,7 +84,7 @@
         </div>
     
     {% endfor %}
-    </div>
+
 
 
   <!--Pgaination without filter-->
@@ -94,7 +95,7 @@
       <li class="page-item"><a class="page-link" href="?page={{ program_list.previous_page_number }}">&laquo;</a></li>
         {% endif %}
       <li class="page-link pagination-arrow">
-        page {{ program_list.number }} of {{ program_list.paginator.num_pages }}
+        Page {{ program_list.number }} of {{ program_list.paginator.num_pages }}
       </li>
       {% if program_list.has_next %}
       <li class="page-item"><a class="page-link" href="?page={{ program_list.next_page_number }}">&raquo;</a></li>
