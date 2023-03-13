@@ -1,18 +1,31 @@
 {% extends "base.html" %}
-
+{% load bootstrap_tags %}
 {% block content %}
-<div class="container">
+<div class="container-fluid g-0 login-form">
     <div class="row">
         <div class="col-sm-12">
-            <form class="enrollment-form m-3" method="POST" enctype="multipart/form-data">
-                {{ program_booking_form.as_p }}
-                
-                {% csrf_token %}
-                <button type="submit" class="btn btn-primary">submit</button>
-                <!--{% for message in messages %}
-                        <p>{{message}}</p>
-                      {% endfor %}-->
-              </form>
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-6">
+                  <div class="card register-card rounded-5 text-black">
+                    <div class="row g-0">
+                      <div class="col-sm-12">
+                        <div class=" p-md-4 mx-md-4">
+                            <form class=" m-3" method="POST" enctype="multipart/form-data">
+                                {{ program_booking_form | as_bootstrap }}
+                                
+                                {% csrf_token %}
+                                <button type="submit" class=" btn-booking">submit</button>
+                                <!--{% for message in messages %}
+                                        <p>{{message}}</p>
+                                      {% endfor %}-->
+                              </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>

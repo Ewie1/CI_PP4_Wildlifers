@@ -25,7 +25,7 @@ class EnrollForm(forms.ModelForm):
             'name',
             'start_date',
             'email',
-             'volunteer_job',
+            'volunteer_job',
             'work_time'
             ]
         widgets = {

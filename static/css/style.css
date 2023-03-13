@@ -389,7 +389,8 @@ footer {
 
 .btn-signup,
 .primaryAction,
-.btn-logout {
+.btn-logout,
+.btn-booking {
     height: 40px;
     width: 200px;
     background: rgb(0, 82, 0);
@@ -398,7 +399,7 @@ footer {
     color: #fff;
     border: 1px solid black;
     margin-top: 30px;
-    margin-left: 150px ;
+    margin-left: 170px ;
     
 }
 
