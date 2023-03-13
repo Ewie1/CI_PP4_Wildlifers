@@ -324,14 +324,17 @@ footer {
 .register-form,
 .login-form {
    /* height: 600px;*/
-    background: #EFEBE9;;
-    text-align: center;
+    background: #EFEBE9;
    /* padding-top: 100px; */
 }
 
 .form-control {
-    border-color:  red;
+    border-color:  rgb(0, 82, 0);
 }
+
+.control-label {
+    margin-top: 1.5rem;
+  }
 
 
 .logout-form {
