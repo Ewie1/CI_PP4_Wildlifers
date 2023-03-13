@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'django_summernote',
     'django_filters',
+    'django_forms_bootstrap',
     'cloudinary',
     'home',
     'programs',
