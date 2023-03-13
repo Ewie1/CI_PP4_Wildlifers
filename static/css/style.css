@@ -325,6 +325,9 @@ footer {
 .login-form {
    /* height: 600px;*/
     background: #EFEBE9;
+    padding-bottom: 30px;
+    margin-bottom: -16px;
+    
    /* padding-top: 100px; */
    overflow: hidden;
 }
@@ -338,7 +341,7 @@ footer {
 .register-form p,
 .login-form p {
     text-align: center;
-    margin: 30px;
+    margin-top: 20px;
 }
 
 .register-card {
@@ -394,7 +397,8 @@ footer {
     border-radius: 5px;
     color: #fff;
     border: 1px solid black;
-    margin: 30px;
+    margin-top: 30px;
+    margin-left: 150px ;
     
 }
 

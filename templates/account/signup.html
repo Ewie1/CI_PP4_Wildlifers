@@ -15,6 +15,7 @@
           <div class="row g-0">
             <div class="col-sm-12">
               <div class=" p-md-4 mx-md-4">
+                <p class="card-title text-center">Enter your account information</p>
                 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                   {% csrf_token %}
                   {{ form | as_bootstrap }}
@@ -32,7 +33,6 @@
                          Passwords must match
                     </div>
                 </div>
-                  
                   <button class="btn-signup" type="submit">{% trans "Sign Up" %}</button>
                   <p>{% blocktrans %}Already have an account? Then please <b> <a href="{{ login_url }}">log in</a>.{% endblocktrans %}</b></p>
                 </form>
@@ -47,4 +47,5 @@
     </div>
   </div>
 </div>
+
 {% endblock %}
