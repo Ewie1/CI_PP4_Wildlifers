@@ -24,12 +24,26 @@ volunteer_jobs = (
     ('Help Researchers', 'Help Researchers'),
 )
 
+animal_names = (
+    ('Red Panda', 'Red Panda'),
+    ('Artic Fox', 'Artic Fox'),
+    ('Steppe Eagle', 'Steppe Eagle'),
+    ('Red Wolf', 'Red Wolf'),
+    ('Persian Fallow Dear', 'Persian Fallow Dear'),
+    ('Koala', 'Koala'),
+    ('Wolverine', 'Wolverine'),
+    (),
+    (),
+    (),
+    (),
+)
+
 
 class Enroll(models.Model):
     """
     Model for Program bookings
     """
-    
+    created_date = models.DateTimeField(auto_now_add=True)
     start_date = models.DateField()
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user", null=True)
@@ -51,10 +65,15 @@ class Enroll(models.Model):
         choices=available_times,
         default=''
     )
+    animal_name = models.CharField(
+        max_length=100,
+        choices=animal_names,
+        default=''
+        )
 
     class Meta:
         ordering = ['-name']
-        unique_together = ('work_time', 'volunteer_job')
+        unique_together = ('work_time', 'volunteer_job', 'animal_name')
 
     def __str__(self):
         return self.name
