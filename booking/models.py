@@ -39,7 +39,7 @@ class Enroll(models.Model):
     """
     Model for Program bookings
     """
-    created_date = models.DateTimeField(auto_now_add=True)
+    created_date = models.DateTimeField(auto_now_add=True, null=True)
     start_date = models.DateField()
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user", null=True)
