@@ -22,11 +22,12 @@ class EnrollForm(forms.ModelForm):
     class Meta:
         model = Enroll
         fields = [
-            'name',
+            'user',
             'start_date',
             'email',
             'volunteer_job',
-            'work_time'
+            'work_time',
+            'animal_name'
             ]
         widgets = {
             'start_date': DateInput(),
