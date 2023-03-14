@@ -8,8 +8,6 @@ from booking.models import Enroll
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-admin.site.register(Enroll)
-
 @admin.register(Enroll)
 class EnrollAdmin(admin.ModelAdmin):
     list_filter = (
@@ -19,7 +17,7 @@ class EnrollAdmin(admin.ModelAdmin):
         'animal_name',
         'volunteer_job',
         'work_time',
-        'created_on'
+        'created_date'
     )
 
     list_display = (
@@ -29,7 +27,7 @@ class EnrollAdmin(admin.ModelAdmin):
         'animal_name',
         'volunteer_job',
         'work_time',
-        'created_on'
+        'created_date'
     )
 
-     
+    search_fields = ('user', 'animal_name')

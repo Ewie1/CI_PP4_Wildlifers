@@ -32,10 +32,6 @@ animal_names = (
     ('Persian Fallow Dear', 'Persian Fallow Dear'),
     ('Koala', 'Koala'),
     ('Wolverine', 'Wolverine'),
-    (),
-    (),
-    (),
-    (),
 )
 
 

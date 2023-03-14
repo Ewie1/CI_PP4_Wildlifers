@@ -31,4 +31,7 @@ class EnrollForm(forms.ModelForm):
             ]
         widgets = {
             'start_date': DateInput(),
+            'animal_name': forms.TextInput(attrs={'class': 'job-form' }),
+            'volunteer_job': forms.TextInput(attrs={'class': 'job-form1' }),
+            'work_time': forms.TextInput(attrs={'class': 'job-form2' })
         }
