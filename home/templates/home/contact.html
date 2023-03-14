@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section>
+<!--<section>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -11,42 +11,58 @@
             </div>
         </div>
     </div>
-</section>
-<div class="container">
+</section>-->
+<div class="container-fluid g-0 contact-form">
     <div class="row">
         <h1>Contact Us</h1>
-        <form method="POST" action="{% url 'contact' %}">
-            {% csrf_token %}
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-6">
+                            <div class="card register-card rounded-5 text-black">
+                                <div class="row g-0">
+                                    <div class="col-sm-12">
+                                        <div class=" p-md-4 mx-md-4">
+                                            <form method="POST" action="{% url 'contact' %}">
+                                                {% csrf_token %}
 
-            <div class="col-sm-12">
-                <div class="col-md-6">
-                    <label for="your-name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="your-name" name="your-name">
+                                                <div class="col-sm-12">
+                                                    <div class="col-md-6">
+                                                        <label for="your-name" class="form-label">Name</label>
+                                                        <input type="text" class="form-control" id="your-name"
+                                                            name="your-name">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="your-email" class="form-label">Your Email</label>
+                                                        <input type="email" class="form-control" id="your-email"
+                                                            name="your-email" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="your-message" class="form-label">Your
+                                                            Message</label>
+                                                        <textarea class="form-control" id="your-message"
+                                                            name="your-message" rows="5" required></textarea>
+                                                    </div>
+                                                    <div class="d-grid gap-2 col-6 mx-auto m-3">
+                                                        <button class="btn btn-success" type="submit">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <label for="your-email" class="form-label">Your Email</label>
-                    <input type="email" class="form-control" id="your-email" name="your-email" required>
-                </div>
-                <div class="col-12">
-                    <label for="your-message" class="form-label">Your Message</label>
-                    <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto m-3">
-                    <button class="btn btn-success" type="submit">Submit</button>
-                  </div>
             </div>
-        </form>
-    </div>
-</div>
 
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 contact-page-map">
-                <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.0416906408054!2d18.046351515710345!3d59.332257781659855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d63cb52d92d%3A0x6655485d7cf37fb3!2sFleminggatan%203%2C%20112%2026%20Stockholm%2C%20Sweden!5e0!3m2!1sen!2sus!4v1678279066376!5m2!1sen!2sus" 
-                  ></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-{% endblock %}
+            <section>
+                <div class="container-fluid g-0">
+                    <div class="row">
+                        <div class="col-sm-12 contact-page-map">
+                            <iframe style="width: 100%;"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.0416906408054!2d18.046351515710345!3d59.332257781659855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d63cb52d92d%3A0x6655485d7cf37fb3!2sFleminggatan%203%2C%20112%2026%20Stockholm%2C%20Sweden!5e0!3m2!1sen!2sus!4v1678279066376!5m2!1sen!2sus"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endblock %}

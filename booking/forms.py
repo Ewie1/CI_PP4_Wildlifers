@@ -22,7 +22,7 @@ class EnrollForm(forms.ModelForm):
     class Meta:
         model = Enroll
         fields = [
-            'user',
+            'name',
             'start_date',
             'email',
             'volunteer_job',
@@ -31,7 +31,7 @@ class EnrollForm(forms.ModelForm):
             ]
         widgets = {
             'start_date': DateInput(),
-            'animal_name': forms.TextInput(attrs={'class': 'job-form' }),
-            'volunteer_job': forms.TextInput(attrs={'class': 'job-form1' }),
-            'work_time': forms.TextInput(attrs={'class': 'job-form2' })
+           # 'animal_name': forms.TextInput(attrs={'class': 'job-form'}),
+           # 'volunteer_job': forms.TextInput(attrs={'class': 'job-form1'}), 
+           # 'work_time': forms.TextInput(attrs={'class': 'job-form2'})
         }
