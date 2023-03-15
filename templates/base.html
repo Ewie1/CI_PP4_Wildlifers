@@ -22,8 +22,8 @@
 </head>
 <body>
     <div class="home-page-container">
-        <nav class="navbar navbar-expand-lg navbar-white my-navbar">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg  my-navbar">
+            <div class="container">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -86,10 +86,10 @@
     {% block content %}
     {% endblock content %}
 <footer>
-  <div class="container g-0">
+  <div class="container g-0 ">
     <hr>
     <div class="row">
-      <div class="col-sm-4 col-md-4 text-center media-links">
+      <div class="col-md text-center media-links">
         <h3 class="follow-us general-sub">Social Media</h3>
         <ul class="list-unstyled">
           <li>
@@ -104,7 +104,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-sm-4 col-md-4 text-center media-links">
+      <div class="col-md text-center media-links">
         <h3 class="follow-us general-sub">Wildlifers</h3>
         <p>This site was craeted and used for educational purposes only</p>
         <!--<ul class="list-unstyled">
@@ -120,9 +120,9 @@
           </li>
         </ul>-->
       </div>
-      <div class="col-md-4 col-sm-4">
+      <div class="col-md">
         <div class="row contact-us">
-          <div class="col-sm-12 text-center">
+          <div class=" text-center">
             <h3 class="uppercase">Contact Information</h3>
             <p><a href="{% url 'contact' %}"><i class="fa-solid fa-envelope"></i></a> wildlifers@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i> +46 736776322</p>

@@ -60,7 +60,7 @@ h2 {
 
 /*Style hero image*/
 #hero-image {
-    height: 600px;
+    height: 400px;
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677247794/samples/landscapes/rainforest-sunset2_mv4rtl.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -70,36 +70,36 @@ h2 {
 }
 
 #hero-image h1 {
-    margin-top: 250px;
+    margin-top: 100px;
 }
 
 /* Style accompany images in home page description section*/
 .accompany-image1 {
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677238747/samples/animals/giantpanda_sjl5v9.jpg')no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .accompany-image2 {
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677234626/samples/animals/homepage-image_o86p9d.jpg')no-repeat;
     background-size: cover;
     background-position: center;
-    margin-right: 300px;
+     
 }
 
 /*Style home page paragraphs*/
 .home-text1 {
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
 }
 
 .home-text2 {
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
 }
 
 /*Style home page buttons*/
@@ -130,7 +130,7 @@ h2 {
 
 /*Style home page bottom image*/
 .home-bottom-image {
-    height: 200px;
+    height: 100px;
     width: 100%;
     margin-top: 60px;
 }
@@ -462,4 +462,27 @@ footer h3 {
 
 .job-form {
     margin-top: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .join-us {
+        margin-top: 100px;
+    }
+    .homepage-program-link {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        height: 600px;
+    }
+
+    .accompany-image2 {
+        margin-top: 100px;
+    }
+    .homepage-program-link {
+        margin-top: 50px;
+    }
+    
 }
