@@ -244,11 +244,11 @@ footer h3 {
     width:300px
 }
 
-.card-body {
-    text-align: center;
+.animal-cards {
+    text-align: ;
 }
 
-.card-body h4 {
+.animal-cards h4 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -257,9 +257,10 @@ footer h3 {
 .program-view-button  {
     margin-top: 30px;
     margin-left: 85px;
-    background: rgb(0, 82, 0);
+   /* background: rgb(0, 82, 0);
     padding: 8px;
-    width: 120px;
+    width: 120px;*/
+    text-align: center;
 }
 
 .program-view-button a {
@@ -341,11 +342,15 @@ footer h3 {
 }
 
 /* Style for signup, login and logout forms*/
+.form-page-wrap {
+    background: #EFEBE9;
+}
+
+
 .register-form,
 .login-form,
 .booking-form {
    /* height: 600px;*/
-    background: #EFEBE9;
     padding-bottom: 30px;
     margin-bottom: -16px;
     
@@ -374,8 +379,8 @@ footer h3 {
 }
 
 .register-card {
-    margin-left: 20%;
-    width: 60%;
+    /*margin-left: 20%;*/
+    /*width: 60%;*/
     border-radius: 20px;
     box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.2);
 }
@@ -389,7 +394,7 @@ footer h3 {
     border-radius: 20px;
     box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.2);
 }
-
+ .card-body
 
 .form-control {
     border-color:  rgb(0, 82, 0);
@@ -494,6 +499,10 @@ footer h3 {
     }
     .homepage-program-link {
         margin-top: 50px;
+    }
+
+    .register-form {
+        
     }
     
 }
