@@ -348,6 +348,12 @@ footer h3 {
     background: #EFEBE9;
 }
 
+.form-login-page-wrap {
+    background: #EFEBE9;
+    height: 750px;
+    margin-bottom: -30px;
+}
+
 
 .register-form,
 .login-form,
@@ -373,7 +379,7 @@ footer h3 {
 }
 
 .contact-form h1 {
-    
+
 }
 
 
