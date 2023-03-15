@@ -10,7 +10,7 @@
 
 /*Add website font-family */
 body {
-    
+    height: 100vh;
 }
 
 /*Style navigation bar*/
@@ -222,16 +222,6 @@ footer h3 {
     line-height: 2rem;
 }
 
-.program-jobs {
-    height: 400px;
-    width: 500px;
-    line-height: 1.5rem;
-    
-}
-
-.program-jobs ul {
-    list-style-type:none;
-}
 
 .program-card {
     
@@ -323,13 +313,20 @@ footer h3 {
     /*background:rgba(1, 9, 62, 0.5);*/
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678561827/nature-landscape-animals-cheetahs_qg1pwm.jpg');
     background-size: cover;
-    background-position: center;
+    
 }
 
 .overlay {
     z-index: -1;
     height: 250px;
     background: rgba(120, 120, 120, 0.5);
+}
+
+.contact-image-overlay {
+    height: 700px;
+    z-index: -1;
+    background: rgba(120, 120, 120, 0.5);
+    margin-top: -700px;
 }
 
 .contact-page-section {
@@ -345,7 +342,10 @@ footer h3 {
 
 /* Style for signup, login and logout forms*/
 .form-page-wrap {
-    background: #EFEBE9;
+    /*background: #EFEBE9;*/
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1673022396/cld-sample-2.jpg')no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 .form-login-page-wrap {

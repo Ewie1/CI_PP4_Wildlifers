@@ -1,7 +1,17 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
-<div class="container-fluid g-0 booking-form">
+
+<div class="container-fluid g-0">
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="contact-image">
+              <div class="overlay"></div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--<div class="container-fluid g-0 booking-form">
     <div class="row">
         <div class="col-sm-12">
             <div class="row d-flex justify-content-center">
@@ -15,39 +25,65 @@
                                 
                                 {% csrf_token %}
                                 <button type="submit" class=" btn-booking">submit</button>
-                                <!--{% for message in messages %}
-                                        <p>{{message}}</p>
-                                      {% endfor %}-->
+                                
                               </form>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-            </div>
-            
-        </div>
-        <div class="col-sm-6 program-jobs">
-          <!---<h3>Jobs</h3>-->
-             <ul>
-                 <li>
-                    <b>Animal Identifier:</b>  <br>
-                     Search and send us photos/videos of endangered animals in your region
-                 </li>
-                 <li>
-                    <b>Fund Raiser:</b>  <br>
-                     Give a small donation to help fund the Wildlifers efforts
+            </div>-->
+            <div class="form-page-wrap">
+              <div class="container register-form">
+                <h1 class="text-center" style="color: green;">Save an Animal</h1>
+                <hr>
+                <div class="row d-flex justify-content-center mb-5">
+                  <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card rounded-3 text-black mt-3">
+                      <div class="row g-0">
+                        <div class="col-lg-12 rounded-3">
+                          <div class="card-body p-md-4 mx-md-4">
+                            <p class="card-title text-center">Create your vlounteer program here: </p>
+                            <form class=" m-3" method="POST" enctype="multipart/form-data">
+                              {{ program_booking_form | as_bootstrap }}
+                              
+                              {% csrf_token %}
+                              <button type="submit" class=" btn-booking">submit</button>
+                              
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row d-flex justify-content-center mb-5">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <h3 class="text-center mt-3">Jobs</h3>
+                <ul>
+                  <li>
+                     <b>Animal Identifier:</b>  <br>
+                      Search and send us photos/videos of endangered animals in your region
                   </li>
-                 <li>
-                    <b>Transcriber:</b>  <br>
-                     Help researchers with documentations by transcribing field notes 
-                 </li>
-                 <li>
-                    <b>Reseacher Assitant:</b>  <br>
-                     Answer calls, read and redirect email to your region researcher
-                 </li>
-             </ul>
-         </div>
+                  <li>
+                     <b>Fund Raiser:</b>  <br>
+                      Give a small donation to help fund the Wildlifers efforts
+                   </li>
+                  <li>
+                     <b>Transcriber:</b>  <br>
+                      Help researchers with documentations by transcribing field notes 
+                  </li>
+                  <li>
+                     <b>Reseacher Assitant:</b>  <br>
+                      Answer calls, read and redirect email to your region researcher
+                  </li>
+              </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        
      </div>
  </div>
     </div>
