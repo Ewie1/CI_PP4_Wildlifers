@@ -5,10 +5,10 @@
 
 {% load programapp_tags %}
 <section>
-<div class="container-fluid">
-    <div class="row program-description justify-content-center m-3">
+<div class="container">
+    <div class="row program-description justify-content-center shadow rounded-3 mt-3 ">
         <h2>Take Action!</h2>
-        <div class="col-sm-6 program-text" >
+        <div class="col-md text-center" >
           <!---  <h3>Work with Us</h3>-->
             <p>Hundreds of thousands of animals around the world are threatened by human action 
                 and climate change and are in need of protection and conservation efforts. <br>As the list of 
@@ -18,29 +18,6 @@
                 or you can just give a small donation.
             </p>
         </div>
-        <div class="col-sm-6 program-jobs">
-         <!---<h3>Jobs</h3>-->
-            <ul>
-                <li>
-                   <b>Animal Identifier:</b>  <br>
-                    Search and send us photos/videos of endangered animals in your region
-                </li>
-                <li>
-                   <b>Fund Raiser:</b>  <br>
-                    Give a small donation to help fund the Wildlifers efforts
-                 </li>
-                <li>
-                   <b>Transcriber:</b>  <br>
-                    Help researchers with documentations by transcribing field notes 
-                </li>
-                <li>
-                   <b>Reseacher Assitant:</b>  <br>
-                    Answer calls, read and redirect email to your region researcher
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
 </section>
 <!--Code for filter input-->
 <!--<section>
@@ -61,12 +38,11 @@
 </section>-->
 
 
-<div class="container program-container py-5 bg-light ">
+<div class="container justify-content-center shadow py-5 bg-light ">
     {% for program in program_list %}
-   
-        <div class="card program-card mb-3" style="max-width: 600px;">
+        <div class=" card  m-4 me-md mx-auto col-md mb-3" style="max-width: 600px;">
             <div class="row g-0">
-                <div class="col-md-6">
+                <div class="col-md">
                     <img src="{{ program.image.url }}" class="img-fluid rounded-start card-image" alt="...">
                 </div>
                 <div class="col-md-6">
