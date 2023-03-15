@@ -366,11 +366,14 @@ footer h3 {
 }
 
 .register-form h1,
-.login-form h1,
-.contact-form h1 {
+.login-form h1 {
     text-align: center;
     margin: 30px;
     font-style: italic;
+}
+
+.contact-form h1 {
+    
 }
 
 
