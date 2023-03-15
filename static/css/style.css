@@ -95,11 +95,13 @@ h2 {
 .home-text1 {
     height: 300px;
     width: 400px;
+    background:  rgba(240, 240, 240, 0.888);
 }
 
 .home-text2 {
     height: 300px;
     width: 400px;
+    background:  rgba(240, 240, 240, 0.888);
 }
 
 /*Style home page buttons*/
@@ -206,7 +208,7 @@ footer h3 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: rgb(0, 82, 0);
+    
 }
 
 .program-description h3 {
@@ -299,8 +301,10 @@ footer h3 {
     margin: 30px;
 }
 
-.program-view-image {
-    margin-left: -45px;
+.view-row {
+    padding-left: -80px;
+    background: #EFEBE9;
+    
 }
 
 .program-view-image, 
@@ -339,8 +343,7 @@ footer h3 {
 /* Style for signup, login and logout forms*/
 .register-form,
 .login-form,
-.booking-form,
-.contact-form {
+.booking-form {
    /* height: 600px;*/
     background: #EFEBE9;
     padding-bottom: 30px;
@@ -348,6 +351,11 @@ footer h3 {
     
    /* padding-top: 100px; */
    overflow: hidden;
+}
+
+.contact-form {
+    border: none;
+    background: #EFEBE9;
 }
 
 .register-form h1,
@@ -469,6 +477,10 @@ footer h3 {
     }
     .homepage-program-link {
         margin-top: 100px;
+    }
+
+    .program-view-image {
+        width: 400px;
     }
 }
 
