@@ -256,16 +256,18 @@ footer h3 {
 
 .program-view-button  {
     margin-top: 30px;
-    margin-left: 85px;
+    margin-left: 150px;
    /* background: rgb(0, 82, 0);
     padding: 8px;
     width: 120px;*/
     text-align: center;
+
 }
 
 .program-view-button a {
     text-decoration: none;
-    color: #fff;
+    color:  rgb(0, 82, 0);
+    text-transform: uppercase;
 }
 
 .program-view-buttons a {
