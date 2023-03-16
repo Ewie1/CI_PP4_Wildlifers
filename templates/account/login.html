@@ -6,48 +6,10 @@
 
 
 {% block content %}
-<!--<div class="container-fluid g-0 login-form">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>Login</h1>
 
-
-
-<div class="row d-flex justify-content-center">
-      <div class="col-sm-6">
-        <div class="card register-card rounded-5 text-black">
-          <div class="row g-0">
-            <div class="col-sm-12">
-              <div class=" p-md-4 mx-md-4">
-                <p class="card-title text-center">Login to your account</p>
-                <form class="login" method="POST" action="{% url 'account_login' %}">
-                  {% csrf_token %}
-                  {{ form | as_bootstrap }}
-                  {% if redirect_field_value %}
-                  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                  {% endif %}
-                  <button class="primaryAction" type="submit">Login</button>
-                </form>
-
-                <div class="d-flex align-items-center justify-content-center pb-3">
-                  <p class="mb-0 mt-3">{% blocktrans %}            
-                    Don't have an account? Click <a class="link" href="{{ signup_url }}">here</a> to sign up.</p>{% endblocktrans %}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-
-
-    </div>
-  </div>
-</div>-->
-
-<div class="form-login-page-wrap">
-  <div class="container login-form">
-    <h1 class="text-center">Login</h1>
+<div class="form-page-wrap">
+  <div class="container register-form">
+    <h1 class="text-center">Register</h1>
     
     <div class="row d-flex justify-content-center mb-5">
       <div class="col-12 col-md-8 col-lg-6">

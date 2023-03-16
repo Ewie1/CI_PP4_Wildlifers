@@ -425,10 +425,9 @@ footer h3 {
 
 .logout-form {
     height: 600px;
-    background: #EFEBE9;;
     text-align: center;
     padding-top: 200px;
-
+    color: #fff;
 }
 
 .register-form h1,
@@ -515,7 +514,7 @@ footer h3 {
 
 @media screen and (max-width: 1200px) {
     .join-us {
-        margin-top: 100px;
+        margin-top: ;
     }
     .homepage-program-link {
         margin-top: 100px;
@@ -524,6 +523,15 @@ footer h3 {
     .program-view-image {
         width: 400px;
     }
+
+    .home-text1 {
+        font-size: 0.8rem;
+    }
+
+    .home-text2 {
+        font-size: 0.8rem;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -531,9 +539,6 @@ footer h3 {
         height: 600px;
     }
 
-    .accompany-image2 {
-        margin-top: 100px;
-    }
     .homepage-program-link {
         margin-top: 50px;
     }
