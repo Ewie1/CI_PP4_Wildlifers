@@ -61,7 +61,7 @@ h2 {
 /*Style hero image*/
 #hero-image {
     height: 400px;
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677247794/samples/landscapes/rainforest-sunset2_mv4rtl.jpg') no-repeat;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677247794/samples/landscapes/rainforest-sunset2_mv4rtl.jpg') no-repeat fixed;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -191,17 +191,15 @@ footer h3 {
    background: #EFEBE9;
 }
 
-.overlay {
-    z-index: -1;
-    height: 400px;
-    background: rgba(1, 9, 62, 0.5);
-}
 
 /* Style for program card display*/
 .program-description {
-    background:  rgba(240, 240, 240, 0.888);
-   /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678556874/Reindeer-In-Snow_pa6r49.jpg');*/
-   margin-bottom: 60px;
+   /* background:  rgba(240, 240, 240, 0.888);*/
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678561827/nature-landscape-animals-cheetahs_qg1pwm.jpg')center no-repeat;
+    margin-bottom: 60px;
+    background-size: cover;
+    height: 300px;
+    color:azure;
 }
 
 .program-description h2 {
@@ -216,11 +214,13 @@ footer h3 {
     font-style: italic;
 }
 
-.program-text {
-    height: 400px;
-    width: 500px;
-    line-height: 2rem;
+.program-overlay {
+    z-index: -1;
+    height: 300px;
+    background: rgba(125, 125, 125, 0.5);
+    margin-top: -90px;
 }
+
 
 
 .program-card {
@@ -311,8 +311,9 @@ footer h3 {
 .contact-image {
     height: 300px;
     background:rgba(1, 9, 62, 0.5);
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678561827/nature-landscape-animals-cheetahs_qg1pwm.jpg');
+   /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678561827/nature-landscape-animals-cheetahs_qg1pwm.jpg')no-repeat center fixed;*/
     background-size: cover;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677247794/samples/landscapes/rainforest-sunset2_mv4rtl.jpg')no-repeat center fixed;
     
 }
 
@@ -325,6 +326,14 @@ footer h3 {
 .booking-heading {
     color: white;
     padding-top: 150px;
+}
+
+.jobs ul {
+    list-style:none;
+}
+
+.jobs h3 {
+    font-weight: 700;
 }
 
 /*.contact-image-overlay {
@@ -347,14 +356,19 @@ footer h3 {
 
 /* Style for signup, login and logout forms*/
 .form-page-wrap {
-    background: #EFEBE9 fixed;
+   /* background: #EFEBE9 fixed;*/ 
    /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1673022396/cld-sample-2.jpg')no-repeat center fixed;*/
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677247794/samples/landscapes/rainforest-sunset2_mv4rtl.jpg') no-repeat center fixed;
     background-size: cover;
     background-position: center;
 }
 
+.booking-form-page-wrap {
+    background: rgba(240, 240, 240, 0.888);
+}
+
 .form-login-page-wrap {
-    background: #EFEBE9;
+    background: rgba(240, 240, 240, 0.888);
     height: 750px;
     margin-bottom: -30px;
 }
