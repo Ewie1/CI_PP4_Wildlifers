@@ -280,15 +280,7 @@ footer h3 {
 .view-row {
     padding-left: -80px;
     background: #EFEBE9;
-    
 }
-
-.program-view-image, 
-.program-view-text {
-    height: 400px;
-    width: 500px;
-}
-
 
 /*Style for contact page image*/
 .contact-image {
@@ -503,7 +495,7 @@ footer h3 {
     }
 
     .program-view-image {
-        width: 400px;
+        
     }
 
     .home-text1 {
@@ -525,8 +517,8 @@ footer h3 {
         margin-top: 50px;
     }
 
-    .register-form {
-        
+    .program-view-image {
+        width: ;
     }
     
 }
