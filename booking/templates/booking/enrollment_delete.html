@@ -2,34 +2,33 @@
 
 {% block content %}
 <div class="form-page-wrap">
-    <div class="container register-form">
-      <h1 class="text-center">Edit Enrollment here</h1>
-      
+    <div class="container logout-form">
+      <h1 class="text-center">Logout</h1>
       <div class="row d-flex justify-content-center mb-5">
         <div class="col-12 col-md-8 col-lg-6">
-          <div class="card rounded-3 text-black">
             <div class="row g-0">
               <div class="col-lg-12">
                 <div class="card-body p-md-4 mx-md-4">
-                    <form action="" method="POST">
-                        {% csrf_token %}
-                    <h3>Are You Sure You Want To Delete This '{{ obj }}'</h3>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="{% url 'enrollments' %}">Go Back</a>
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="submit" value="Confirm"></input>
-                        </div>
+                  <form action="" method="POST">
+                    {% csrf_token %}
+                <p>Are You Sure You Want To Delete This '{{ obj }}'?</p>
+                <div class="row">
+                    <div class="col-sm-6 join-us">
+                        <a href="{% url 'enrollments' %}" class="homepage-button">Go Back</a>
                     </div>
-                    </form>
+                    <div class="col-sm-6">
+                        <input type="submit" class="btn-booking"  value="Confirm"></input>
+                    </div>
+                </div>
+                </form>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
+  </div>
+
 <!--<div class="container">
     <div class="row">
         <div class="col-sm-12">
