@@ -309,8 +309,8 @@ footer h3 {
 
 /*Style for contact page image*/
 .contact-image {
-    height: 250px;
-    /*background:rgba(1, 9, 62, 0.5);*/
+    height: 300px;
+    background:rgba(1, 9, 62, 0.5);
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678561827/nature-landscape-animals-cheetahs_qg1pwm.jpg');
     background-size: cover;
     
@@ -318,16 +318,21 @@ footer h3 {
 
 .overlay {
     z-index: -1;
-    height: 250px;
+    height: 300px;
     background: rgba(120, 120, 120, 0.5);
 }
 
-.contact-image-overlay {
+.booking-heading {
+    color: white;
+    padding-top: 150px;
+}
+
+/*.contact-image-overlay {
     height: 700px;
     z-index: -1;
     background: rgba(120, 120, 120, 0.5);
     margin-top: -700px;
-}
+}*/
 
 .contact-page-section {
     overflow: hidden;
@@ -342,8 +347,8 @@ footer h3 {
 
 /* Style for signup, login and logout forms*/
 .form-page-wrap {
-    /*background: #EFEBE9;*/
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1673022396/cld-sample-2.jpg')no-repeat center fixed;
+    background: #EFEBE9 fixed;
+   /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1673022396/cld-sample-2.jpg')no-repeat center fixed;*/
     background-size: cover;
     background-position: center;
 }
@@ -365,6 +370,7 @@ footer h3 {
    /* padding-top: 100px; */
    overflow: hidden;
 }
+
 
 .contact-form {
     border: none;
