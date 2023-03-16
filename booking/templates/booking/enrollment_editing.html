@@ -33,9 +33,7 @@
                                     <p class="card-title text-center"> <b> Update your vlounteer program here:</b> </p>
                                     <form action="{% url 'enrollment_editing' enroll.pk %}" method="POST"
                                         enctype="multipart/form-data">
-
                                         {% csrf_token %}
-
                                         <div>
                                             {{ form | as_bootstrap }}
                                         </div>

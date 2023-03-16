@@ -12,25 +12,25 @@
         <div class="container">
             <div class="row">
                 <div class="card text-black">
-                <div class="col-sm-12 booking-list">
-                    <p>
-                       <b>Name:</b>  {{ booking.name }}
-                    </p>
-                    <p>
-                        <b>Animal:</b> {{booking.animal_name}}
-                    </p>
-                    <p>
-                       <b>Job:</b>  {{ booking.volunteer_job }}
-                    </p>
-                    <p>
-                        <b>Work-Day:</b>  {{ booking.start_date }}
-                     </p>
-                    <p>
-                       <b>Work-Time:</b>  {{ booking.work_time }}
-                    </p>
-                    <a href="{% url 'enrollment_editing' booking.pk  %}" class="btn btn-success">Edit</a>
-                    <a href="{% url 'enrollment_cancel' booking.pk  %}" class="btn btn-danger">Cancel</a>
-                </div>
+                    <div class="col-sm-12 booking-list">
+                        <p>
+                            <b>Name:</b> {{ booking.name }}
+                        </p>
+                        <p>
+                            <b>Animal:</b> {{booking.animal_name}}
+                        </p>
+                        <p>
+                            <b>Job:</b> {{ booking.volunteer_job }}
+                        </p>
+                        <p>
+                            <b>Work-Day:</b> {{ booking.start_date }}
+                        </p>
+                        <p>
+                            <b>Work-Time:</b> {{ booking.work_time }}
+                        </p>
+                        <a href="{% url 'enrollment_editing' booking.pk  %}" class="btn btn-success">Edit</a>
+                        <a href="{% url 'enrollment_cancel' booking.pk  %}" class="btn btn-danger">Cancel</a>
+                    </div>
                 </div>
             </div>
         </div>

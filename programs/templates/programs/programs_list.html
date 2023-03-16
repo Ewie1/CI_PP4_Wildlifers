@@ -5,22 +5,22 @@
 
 {% load programapp_tags %}
 <section>
-<div class="container">
-    <div class="row program-description justify-content-center rounded-3 mt-3 ">
-        <h2>Take Action!</h2>
-        <div class="col-md text-center" >
-            <div class="">
-          <!---  <h3>Work with Us</h3>-->
-            <p>Hundreds of thousands of animals around the world are threatened by human action 
-                and climate change and are in need of protection and conservation efforts. <br>As the list of 
-                animals distinction grows we challeng you to make a difference.<br> Help an animal in your
-                region. Enroll in our program where you can contribute to an animal of your choice
-                by doing two hours of work which will help us gather more information, speed up comunication 
-                or you can just give a small donation.
-            </p>
+    <div class="container">
+        <div class="row program-description justify-content-center rounded-3 mt-3 ">
+            <h2>Take Action!</h2>
+            <div class="col-md text-center">
+                <div class="">
+                    <!---  <h3>Work with Us</h3>-->
+                    <p>Hundreds of thousands of animals around the world are threatened by human action
+                        and climate change and are in need of protection and conservation efforts. <br>As the list of
+                        animals distinction grows we challeng you to make a difference.<br> Help an animal in your
+                        region. Enroll in our program where you can contribute to an animal of your choice
+                        by doing two hours of work which will help us gather more information, speed up comunication
+                        or you can just give a small donation.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 </section>
 <!--Code for filter input-->
 <!--<section>
@@ -39,51 +39,49 @@
         </div>
     </div>
 </section>-->
-
-
 <div class="container justify-content-center shadow py-5 bg-light ">
     {% for program in program_list %}
-        <div class=" card  m-4 me-md mx-auto col-md mb-3" style="max-width: 600px;">
-            <div class="row g-0">
-                <div class="col-md">
-                    <img src="{{ program.image.url }}" class="img-fluid rounded-start card-image" alt="...">
-                </div>
-                <div class="col-md-6">
-                    <div class="card-body animal-cards">
-                        <h4 class="card-title">{{ program.animal_name }}</h4>
-                        <p class="card-text">
-                            Endanger Status <br><hr>
-                            Classified: {{ program.animal_category }}<br> 
-                            Country: {{ program.country.name }}
-                        </p>
-                        <div class="program-view-button">
-                            <!-- <h2>Join the fight</h2>-->
-                             <a href="{% url 'show_program' program.id %}"> <b>Read</b></a>
-                        </div>
+    <div class=" card  m-4 me-md mx-auto col-md mb-3" style="max-width: 600px;">
+        <div class="row g-0">
+            <div class="col-md">
+                <img src="{{ program.image.url }}" class="img-fluid rounded-start card-image" alt="...">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body animal-cards">
+                    <h4 class="card-title">{{ program.animal_name }}</h4>
+                    <p class="card-text">
+                        Endanger Status <br>
+                        <hr>
+                        Classified: {{ program.animal_category }}<br>
+                        Country: {{ program.country.name }}
+                    </p>
+                    <div class="program-view-button">
+                        <!-- <h2>Join the fight</h2>-->
+                        <a href="{% url 'show_program' program.id %}"> <b>Read</b></a>
                     </div>
                 </div>
             </div>
         </div>
-    
+    </div>
+
     {% endfor %}
 
-
-
-  <!--Pgaination without filter-->
-<nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center">
-        {% if program_list.has_previous %}
-      <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
-      <li class="page-item"><a class="page-link" href="?page={{ program_list.previous_page_number }}">&laquo;</a></li>
-        {% endif %}
-      <li class="page-link pagination-arrow">
-        Page {{ program_list.number }} of {{ program_list.paginator.num_pages }}
-      </li>
-      {% if program_list.has_next %}
-      <li class="page-item"><a class="page-link" href="?page={{ program_list.next_page_number }}">&raquo;</a></li>
-      <li class="page-item"><a class="page-link" href="?page={{ program_list.paginator.num_pages}}">Last</a></li>
-        {% endif %}
-    </ul>
-  </nav>
+    <!--Pgaination without filter-->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            {% if program_list.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ program_list.previous_page_number }}">&laquo;</a>
+            </li>
+            {% endif %}
+            <li class="page-link pagination-arrow">
+                Page {{ program_list.number }} of {{ program_list.paginator.num_pages }}
+            </li>
+            {% if program_list.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ program_list.next_page_number }}">&raquo;</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ program_list.paginator.num_pages}}">Last</a></li>
+            {% endif %}
+        </ul>
+    </nav>
 </div>
 {% endblock %}

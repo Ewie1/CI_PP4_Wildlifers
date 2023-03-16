@@ -2,31 +2,28 @@
 
 {% block content %}
 <section class="bg-light">
-<div class="container">
-            <div class="row">
-                <div class="view-page-heading">
-                    <h1>{{ program.animal_name }}</h1>
-                </div>
-            </div>
-            <div class="row view-row g-0">
-                <div class="col-md" style="text-align: center;">
-                    <img src="{{ program.image.url }}" class=" program-view-image" alt="...">
-                </div>
-                <div class="col-md program-view-text" >
-                    <p>
-                        {{ program.description|safe }}
-                    </p>
-                </div>
-                
-            </div>
+    <div class="container">
+        <div class="row">
+            <div class="view-page-heading">
+                <h1>{{ program.animal_name }}</h1>
             </div>
         </div>
+        <div class="row view-row g-0">
+            <div class="col-md" style="text-align: center;">
+                <img src="{{ program.image.url }}" class=" program-view-image" alt="...">
+            </div>
+            <div class="col-md program-view-text">
+                <p>
+                    {{ program.description|safe }}
+                </p>
+            </div>
+
+        </div>
     </div>
-</div>
 </section>
 <section class="program-view-buttons">
     <a href="/programs" class="program-button">Go Back</a>
     <a href="{% url 'enrollview' %}" class="program-button">Enroll</a>
- </section>
+</section>
 
 {% endblock %}

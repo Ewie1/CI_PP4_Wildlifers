@@ -3,111 +3,114 @@
 {% load static %}
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" 
-    content="Wildlifers is a freelance organisation dedicated to help wildlife extinction all over the world">
-    <meta name="keywords" 
-    content="wild life, animals, nature, endangered species, endangered wild life, extinction">
-   
-    
-    <!--Bootstrap and css links-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    <title>Wildlifers</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Wildlifers is a freelance organisation dedicated to help wildlife extinction all over the world">
+  <meta name="keywords" content="wild life, animals, nature, endangered species, endangered wild life, extinction">
+
+
+  <!--Bootstrap and css links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <title>Wildlifers</title>
 </head>
+
 <body>
-    <div class="home-page-container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
-            <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="/programs">Programs</a>
-                  </li>
-                  <!--User must be authenticated to view bookings-->
-                  {% if user.is_authenticated %}
-                  <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'enrollments' %}"> My Bookings</a>
-                  </li>
-                  {% else %}
-                  <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'account_signup' %}"> My Bookings</a>
-                  </li>
-                  {% endif %}
-                  <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown link
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
-                      {% if user.is_authenticated %}
-                      <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
-                      {% else %}
-                      <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
-                      {% endif %}
-                      <li><a class="dropdown-item" href="{% url 'enrollview' %}">Bookings</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          {% for message in messages %}
-          <div class="alert alert-dismissible fade show" id="msg" role="alert">
-            <p>{{ message | safe }}</p>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          {% endfor %}
+  <div class="home-page-container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/programs">Programs</a>
+            </li>
+            <!--User must be authenticated to view bookings-->
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'enrollments' %}"> My Bookings</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'account_signup' %}"> My Bookings</a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                {% if user.is_authenticated %}
+                <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                {% else %}
+                <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                {% endif %}
+                <li><a class="dropdown-item" href="{% url 'enrollview' %}">Bookings</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    {% block content %}
-    {% endblock content %}
-<footer>
-  <div class="container g-0 ">
-    <hr>
+    </nav>
+  </div>
+  <div class="container">
     <div class="row">
-      <div class="col-md text-center media-links">
-        <h3 class="follow-us general-sub">Social Media</h3>
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://facebook.com" target="_blank" rel="noopener"
-              aria-label="Visit our facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener"
-              aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-square-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener"
-              aria-label="Visit our instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener"
-              aria-label="Visit our youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
-          </li>
-        </ul>
+      <div class="col-md-8 offset-md-2">
+        {% for message in messages %}
+        <div class="alert alert-dismissible fade show" id="msg" role="alert">
+          <p>{{ message | safe }}</p>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
       </div>
-      <div class="col-md text-center media-links">
-        <h3 class="follow-us general-sub">Wildlifers</h3>
-        <p>This site was craeted and used for educational purposes only</p>
-        <!--<ul class="list-unstyled">
+    </div>
+  </div>
+  {% block content %}
+  {% endblock content %}
+  <footer>
+    <div class="container g-0 ">
+      <hr>
+      <div class="row">
+        <div class="col-md text-center media-links">
+          <h3 class="follow-us general-sub">Social Media</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener"
+                aria-label="Visit our facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener"
+                aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener"
+                aria-label="Visit our instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener"
+                aria-label="Visit our youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md text-center media-links">
+          <h3 class="follow-us general-sub">Wildlifers</h3>
+          <p>This site was craeted and used for educational purposes only</p>
+          <!--<ul class="list-unstyled">
           <li>
             <a href="https://facebook.com" target="_blank" rel="noopener"
               aria-label="Visit our facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
@@ -119,33 +122,34 @@
               aria-label="Visit our youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
           </li>
         </ul>-->
-      </div>
-      <div class="col-md">
-        <div class="row contact-us">
-          <div class=" text-center">
-            <h3 class="uppercase">Contact Information</h3>
-            <p><a href="{% url 'contact' %}"><i class="fa-solid fa-envelope"></i></a> wildlifers@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> +46 736776322</p>
-            <p><i class="fa-solid fa-location-dot"></i> Fleminggatan3 112 26 <br> Stockholm <br> Sweden</p>
+        </div>
+        <div class="col-md">
+          <div class="row contact-us">
+            <div class=" text-center">
+              <h3 class="uppercase">Contact Information</h3>
+              <p><a href="{% url 'contact' %}"><i class="fa-solid fa-envelope"></i></a> wildlifers@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> +46 736776322</p>
+              <p><i class="fa-solid fa-location-dot"></i> Fleminggatan3 112 26 <br> Stockholm <br> Sweden</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-   <!-- Copyright -->
-   <div class="text-center p-2 copyright">
-    © 2023 Copyright: Wildlifers.
-   </div>
-</footer>
+    <!-- Copyright -->
+    <div class="text-center p-2 copyright">
+      © 2023 Copyright: Wildlifers.
+    </div>
+  </footer>
 
-<!-- font awesome script-->
-<script src="https://kit.fontawesome.com/4847b8087f.js" crossorigin="anonymous"></script>
+  <!-- font awesome script-->
+  <script src="https://kit.fontawesome.com/4847b8087f.js" crossorigin="anonymous"></script>
 
- <!-- Bootstrap v.5.1.3 JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  <!-- Bootstrap v.5.1.3 JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-  </script> 
-<script type="text/javascript" src=" {% static 'js/script.js' %}"></script>
-    
+  </script>
+  <script type="text/javascript" src=" {% static 'js/script.js' %}"></script>
+
 </body>
+
 </html>
