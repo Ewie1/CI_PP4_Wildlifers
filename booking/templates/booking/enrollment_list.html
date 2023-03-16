@@ -11,21 +11,23 @@
         {% for booking in booking_page %}
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="card text-black">
+                <div class="col-sm-12 booking-list">
                     <p>
-                        {{ booking.start_date }}
+                       <b>Work-Day:</b>  {{ booking.start_date }}
                     </p>
                     <p>
-                        {{ booking.name }}
+                       <b>Name:</b>  {{ booking.name }}
                     </p>
                     <p>
-                        {{ booking.volunteer_job }}
+                       <b>Job:</b>  {{ booking.volunteer_job }}
                     </p>
                     <p>
-                        {{ booking.work_time }}
+                       <b>Work-Time:</b>  {{ booking.work_time }}
                     </p>
                     <a href="{% url 'enrollment_editing' booking.pk  %}" class="btn btn-success">Edit</a>
                     <a href="{% url 'enrollment_cancel' booking.pk  %}" class="btn btn-danger">Cancel</a>
+                </div>
                 </div>
             </div>
         </div>
