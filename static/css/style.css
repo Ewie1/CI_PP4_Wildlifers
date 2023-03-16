@@ -323,18 +323,7 @@ footer h3 {
     background: rgba(120, 120, 120, 0.5);
 }
 
-.booking-heading {
-    color: white;
-    padding-top: 150px;
-}
 
-.jobs ul {
-    list-style:none;
-}
-
-.jobs h3 {
-    font-weight: 700;
-}
 
 /*.contact-image-overlay {
     height: 700px;
@@ -363,9 +352,7 @@ footer h3 {
     background-position: center;
 }
 
-.booking-form-page-wrap {
-    background: rgba(240, 240, 240, 0.888);
-}
+
 
 .form-login-page-wrap {
     background: rgba(240, 240, 240, 0.888);
@@ -494,11 +481,30 @@ footer h3 {
 
 /*Style for enrollment form*/
 
+.booking-form-page-wrap {
+    background: rgba(240, 240, 240, 0.888);
+    padding-bottom: 40px;
+    margin-bottom: -20px;
+}
+
 .enrollment-form {
     height: 600px;
     background: #EFEBE9;
     text-align: center;
     padding-top: 100px; 
+}
+
+.booking-heading {
+    color: white;
+    padding-top: 150px;
+}
+
+.jobs ul {
+    list-style:none;
+}
+
+.jobs h3 {
+    font-weight: 700;
 }
 
 /*Style for Booking/Enrollment form*/
