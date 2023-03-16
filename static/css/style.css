@@ -15,29 +15,12 @@ body {
 
 /*Style navigation bar*/
 
-.my-navbar {
-    background-color: black;
+.home-page-container {
+    background: black;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-link:hover {
-    color: #fff;
-}
-
-.program-link::after {
-    color: white;
-}
-
-.dropdown-menu a {
-    color: black;
-}
-
-.dropdown-menu a:hover {
-    color: black;
+.bg-darker {
+    background: rgba(0, 0, 0, 0.2);
 }
 
 /* Style for signup and log in messages*/

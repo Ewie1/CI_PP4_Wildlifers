@@ -22,7 +22,7 @@
 </head>
 <body>
     <div class="home-page-container">
-        <nav class="navbar navbar-expand-lg  my-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
             <div class="container">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
@@ -34,26 +34,26 @@
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link program-link" href="/programs">Programs</a>
+                    <a class="nav-link active" href="/programs">Programs</a>
                   </li>
                   <!--User must be authenticated to view bookings-->
                   {% if user.is_authenticated %}
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'enrollments' %}"> My Bookings</a>
+                    <a class="nav-link active" href="{% url 'enrollments' %}"> My Bookings</a>
                   </li>
                   {% else %}
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'account_signup' %}"> My Bookings</a>
+                    <a class="nav-link active" href="{% url 'account_signup' %}"> My Bookings</a>
                   </li>
                   {% endif %}
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link active" href="#">Blog</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown link
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
