@@ -1,43 +1,56 @@
 {% extends "base.html" %}
+{% load bootstrap_tags %}
 
 {% block content %}
 <section>
-    <div class="container">
+    <div class="container-fluid g-0">
         {% if not user.is_authenticated %}
         <p>Please login</p>
         <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
                 Page</a></button>
         {% else %}
         {% if user.is_authenticated %}
-        <div class="form-page-wrap">
-            <div class="container register-form">
-              <h1 class="text-center">Register</h1>
-              
-              <div class="row d-flex justify-content-center mb-5">
-                <div class="col-12 col-md-8 col-lg-6">
-                  <div class="card rounded-3 text-black">
-                    <div class="row g-0">
-                      <div class="col-lg-12">
-                        <div class="card-body p-md-4 mx-md-4">
-                            <form action="{% url 'enrollment_editing' enroll.pk %}" method="POST" enctype="multipart/form-data">
-                        
-                                {% csrf_token %}
-                                
-                                <div>
-                                    {{ form.as_p }}
-                                </div>
-                                <div>
-                                    <button class="btn btn-success" type="submit">Update</button>
-                                </div>
-                            </form>
+        <div class="container-fluid g-0">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-image">
+                        <div class="">
+                            <h1 class="text-center booking-heading">Save an Animal Today!</h1>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
+        </div>
 
-       <!--<div class="container">
+        <div class="booking-form-page-wrap">
+            <div class="container register-form">
+                <div class="row d-flex justify-content-start mb-5">
+                    <div class="col-12 col-md-8 col-lg-8">
+
+                        <div class="row g-0">
+                            <div class="col-lg-12 rounded-3">
+                                <div class="card-body p-md-4 mx-md-4">
+                                    <p class="card-title text-center"> <b> Update your vlounteer program here:</b> </p>
+                                    <form action="{% url 'enrollment_editing' enroll.pk %}" method="POST"
+                                        enctype="multipart/form-data">
+
+                                        {% csrf_token %}
+
+                                        <div>
+                                            {{ form | as_bootstrap }}
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-booking" type="submit">Update</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <form action="{% url 'enrollment_editing' enroll.pk %}" method="POST" enctype="multipart/form-data">
@@ -54,8 +67,8 @@
                 </div>
             </div>
         </div>-->
-        {% endif %}
-        {% endif %}
-    </div>
+            {% endif %}
+            {% endif %}
+        </div>
 </section>
 {% endblock %}
