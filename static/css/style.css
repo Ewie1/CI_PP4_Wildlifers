@@ -15,6 +15,21 @@ body {
 
 /*Style navigation bar*/
 
+.logo {
+    height: 50px;
+    width: 50px;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679074205/background-remover_vinz0k.png') no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+   /* background: #EFEBE9;*/
+}
+
+.logo p {
+    margin-top: 6px;
+    margin-left: 45px;
+    color: #66BB6A;
+}
+
 .home-page-container {
     background: black;
 }

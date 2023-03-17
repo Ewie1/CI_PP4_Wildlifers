@@ -67,7 +67,8 @@
   - [Acknowledgements](#acknowledgements)
 
 
-## Project Goals 
+## About
+- Wildlifers are a group dedicated to saving and aiding wild life.  We save and help native animals who are close to extinction or similar.  
  
 
 ### User Goals
