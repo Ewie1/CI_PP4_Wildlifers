@@ -122,10 +122,19 @@ h2 {
 }
 
 .homepage-program-link a, .join-us a {
-    background: rgb(0, 82, 0);
+   /* background: rgb(0, 82, 0);*/
+    background: #4CAF50;
+    border-radius: 10px;
     padding: 15px;
     text-decoration: none;
     color: #fff;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-program-link a:hover, .join-us a:hover {
+    background: #66BB6A;
+    color: black;
+    transition: .5s ease-in-out;
 }
 
 /*Style home page bottom image*/
