@@ -449,25 +449,22 @@ footer h3 {
 .primaryAction,
 .btn-logout,
 .btn-contact {
-    height: 40px;
+    height: 50px;
     width: 200px;
-    background: rgb(0, 82, 0);
+    background: #4CAF50;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #fff;
-    border: 1px solid black;
     margin-top: 30px;
-    margin-left: 40px ;
 }
 
 .btn-booking {
     height: 40px;
     width: 100px;
-    background: rgb(0, 82, 0);
+    background: #4CAF50;
     border: none;
     border-radius: 5px;
     color: #fff;
-    border: 1px solid black;
     margin-top: 30px;
 }
 
