@@ -299,12 +299,13 @@ footer h3 {
 
 
 
-/*.contact-image-overlay {
-    height: 700px;
+.contact-image-overlay {
+    height: 600px;
     z-index: -1;
-    background: rgba(120, 120, 120, 0.5);
-    margin-top: -700px;
-}*/
+    background: rgba(105, 105, 105, 0.5);
+    margin-top: -640px;
+    margin-bottom: -20px;
+}
 
 .contact-page-section {
     overflow: hidden;
@@ -473,6 +474,10 @@ footer h3 {
 
 .jobs h3 {
     font-weight: 700;
+}
+
+.booking-list{
+    display: inline;
 }
 
 /*Style for Booking/Enrollment form*/

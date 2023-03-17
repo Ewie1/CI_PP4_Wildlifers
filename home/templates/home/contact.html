@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="form-page-wrap">
-    <div class="container register-form" style="color: #ffff;">
+    <div class="container register-form">
         <h1 class="text-center">Contact Us</h1>
         <div class="row d-flex justify-content-center mb-5">
             <div class="col-12 col-md-8 col-lg-6">
@@ -12,21 +12,21 @@
                             <form method="POST" action="{% url 'contact' %}">
                                 {% csrf_token %}
 
-                                <div class="col-sm-12">
+                                <div class="col-sm-12" style="color: #fff;">
                                     <div class="col-md-6">
                                         <label for="your-name" class="form-label">Name*</label>
-                                        <input type="text" class="form-control border-light" id="your-name"
+                                        <input type="text" class="form-control" id="your-name"
                                             name="your-name">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="your-email" class="form-label">Your Email*</label>
-                                        <input type="email" class="form-control border-light" id="your-email"
+                                        <input type="email" class="form-control" id="your-email"
                                             name="your-email" required>
                                     </div>
                                     <div class="col-12">
                                         <label for="your-message" class="form-label">Your
                                             Message</label>
-                                        <textarea class="form-control border-light" id="your-message"
+                                        <textarea class="form-control" id="your-message"
                                             name="your-message" rows="5" required></textarea>
                                     </div>
                                     <div class="d-grid gap-2 col-6 mx-auto m-3">
