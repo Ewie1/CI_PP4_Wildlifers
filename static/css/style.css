@@ -44,7 +44,7 @@ h2 {
 /*Style hero image*/
 #hero-image {
     height: 400px;
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677247794/samples/landscapes/rainforest-sunset2_mv4rtl.jpg') no-repeat fixed;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat fixed;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -178,7 +178,7 @@ footer h3 {
 /* Style for program card display*/
 .program-description {
    /* background:  rgba(240, 240, 240, 0.888);*/
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678561827/nature-landscape-animals-cheetahs_qg1pwm.jpg')center no-repeat;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677240953/samples/landscapes/rainforest-sunset4_agtkjp.jpg')center no-repeat;
     margin-bottom: 60px;
     background-size: cover;
     height: 300px;
@@ -288,7 +288,7 @@ footer h3 {
     background:rgba(1, 9, 62, 0.5);
    /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678561827/nature-landscape-animals-cheetahs_qg1pwm.jpg')no-repeat center fixed;*/
     background-size: cover;
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677247794/samples/landscapes/rainforest-sunset2_mv4rtl.jpg')no-repeat center fixed;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677240953/samples/landscapes/rainforest-sunset4_agtkjp.jpg')no-repeat center fixed;
 }
 
 .overlay {
@@ -321,7 +321,7 @@ footer h3 {
 .form-page-wrap {
    /* background: #EFEBE9 fixed;*/ 
    /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1673022396/cld-sample-2.jpg')no-repeat center fixed;*/
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677247794/samples/landscapes/rainforest-sunset2_mv4rtl.jpg') no-repeat center fixed;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677240953/samples/landscapes/rainforest-sunset4_agtkjp.jpg') no-repeat center fixed;
     background-size: cover;
     background-position: center;
 }
@@ -358,11 +358,6 @@ footer h3 {
     margin: 30px;
     font-style: italic;
 }
-
-.contact-form h1 {
-
-}
-
 
 .register-form p,
 .login-form p {
