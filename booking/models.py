@@ -54,17 +54,17 @@ class Enroll(models.Model):
     volunteer_job = models.CharField(
         max_length=100,
         choices=volunteer_jobs,
-        default=''
+        blank=False
     )
     work_time = models.CharField(
         max_length=50,
         choices=available_times,
-        default=''
+        blank=False
     )
     animal_name = models.CharField(
         max_length=100,
         choices=animal_names,
-        default=''
+        blank=False
         )
 
     class Meta:
