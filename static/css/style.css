@@ -123,7 +123,7 @@ h2 {
 
 .homepage-program-link a, .join-us a {
    /* background: rgb(0, 82, 0);*/
-    background: #4CAF50;
+    background: rgb(0, 82, 0);
     border-radius: 10px;
     padding: 15px;
     text-decoration: none;
@@ -132,13 +132,14 @@ h2 {
 }
 
 .homepage-program-link a:hover, .join-us a:hover {
-    background: #66BB6A;
-    color: black;
+    background: rgb(0, 82, 0);
     transition: .5s ease-in-out;
 }
 
 /*Style home page bottom image*/
 .home-bottom-image {
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') center no-repeat;
+    background-size: cover;
     height: 100px;
     width: 100%;
     margin-top: 60px;
@@ -192,7 +193,6 @@ footer h3 {
 
 /* Style for program background*/
 .program-container {
-   /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677212059/backgd1_oznmf0.jpg')no-repeat center center fixed;*/
     background-size: cover;
    /* height: calc(100vh - 164px);*/
    background: #EFEBE9;
@@ -202,7 +202,7 @@ footer h3 {
 /* Style for program card display*/
 .program-description {
    /* background:  rgba(240, 240, 240, 0.888);*/
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677240953/samples/landscapes/rainforest-sunset4_agtkjp.jpg')center no-repeat;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg')center no-repeat;
     margin-bottom: 60px;
     background-size: cover;
     height: 300px;
@@ -228,10 +228,7 @@ footer h3 {
     margin-top: -90px;
 }
 
-
-
 .program-card {
-    
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
     margin-top: 100px;
 }
@@ -239,10 +236,6 @@ footer h3 {
 .card-image {
     height: 240px;
     width:300px
-}
-
-.animal-cards {
-    text-align: ;
 }
 
 .animal-cards h4 {
@@ -263,16 +256,10 @@ footer h3 {
 
 .program-view-button a {
     text-decoration: none;
-    color:  rgb(0, 82, 0);
+    color: rgb(0, 82, 0);
     text-transform: uppercase;
 }
 
-.program-view-buttons a {
-    background: rgb(0, 82, 0);
-    padding: 15px;
-    text-decoration: none;
-    color: #fff;
-}
 
 .program-view-buttons {
     text-align: center;
@@ -288,6 +275,10 @@ footer h3 {
 .page-link {
     margin-bottom: 20px;
     margin-top: 20px;
+    color: rgb(0, 82, 0);
+}
+
+.pagination a:hover {
     color: rgb(0, 82, 0);
 }
 
@@ -309,10 +300,9 @@ footer h3 {
 /*Style for contact page image*/
 .contact-image {
     height: 300px;
-    background:rgba(1, 9, 62, 0.5);
    /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1678561827/nature-landscape-animals-cheetahs_qg1pwm.jpg')no-repeat center fixed;*/
     background-size: cover;
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677240953/samples/landscapes/rainforest-sunset4_agtkjp.jpg')no-repeat center fixed;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg')no-repeat center fixed;
 }
 
 .overlay {
@@ -327,7 +317,7 @@ footer h3 {
     height: 600px;
     z-index: -1;
     background: rgba(105, 105, 105, 0.5);
-    margin-top: -640px;
+    margin-top: -650px;
     margin-bottom: -20px;
 }
 
@@ -346,7 +336,7 @@ footer h3 {
 .form-page-wrap {
    /* background: #EFEBE9 fixed;*/ 
    /* background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1673022396/cld-sample-2.jpg')no-repeat center fixed;*/
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677240953/samples/landscapes/rainforest-sunset4_agtkjp.jpg') no-repeat center fixed;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat center fixed;
     background-size: cover;
     background-position: center;
 }
@@ -406,7 +396,7 @@ footer h3 {
     border-radius: 20px;
     box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.2);
 }
- .card-body
+
 
 .form-control {
     border-color:  rgb(0, 82, 0);
@@ -451,7 +441,7 @@ footer h3 {
 .btn-contact {
     height: 50px;
     width: 200px;
-    background: #4CAF50;
+    background: rgb(0, 82, 0);
     border: none;
     border-radius: 10px;
     color: #fff;
@@ -461,7 +451,7 @@ footer h3 {
 .btn-booking {
     height: 40px;
     width: 100px;
-    background: #4CAF50;
+    background: rgb(0, 82, 0);
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -475,6 +465,12 @@ footer h3 {
     background: rgba(240, 240, 240, 0.888);
     padding-bottom: 40px;
     margin-bottom: -20px;
+}
+
+.booking-image {
+    height: 300px;
+    background:url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg')no-repeat center fixed; 
+    background-size: cover;
 }
 
 .enrollment-form {
