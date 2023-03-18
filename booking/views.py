@@ -65,6 +65,16 @@ class EnrollView(View):
             return render(request, 'booking/bookings.html', context)
 
 
+class EnrollmentConfirmation(generic-Listview):
+    """
+    View to confirm enrollment
+    """
+    template_name = 'booking/enrollment_confirmation.html'
+
+    def get(self, request):
+        return render(request, 'booking/enrollment_confirmation.html')
+
+
 class Enrollments(generic.ListView):
     """
     Class to display booking information 
