@@ -38,6 +38,10 @@ body {
     background: rgba(0, 0, 0, 0.2);
 }
 
+.dropdown-menu a:hover {
+    background-color: #EFEBE9;
+}
+
 /* Style for signup and log in messages*/
 #msg {
     z-index: 2;
@@ -273,7 +277,8 @@ footer h3 {
     color: rgb(0, 82, 0);
 }
 
-.pagination a:hover {
+.pagination a:hover,
+.pagination-arrow:hover {
     color: rgb(0, 82, 0);
 }
 
@@ -461,6 +466,11 @@ footer h3 {
     background: rgba(240, 240, 240, 0.888);
     padding-bottom: 40px;
     margin-bottom: -20px;
+}
+
+.booking-form-page-wrap p {
+    margin-top: 30px;
+    font-size: 1.2rem;
 }
 
 .booking-image {
