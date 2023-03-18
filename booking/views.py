@@ -57,22 +57,13 @@ class EnrollView(View):
             booking = program_booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
+            program_booking_form = EnrollForm()
             messages.success(request, 'Your are booking was Successful!')
             context = {
                 'program_booking_form': program_booking_form
             }
 
             return render(request, 'booking/bookings.html', context)
-
-
-class EnrollmentConfirmation(generic-Listview):
-    """
-    View to confirm enrollment
-    """
-    template_name = 'booking/enrollment_confirmation.html'
-
-    def get(self, request):
-        return render(request, 'booking/enrollment_confirmation.html')
 
 
 class Enrollments(generic.ListView):
