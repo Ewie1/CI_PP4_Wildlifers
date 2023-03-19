@@ -29,7 +29,7 @@ def contact(request):
             'Message from' + your_name,  # subject
             your_message,  # message 
             your_email,  # from_email 
-            [os.environ.get('EMAIL_HOST_USER')] # recipient_list
+            ['wildlifers246@gmail.com'] # recipient_list
              )
 
         return render(request, 'home/contact.html', {'your_name': your_name})
