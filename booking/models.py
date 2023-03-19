@@ -69,7 +69,12 @@ class Enroll(models.Model):
 
     class Meta:
         ordering = ['-name']
-        unique_together = ('work_time', 'volunteer_job', 'animal_name')
+        unique_together = (
+            'work_time',
+            'volunteer_job',
+            'animal_name',
+            'start_date',
+            )
 
     def __str__(self):
         return self.name
