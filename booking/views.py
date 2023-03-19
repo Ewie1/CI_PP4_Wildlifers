@@ -60,11 +60,11 @@ class EnrollView(View):
             program_booking_form = EnrollForm()
             booking.user = request.user
             messages.success(request, 'Your are booking was Successful!')
-            context = {
-                'program_booking_form': program_booking_form
-            }
-
-            return render(request, 'booking/bookings.html', context)
+            #context = {
+            #    'program_booking_form': program_booking_form
+            #}
+            return render(request, 'booking/bookings.html')
+        return render(request, 'booking/bookings.html', {'program_booking_form': program_booking_form})
 
 
 class Enrollments(generic.ListView):
@@ -126,5 +126,5 @@ def CancelEnrollments(request, pk):
         return redirect('enrollments')
 
     return render(request, 'booking/enrollment_delete.html',
-                     {'obj': enrollment})
+                     {'enrollment': enrollment})
     
