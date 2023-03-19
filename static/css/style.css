@@ -27,7 +27,7 @@ body {
 .logo p {
     margin-top: 6px;
     margin-left: 45px;
-    color: #66BB6A;
+    color: rgb(102, 187, 135);
 }
 
 .home-page-container {
@@ -204,7 +204,7 @@ footer h3 {
 
 
 /* Style for program card display*/
-.program-description {
+.program-page-image {
    /* background:  rgba(240, 240, 240, 0.888);*/
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg')center no-repeat;
     margin-bottom: 60px;
@@ -213,7 +213,7 @@ footer h3 {
     color:azure;
 }
 
-.program-description h2 {
+.program-page-image h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 100px;
@@ -306,19 +306,23 @@ footer h3 {
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg')no-repeat center fixed;
 }
 
+.contact-page-background {
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
+}
+
 .overlay {
     z-index: -1;
     height: 300px;
     background: rgba(120, 120, 120, 0.5);
 }
 
-
-
 .contact-image-overlay {
-    height: 600px;
+    height: 700px;
     z-index: -1;
     background: rgba(105, 105, 105, 0.5);
-    margin-top: -650px;
+    margin-top: -717px;
     margin-bottom: -20px;
 }
 
@@ -326,6 +330,21 @@ footer h3 {
     overflow: hidden;
     margin-bottom: -22px;
     margin-top: 10px;
+}
+
+.contact-form-textarea {
+    height: 200px;
+}
+
+.btn-contact{
+    height: 50px;
+    width: 200px;
+    background: rgb(0, 82, 0);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 .map {
@@ -353,7 +372,8 @@ footer h3 {
 
 .register-form,
 .login-form,
-.booking-form {
+.booking-form,
+.contact-form {
    /* height: 600px;*/
     padding-bottom: 30px;
     margin-bottom: -16px;
@@ -362,14 +382,9 @@ footer h3 {
    overflow: hidden;
 }
 
-
-.contact-form {
-    border: none;
-    background: #EFEBE9;
-}
-
 .register-form h1,
-.login-form h1 {
+.login-form h1,
+.contact-form h1 {
     text-align: center;
     margin: 30px;
     font-style: italic;
@@ -399,9 +414,6 @@ footer h3 {
 }
 
 
-.form-control {
-    border-color:  rgb(0, 82, 0);
-}
 
 .control-label {
     margin-top: 1.5rem;
@@ -438,8 +450,7 @@ footer h3 {
 
 .btn-signup,
 .primaryAction,
-.btn-logout,
-.btn-contact {
+.btn-logout {
     height: 50px;
     width: 200px;
     background: rgb(0, 82, 0);

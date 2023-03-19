@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="form-page-wrap">
-    <div class="container register-form">
+<div class="contact-page-background">
+    <div class="container contact-form">
         <h1 class="text-center">Contact Us</h1>
         <div class="row d-flex justify-content-center mb-5">
-            <div class="col-12 col-md-8 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-8">
                 <div class="row g-0">
                     <div class="col-lg-12">
                         <div class="card-body p-md-4 mx-md-4">
                             <form method="POST" action="{% url 'contact' %}">
                                 {% csrf_token %}
 
-                                <div class="col-sm-12" style="color: #fff;">
+                                <div class="col-sm-12">
                                     <div class="col-md-6">
                                         <label for="your-name" class="form-label">Name*</label>
                                         <input type="text" class="form-control" id="your-name"
@@ -26,7 +26,7 @@
                                     <div class="col-12">
                                         <label for="your-message" class="form-label">Your
                                             Message</label>
-                                        <textarea class="form-control" id="your-message"
+                                        <textarea class="form-control contact-form-textarea" id="your-message"
                                             name="your-message" rows="5" required></textarea>
                                     </div>
                                     <div class="d-grid gap-2 col-6 mx-auto m-3">
