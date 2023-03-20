@@ -504,10 +504,23 @@ footer h3 {
     font-weight: 700;
 }
 
+.booking-list-background {
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -17px;
+}
+
 .booking-list{
     display: inline;
     background: rgba(240, 240, 240, 0.888);
     height: 350px;
+}
+
+.delete-list {
+    background: rgba(239, 83, 80, 0.51);
+    height: 100px;
+    display: inline;
 }
 
 /*Style for user  Booking*/

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section  class="form-page-wrap">
+<div  class="booking-list-background">
     <div class="container">
         {% if not user.is_authenticated %}
         <p>Please login</p>
@@ -9,6 +9,17 @@
                 Page</a></button>
         {% else %}
         {% for booking in booking_page %}
+        <div id="delete" class="modal">
+            <div class="modal-content">
+                <p>Are You Sure You Want To Delete This '{{ obj }}'?</p>
+                <div class="col-sm-6 join-us">
+                    <a href="{% url 'enrollments' %}" class="btn-booking">Go Back</a>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="submit" class="btn-booking" value="Confirm"></input>
+                  </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class=" booking-list col-12 col-md-8 col-lg-4 rounded-3 text-center text-black m-3">
@@ -31,7 +42,7 @@
                             <b>Work-Time:</b> {{ booking.work_time }}
                         </p>
                         <a href="{% url 'enrollment_editing' booking.pk  %}" class="btn btn-user-booking">Edit</a>
-                        <a href="{% url 'enrollment_cancel' booking.pk  %}" class="btn btn-user-booking">Cancel</a>
+                        <a href="{% url 'enrollment_cancel' booking.pk  %}" class="btn btn-user-booking" onclick="" id="btn-delete">Delete</a>
                     </div>
                 </div>
             </div>
@@ -39,5 +50,5 @@
         {% endfor %}
         {% endif %}
     </div>
-</section>
+</div>
 {% endblock %}
