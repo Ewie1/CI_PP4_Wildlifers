@@ -17,7 +17,7 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name='blog_posts'
         )
-    create_date = models.DateTimeField(blank=True)
+    created_date = models.DateTimeField(blank=True)
     update = models.DateTimeField()
     content = models.TextField()
     featured_image = CloudinaryField(
@@ -25,7 +25,7 @@ class Post(models.Model):
         default='placeholder'
         )
     excert = models.TextField(blank=True)
-    status = models.IntegerField(choices='STATUS', default=0)
+    status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
         ordering = ['-created_date']
@@ -47,7 +47,7 @@ class Comment(models.Model):
     email = models.EmailField()
     body = models.TextField()
     approved = models.BooleanField(default=False)
-    create_date = models.DateTimeField(blank=True)
+    created_date = models.DateTimeField(blank=True)
 
     class Meta:
         ordering = ['created_date']

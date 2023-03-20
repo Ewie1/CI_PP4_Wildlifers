@@ -508,16 +508,19 @@ footer h3 {
     display: inline;
 }
 
-/*Style for Booking/Enrollment form*/
+/*Style for user  Booking*/
 
-.job-form {
-    margin-top: 50px;
+.btn-user-booking {
+    background: rgb(0, 82, 0);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 30px;
 }
+    
 
 @media screen and (max-width: 1200px) {
-    .join-us {
-        margin-top: ;
-    }
+
     .homepage-program-link {
         margin-top: 100px;
     }

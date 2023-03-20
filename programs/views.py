@@ -56,4 +56,4 @@ class ProgramDetails(View):
         program = Program.objects.get(pk=program_id)
 
         return render(request, 'programs/programs.html', {'program': program})
-
+    

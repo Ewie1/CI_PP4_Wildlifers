@@ -11,8 +11,10 @@
         {% for booking in booking_page %}
         <div class="container">
             <div class="row justify-content-center">
-                <div class="card booking-list   text-black m-3" style="width: 300px;">
+                <div class=" booking-list  text-center text-black m-3" style="width: 300px;">
                     <div class="col-md">
+                        <h3>Your Booking</h3>
+                        <hr>
                         <p>
                             <b>Name:</b> {{ booking.name }}
                         </p>
@@ -28,8 +30,8 @@
                         <p>
                             <b>Work-Time:</b> {{ booking.work_time }}
                         </p>
-                        <a href="{% url 'enrollment_editing' booking.pk  %}" class="btn btn-success">Edit</a>
-                        <a href="{% url 'enrollment_cancel' booking.pk  %}" class="btn btn-danger">Cancel</a>
+                        <a href="{% url 'enrollment_editing' booking.pk  %}" class="btn btn-user-booking">Edit</a>
+                        <a href="{% url 'enrollment_cancel' booking.pk  %}" class="btn btn-user-booking">Cancel</a>
                     </div>
                 </div>
             </div>
