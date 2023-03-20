@@ -60,7 +60,7 @@ class EnrollView(View):
             program_booking_form = EnrollForm()
             booking.user = request.user
             messages.success(request, 'Your are booking was Successful!')
-            return render(request, 'booking/bookings.html')
+            return render(request, 'booking/bookings.html', {'program_booking_form': program_booking_form})
         return render(request, 'booking/bookings.html', {'program_booking_form': program_booking_form})
 
 

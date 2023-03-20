@@ -27,11 +27,15 @@ volunteer_jobs = (
 animal_names = (
     ('Red Panda', 'Red Panda'),
     ('Artic Fox', 'Artic Fox'),
-    ('Steppe Eagle', 'Steppe Eagle'),
+    ('Giant Panda', 'Giant Panda'),
     ('Red Wolf', 'Red Wolf'),
     ('Persian Fallow Dear', 'Persian Fallow Dear'),
-    ('Koala', 'Koala'),
-    ('Wolverine', 'Wolverine'),
+    ('Saola', 'Saola'),
+    ('Amur Leopard', 'Amur Leopard'),
+    ('Arctic Beluga', 'Arctic Beluga'),
+    ('Hyacinth Macaw', 'Hyacinth Macaw'),
+    ('Vaquita', 'Vaquita'),
+    ('Lemur', 'Lemur'),
 )
 
 
