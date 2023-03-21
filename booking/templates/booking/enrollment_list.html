@@ -8,8 +8,9 @@
         <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
                 Page</a></button>
         {% else %}
+        <h1 class="text-center  p-3">Your Bookings:</h1>
         {% for booking in booking_page %}
-        <div id="delete" class="modal">
+        <!--<div id="delete" class="modal">
             <div class="modal-content">
                 <p>Are You Sure You Want To Delete This '{{ obj }}'?</p>
                 <div class="col-sm-6 join-us">
@@ -19,12 +20,12 @@
                     <input type="submit" class="btn-booking" value="Confirm"></input>
                   </div>
             </div>
-        </div>
+        </div>-->
         <div class="container">
             <div class="row justify-content-center">
                 <div class=" booking-list col-12 col-md-8 col-lg-4 rounded-3 text-center text-black m-3">
                     <div class="col-md">
-                        <h2 class="m-3">Your Booking</h2>
+                        <h2 class="m-3">{{  booking.name }}</h2>
                         <hr>
                         <p>
                             <b>Name:</b> {{ booking.name }}
