@@ -245,7 +245,7 @@ footer h3 {
 
 .program-view-button a {
     text-decoration: none;
-    color: rgb(0, 82, 0);
+    color: rgb(56, 142, 60);
     text-transform: uppercase;
 }
 
@@ -461,9 +461,24 @@ footer h3 {
     text-decoration: none;
 }
 
+.btn-submit {
+    height: 40px;
+    width: 100px;
+    background: rgb(56, 142, 60);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.btn-submit:hover {
+    background: rgb(27, 121, 32);
+}
+
 .delete-buttons a {
     padding: 7px;
-    background: rgb(0, 82, 0);
+    background: rgb(56, 142, 60);
 }
 
 .confirmation-form {
@@ -473,7 +488,8 @@ footer h3 {
 }
 
 .delete-buttons a:hover {
-    color: #fff;  
+    color: #fff; 
+    background: rgb(27, 121, 32); 
 }
 
 
@@ -538,7 +554,7 @@ footer h3 {
 /*Style for user  Booking*/
 
 .btn-user-booking {
-    background: rgb(0, 82, 0);
+    background: rgb(56, 142, 60);
     border: none;
     border-radius: 10px;
     color: #fff;
@@ -546,7 +562,7 @@ footer h3 {
 
 .btn-user-booking:hover {
     color: #fff;
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    background: rgb(27, 121, 32);
 
 }
     
