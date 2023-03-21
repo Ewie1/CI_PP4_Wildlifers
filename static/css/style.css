@@ -457,11 +457,27 @@ footer h3 {
 .btn-booking {
     height: 40px;
     width: 100px;
-    background: rgb(0, 82, 0);
+    background: rgb(169, 0, 0);
     border: none;
     border-radius: 5px;
     color: #fff;
     margin-top: 30px;
+    text-decoration: none;
+}
+
+.delete-buttons a {
+    padding: 7px;
+    background: rgb(0, 82, 0);
+}
+
+.confirmation-form {
+    height: 600px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.delete-buttons a:hover {
+    color: #fff;  
 }
 
 
@@ -517,9 +533,9 @@ footer h3 {
     height: 350px;
 }
 
-.delete-list {
-    background: rgba(239, 83, 80, 0.51);
-    height: 100px;
+.delete-confirmation {
+    background: rgba(240, 240, 240, 0.888);
+    height: 200px;
     display: inline;
 }
 

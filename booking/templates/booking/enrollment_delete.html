@@ -2,23 +2,20 @@
 
 {% block content %}
 <div class="form-page-wrap">
-  <div class="container logout-form">
+  <div class="container confirmation-form">
     <h1 class="text-center"></h1>
     <div class="row d-flex justify-content-center mb-5">
-      <div class="delete-list col-12 col-md-8 col-lg-8 rounded-3 text-center m-3">
+      <div class="delete-confirmation col-12 col-md-8 col-lg-4 rounded-3 text-center m-3">
         <div class="row g-0">
           <div class="col-lg-12">
             <div class="card-body p-md-4 mx-md-4">
-              <form action="" method="POST">
+              <form method="POST">
                 {% csrf_token %}
                 <p>Are You Sure You Want To Delete <i> '{{ enrollment }}'?</i> </p>
-                <div class="row">
-                  <div class="col-sm-6 join-us">
-                    <a href="{% url 'enrollments' %}" class="btn-booking">Go Back</a>
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="submit" class="btn-danger" value="Confirm"></input>
-                  </div>
+                <div class="row justify-content-center delete-buttons">
+                    <a href="{% url 'enrollments' %}" class="btn-booking m-3">Return</a>
+                    <input type="submit" class="btn-booking m-3" value="Yes"></input>
+                  
                 </div>
               </form>
             </div>
