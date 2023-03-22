@@ -73,11 +73,29 @@
 
 ### User Goals
 
-- 
+1. As a site user I awnt to see a wild life scheme to site
+2. As a user I want to have easy navigation to the site features 
+3. As a site user have access to a list of animals of which I can register and help
+4. As a site user I want to read about these animals and their status of extinction
+5. As a site user I want to be able to paginate through the list easily
+6. As a site user I should have the option of enrolling in a program when I am reading about an 
+  animal I like
+7. As a site user I want to be able to register an account so I can enroll in a program
+8. As a site user I want my registration information t be saved so that I only need to log in when I 
+  return
+9. As a site user I want to be able to view a list of my current enrollments so I can plan for them
+10. As a site user I want to be able to upade and change my enrollments
+11. As a site user I want to be able to cancel any of my enrollments
+12. As a site user I want to see messages when I enter, update or delete data entries   
 
 ### Site Owner Goals
 
-- 
+13. As a site owner I want the user to be able to send us messages/emails through a contact form
+14. As a site owner I want user to get messages when register, login , logout, enroll  
+  in a program, edit enrollment, delete enroolment or send us messages through the contact form.
+15. As a site owner I want user to have confirmantion action before canceling enrollments
+16. T want user to see data entry vaildation when registering
+17. I want site to be fully responsive  
 
 ## User Experience
 
