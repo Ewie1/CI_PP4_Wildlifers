@@ -1,22 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="row">
-                hello
-                hello
-{% post_detail % }
 
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3 left">
+            <div class="row"> hello
+                {% for post in post_list %}
+                hello
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://res.cloudinary.com/deipzfplq/image/upload/v1679256733/shm2n1qqv7npntdtq5lf.jpg">
+                                    src="">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
@@ -24,43 +24,37 @@
                                     <p class="author">Author: {{ post.author }}</p>
                                 </div>
                             </div>
-                            <a href="{% url 'post_detail' post.slug  %}" class="post-link">
+                            <a href="" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr />
-                           <!----<p class="card-text text-muted h6">{{ post.created_date}} <i class="far fa-heart"></i>
-                                {{ post.number_of_likes }}</p>-->
+                            <p class="card-text text-muted h6">{{ post.created_date}} <i class="far fa-heart"></i>
+                                {{ post.number_of_likes }}</p>
                         </div>
                     </div>
                 </div>
-        
+                {% if forloop.counter|divisibleby:3 %}
             </div>
-            <div class="row"></div>
-                
-            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
 
+            </div>
         </div>
     </div>
+   <!-- {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}-->
 </div>
-
-<!--Pgaination without filter-->
-<!--<nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
-        {% if program_list.has_previous %}
-        <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
-        <li class="page-item"><a class="page-link" href="?page={{ program_list.previous_page_number }}">&laquo;</a>
-        </li>
-        {% endif %}
-        <li class="page-link pagination-arrow">
-            Page {{ program_list.number }} of {{ program_list.paginator.num_pages }}
-        </li>
-        {% if program_list.has_next %}
-        <li class="page-item"><a class="page-link" href="?page={{ program_list.next_page_number }}">&raquo;</a></li>
-        <li class="page-item"><a class="page-link" href="?page={{ program_list.paginator.num_pages}}">Last</a></li>
-        {% endif %}
-    </ul>
-</nav>
-</div>-->
-
-{% endblock %}
+{%endblock%}
