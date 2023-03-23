@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.contrib import messages
+from django.core.paginator import Paginator
 from .models import Post
 from .forms import CommentForm
 
@@ -10,6 +11,22 @@ class PostDisplay(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_date")
     template_name = 'blog/blog_list.html'
     paginate_by = 4
+
+    def get(self, request, *args, **kwargs):
+        """
+        Display logged in user bookings 
+        paginated by 3 per page
+        """
+        posts = Post.objects.all()
+        paginator = Paginator(Post.objects.all(), 3)
+        page = request.GET.get('page')
+        post_listing = paginator.get_page(page)
+
+        return render(request, 'blog/blog_list.html',
+            {
+                'posts': posts,
+                'post_listing': post_listing,
+            })
 
 
 class ReadPost(View):

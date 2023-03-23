@@ -8,7 +8,7 @@
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row justify-content-center">
-                {% for post in post_list %}
+                {% for post in post_listing %}
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body text-center" style="background: rgba(240, 240, 240, 0.888);">
@@ -41,6 +41,22 @@
             </div>
         </div>
     </div>
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if post_listing.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ post_listing.previous_page_number }}">&laquo;</a>
+            </li>
+            {% endif %}
+            <li class="page-link pagination-arrow">
+                Page {{ post_listing.number }} of {{ post_listing.paginator.num_pages }}
+            </li>
+            {% if post_listing.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ post_listing.next_page_number }}">&raquo;</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ post_listing.paginator.num_pages}}">Last</a></li>
+            {% endif %}
+        </ul>
+    </nav>
    <!-- {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
