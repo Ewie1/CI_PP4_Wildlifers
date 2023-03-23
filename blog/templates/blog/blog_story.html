@@ -15,7 +15,7 @@
 <!---Post-->
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-6 col-md">
             {% if "placeholder" in post.featured_image.url %}
             <img src="" width="100%">
             {% else %}
@@ -48,10 +48,10 @@
 <!--Add comments-->
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-4 col-md">
             <div class="card-body">
                 {% if commented %}
-                <div class="alert alert-success" role="alert" id="go">
+                <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
                 </div>
                 {% else %}

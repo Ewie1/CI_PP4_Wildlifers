@@ -572,7 +572,12 @@ footer h3 {
     
 }
     
+/* Style for Blog post*/
 
+.blog-title a{
+    text-decoration: none;
+    color: rgb(27, 121, 32);
+}
 @media screen and (max-width: 1200px) {
 
     .homepage-program-link {
