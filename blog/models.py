@@ -17,7 +17,7 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name='blog_posts'
         )
-    created_date = models.DateTimeField(blank=True)
+    created_date = models.DateTimeField(auto_now_add=True)
     update = models.DateTimeField()
     content = models.TextField()
     featured_image = CloudinaryField(
@@ -47,7 +47,7 @@ class Comment(models.Model):
     email = models.EmailField()
     body = models.TextField()
     approved = models.BooleanField(default=False)
-    created_date = models.DateTimeField(blank=True)
+    created_date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ['created_date']
