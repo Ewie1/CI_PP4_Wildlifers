@@ -29,8 +29,9 @@ def contact(request):
             'Message from' + your_name,  # subject
             your_message,  # message 
             your_email,  # from_email 
-            ['wildlifers246@gmail.com'] # recipient_list
+            [os.environ.get('EMAIL_HOST_USER')] # recipient_list
              )
+        messages.success(request, 'You message have been sent')
 
         return render(request, 'home/contact.html', {'your_name': your_name})
     else:

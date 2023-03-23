@@ -31,11 +31,13 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
+            <h3>Comments:</h3>
             {% for comment in comments %}
             <div class="col-sm-8">
+
                 <h4> {{ comment.name }} </h4>
                 <p> {{ comment.body | linebreaks }} </p>
-                <p> {{ comment.created_date }} </p>
+                <p>Written on: {{ comment.created_date }} </p>
 
             </div>
             {% endfor %}
@@ -49,7 +51,7 @@
         <div class="col-sm-12">
             <div class="card-body">
                 {% if commented %}
-                <div class="alert alert-success" role="alert" id="com">
+                <div class="alert alert-success" role="alert" id="go">
                     Your comment is awaiting approval
                 </div>
                 {% else %}

@@ -39,10 +39,8 @@ class ReadPost(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
-            messages.success(request, 'Comment pending approval')
         else:
             comment_form = CommentForm()
-            messages.error(request, 'Try again')
 
         return render(request, 'blog/blog_story.html',
             {'post': post,
