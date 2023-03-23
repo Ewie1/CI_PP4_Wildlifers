@@ -578,6 +578,14 @@ footer h3 {
     text-decoration: none;
     color: rgb(27, 121, 32);
 }
+.blog-hr hr {
+    border: 2px solid rgb(56, 142, 32);
+}
+
+.comment-form-margin {
+    margin-bottom: -17px;
+    padding-bottom: 20px;
+}
 @media screen and (max-width: 1200px) {
 
     .homepage-program-link {

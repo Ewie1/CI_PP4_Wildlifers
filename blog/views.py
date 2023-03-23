@@ -18,7 +18,7 @@ class PostDisplay(generic.ListView):
         paginated by 3 per page
         """
         posts = Post.objects.all()
-        paginator = Paginator(Post.objects.all(), 3)
+        paginator = Paginator(Post.objects.all(), 4)
         page = request.GET.get('page')
         post_listing = paginator.get_page(page)
 
