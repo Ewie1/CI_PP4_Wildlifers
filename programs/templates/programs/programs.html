@@ -4,19 +4,26 @@
 <section class="bg-light">
     <div class="container">
         <div class="row">
-            <div class="view-page-heading text-center">
-                <h1>{{ program.animal_name }}</h1>
+            <div class="col-sm-12 col-md-6 ">
+                <h2>Help the {{ program.animal_name }}</h2>
+                <p>{{ program.animal_category }}</p>
+                <p>{{ program.country.name }}</p>
+            </div>
+            <div class="col-sm-12 col-md-6 mx-auto mt-5 rounded p-3 bg-light" style="text-align: center;">
+                <img src="{{ program.image.url }}" class="rounded mx-auto d-block" alt="image of selscted aninamal">
+            </div>  
+        </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-md ms-3 program-view-text">
+                    <p>
+                        {{ program.description|safe }}
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="row view-row g-0">
-            <div class="col-md-12 program-view-image" style="text-align: center;">
-                <img src="{{ program.image.url }}" class=" " alt="image of selscted aninamal">
-            </div>
-            <div class="col-md ms-3 program-view-text">
-                <p>
-                    {{ program.description|safe }}
-                </p>
-            </div>
 
         </div>
     </div>

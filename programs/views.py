@@ -14,9 +14,9 @@ from .models import Program
 def show_all_programs_page(request):
     """
     Function to show 
-    and paginte all programs
+    and paginted all programs
     """
-    program_paginator = Paginator(Program.objects.all(), 5)
+    program_paginator = Paginator(Program.objects.all(), 3)
     page = request.GET.get('page')
     program_list = program_paginator.get_page(page)
 

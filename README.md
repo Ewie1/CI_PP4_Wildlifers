@@ -81,8 +81,7 @@
 6. As a site user I should have the option of enrolling in a program when I am reading about an 
   animal I like
 7. As a site user I want to be able to register an account so I can enroll in a program
-8. As a site user I want my registration information t be saved so that I only need to log in when I 
-  return
+8. As a site user I want my registration information t be saved so that I only need to log in when I return
 9. As a site user I want to be able to view a list of my current enrollments so I can plan for them
 10. As a site user I want to be able to upade and change my enrollments
 11. As a site user I want to be able to cancel any of my enrollments
