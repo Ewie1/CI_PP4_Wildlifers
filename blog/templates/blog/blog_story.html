@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-12">
+            <h1 class="text-center">{{ post.title }}</h1>
+        </div>
+    </div>
+</div>
+
+<!---Post-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            {% if "placeholder" in post.featured_image.url %}
+            <img src="" width="100%">
+            {% else %}
+            <img src="{{ post.featured_image.url }}" width="100%">
+            {% endif %}
+            {{ post.content| safe }}
+            {{ post.image.url }}
+        </div>
+    </div>
+</div>
+
+<!--comment-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            {% for comment in comments %}
+            <div class="col-sm-8">
+                <h4> {{ comment.name }} </h4>
+                <p> {{ comment.body | linebreaks }} </p>
+                <p> {{ comment.created_date }} </p>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
