@@ -3,28 +3,51 @@
 {% block content %}
 <section class="bg-light">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 ">
-                <h2>Help the {{ program.animal_name }}</h2>
-                <p>{{ program.animal_category }}</p>
-                <p>{{ program.country.name }}</p>
+        <div class="row mt-3">
+            <div class="col-sm-12 col-md-6 list">
+                <h2 class="text-center mt-3">Help the {{ program.animal_name }}</h2>
+                <hr>
+                <br>
+                <ul>
+                    <li>
+                      Search and send us photos/videos of the {{ program.animal_name }} 
+                    </li><br>
+                    <li>
+                      Give a little donation towards the {{ program.animal_name }} 
+                    </li><br>
+                    <li>
+                      Help researchers with documentations by transcribing field notes for the {{ program.animal_name }} 
+                    </li><br>
+                    <li>
+                      Answer calls, read and redirect email to your region researcher
+                    </li><br>
+                  </ul>
             </div>
-            <div class="col-sm-12 col-md-6 mx-auto mt-5 rounded p-3 bg-light" style="text-align: center;">
-                <img src="{{ program.image.url }}" class="rounded mx-auto d-block" alt="image of selscted aninamal">
+            <div class="col-sm-12 col-md-6 mt-5">
+                <img src="{{ program.image.url }}"  style="background-size: cover;" alt="image of selscted aninamal">
             </div>  
         </div>
         </div>
         </div>
+        <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-md-10 text-center m-3">
                 <div class="col-md ms-3 program-view-text">
+                    <h2 class="text-center mt-5">Coversation</h2>
                     <p>
                         {{ program.description|safe }}
                     </p>
                 </div>
             </div>
         </div>
-
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p> <b> {{ program.animal_category }} | {{ program.country.name }} </b></p>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </section>

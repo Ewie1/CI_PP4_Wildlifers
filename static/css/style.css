@@ -586,6 +586,10 @@ footer h3 {
     margin-bottom: -17px;
     padding-bottom: 20px;
 }
+
+.list li {
+    list-style: none;
+}
 @media screen and (max-width: 1200px) {
 
     .homepage-program-link {
