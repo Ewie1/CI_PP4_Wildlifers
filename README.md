@@ -446,28 +446,28 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 <details><summary>Booking Edit</summary>
 <img src="">
 </details>
-details><summary>Booking Cancel</summary>
+<details><summary>Booking Cancel</summary>
 <img src="">
 </details>
-details><summary>Contact Us</summary>
+<details><summary>Contact Us</summary>
 <img src="">
 </details>
-details><summary>Blog</summary>
+<details><summary>Blog</summary>
 <img src="">
 </details>
-details><summary>Blog details</summary>
+<details><summary>Blog details</summary>
 <img src="">
 </details>
-details><summary>Register</summary>
+<details><summary>Register</summary>
 <img src="">
 </details>
-details><summary>Login</summary>
+<details><summary>Login</summary>
 <img src="">
 </details>
-details><summary>Logout</summary>
+<details><summary>Logout</summary>
 <img src="">
 </details>
-details><summary>Enroll</summary>
+<details><summary>Enroll</summary>
 <img src="">
 </details>
 <details><summary>403, 404, 500</summary>
@@ -510,7 +510,7 @@ details><summary>Enroll</summary>
 <details><summary>urls.py</summary>
 <img src="">
 </details>
-details><summary>view.py</summary>
+<details><summary>view.py</summary>
 <img src="">
 </details>
 
@@ -730,13 +730,17 @@ details><summary>view.py</summary>
 - Tested Micrsoft Edge
 - Tested on Morzilla Firefox
 
-### Testing user stories
+## Testing
+
+- The was done as follows:
+1. Mannual testing
+2. Automative testing
 
 1. As  a first time user I expect a bright feel energetic gym feel
 
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Color contrast | Bright color contrast and images with laughter |Website feels like the gym  | Works as expected |
+   | **Step** | **Expected result** | **Actual Result** |
+   |-------------|------------|---------------------|
+   | 1 | 2 | 3 | 
 
    <details><summary>Screenshots</summary>
    <img src="docs/features/brightenergy.PNG">
@@ -875,7 +879,30 @@ details><summary>view.py</summary>
   Fix: Replaced "Become a Member" page backgroung image
 - Bug: hero image overlay half way over the image  onthe big screen and overflowing into the ethos section
    Fix: adjusted padding bottom and confirmed issue was no longer present
-   
+
+
+## Configuration
+
+### Google emails
+
+To set up the project to send emails and to use a Google account as an SMTP server, the following steps are required:
+
+1. Create an email account at google.com, login, click you user icon and then on 'Manage Your Google Account'
+2. Click on the Security tab
+3. Turn on 2-step verification and follow the steps to enable
+4. Click on App passwords, click on Select app and choose Other
+5. Give your app a name and click on 'Generate'
+  <br>![App password]()
+6. A 16 digit password will be generated, note the password down
+7. Set the below variables within the settings.py file to successfully send emails
+  <br><code>EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'</code>
+  <br><code>EMAIL_HOST = 'smtp.gmail.com'</code>
+  <br><code>EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')</code>
+  <br><code>EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')</code>
+  <br><code>EMAIL_PORT = '587'</code>
+  <br><code>EMAIL_USE_TLS = True</code>
+8. Set up the variables EMAIL_HOST_USER and EMAIL_HOST_PASSWORD in your Render application Config vars
+
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
