@@ -5,37 +5,6 @@
 
 [Live webpage]()
 
-## Table of Content
-
-1. [Project Goals](#project-goals)
-    1. [User Goals](#user-goals)
-    2. [Site Owner Goals](#site-owner-goals)
-2. [User Experience](#user-experience)
-    1. [Target Audience](#target-audience)
-    2. [User Requrements and Expectations](#user-requrements-and-expectations)
-    3. [User Stories](#user-stories)
-3. [Design](#design)
-    1. [Design Choices](#design-choices)
-    2. [Colour](#colours)
-    3. [Fonts](#fonts)
-    4. [Structure](#structure)
-    5. [Wireframes](#wireframes)
-4. [Technologies Used](#technologies-used)
-    1. [Languages](#languages)
-    2. [Frameworks & Tools](#frameworks-&-tools)
-5. [Features](#features)
-6. [Testing](#validation)
-    1. [HTML Validation](#HTML-validation)
-    2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user stories](#testing-user-stories)
-8. [Bugs](#Bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
-11. [Acknowledgements](#acknowledgements)
 
 ## Table of Contents
   - [About](#about)
@@ -72,7 +41,39 @@
  
 
 ### User Goals
+- Learn more about wild life 
+- Use site features to help prevent wildlife distinction
+- Sign up for to be a memeber of site
+- Enroll in site programs
+- Contact the Organisation
+- Write and comment on blog posts
 
+### Site Owner Goals
+- Make people aware of wild life distinction
+- Offer programs that contribute to this
+- Offer a blog for conversation and interaction amongst targeted audiences
+- Get feedback form targeted audience
+
+## User Experience
+
+### Target Audience
+- Wildlifers Targets animal lovers
+- Enviroment activists
+- Everyday working people who wants to but do not know how to contribute to the enviroment
+- Everyday working people who wants to but do not know how to contribute to distinct animals
+- 
+
+### User Reqirements and Expectaions
+
+- Accessible site
+- Navigations that are simple and easy to use
+- Site contact information
+- Social media links
+- Fully responsiveness
+
+### User Stories
+
+#### User 
 1. As a site user I awnt to see a wild life scheme to site
 2. As a user I want to have easy navigation to the site features 
 3. As a site user have access to a list of animals of which I can register and help
@@ -86,9 +87,12 @@
 10. As a site user I want to be able to upade and change my enrollments
 11. As a site user I want to be able to cancel any of my enrollments
 12. As a site user I want to see messages when I enter, update or delete data entries   
+ 
+#### Returning User
+ 
+ 5. As  a return user I want the site to remember me
 
-### Site Owner Goals
-
+#### Site Owner 
 13. As a site owner I want the user to be able to send us messages/emails through a contact form
 14. As a site owner I want user to get messages when register, login , logout, enroll  
   in a program, edit enrollment, delete enroolment or send us messages through the contact form.
@@ -96,45 +100,14 @@
 16. T want user to see data entry vaildation when registering
 17. I want site to be fully responsive  
 
-## User Experience
-
-### Target Audience
-
-- 
-
-### User Reqirements and Expectaions
-
-- Accessable site
-- Navigations that are simple to use
-- Clear images that gives a vision of the gym structure
-- Information on what is different from other gyms
-- Clear information on location and opening and closing time
-- A Warm welcome feel 
-- Vision of health and happiness
-- A vision of fittness
-- A vision of motivation
-
-### User Stories
-
-#### First-time User 
-1. 
-#### Returning User
- 
- 5. 
-
-#### Site Owner 
-
-10. 
 ## Design
-
-### Design Choices
 
 
 ### Colour
-
+ The color of the site was chosen to support the theme which is wild life, trees and animals. The dark navbar and footer helps to contrast the brightness of the colors.
 
 ### Fonts
-
+The font was chosen from Google Font but I mostly used simple stanard font 
 
 ### Structure
 This website was structured with the animal logo which give a wild life characteristic but also with the regular easy to use nav bar, a body of information and the regular footer which give the final characteristics of a funtional webpage. ***:
