@@ -295,130 +295,428 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 
 ## Features
-The page consists of 3 pages and 11 sections
 
 ### Logo and Navigation Bar
-- The logo and nav bar section is one of the difference maker. It have a stylish logo which every
-gym needs and also a navigation bar which allow the user to freely navigate between the three pages presented. Here you can also find a signup button which return user to get to the sigup page without the need to scroll. 
+- Site Logo supports the wild life theme of the site and navigates to home page 
+- The navbar is consist of the logo and the links to all the site feature
+- The navbar is present on all pages
+- The navbar also have a drop down features login, register and booking
+- The navbar switch to hamburger menu when use on smaller screens
+- Fully responsive
 
-![logo-and-nav](docs/features/menulogonavs.PNG)
+![logo-and-nav]()
 
-### Hero
-- Here the hero image that describe everything a user need in a gym laughter, diversity and work. Along with giving a feel for what you get at the gym there is also a cover note with two questios to catch the users interest and want to know more about the gym.
-- User story covered: 1
+### Home page
+- The home page is consist og images and descriptions relating to wildlife 
+- The home page is also consist of a button to navigate to register and a button enroll
+- Fully responsive
+
 
 ![heros](docs/features/heros.PNG) 
 
-### Gym Features
-- The gym features list is consist of the many progarms available for training and the comforts the gym offer. With this information the user can consider compare to there regular gyms which will help them in deciding to click that signup button.
-- User story covered: 4
+### Footer
+- The footer is consist of social media link
+- The footer also have office location and contact information 
+- the footer is displayed at the bottom of the page
+- Fully responsive
 
 ![gym-features](docs/features/feature.PNG)
 
-### Easy Nav
-- Easy nav is a simple buttton to have the user avoid scrolling up to get to the About Us page.
-- This faeture serves the purpose of allow the user to go throught the page smoothly finding all the gym information with out the need of scrolling back up to the menu bar but use the more about us button to get to the second page whicg contains more information about the gym.
-
+### Sign up/Register
+- The registration page is consist of a form to enter user details
+- It prupose is for new users to access more site features
+- The form also instructions on how to register
+- registered message will be seen
+- Fully responsive
 ![easy-nav](docs/features/easynav.PNG)
 
-### Open Times
-- Open times are locate as we go down to give the user essentail information so they can  fit their schedule into the open times of the gym.
+### Login
+- Easy for return users to get in
+- Fields are mandatory
+- Logged in messsage will be seen
+- Fully responsive
 
 ![opem-times](docs/features/opentimes.PNG)
 
-### Teaser Image
-- A simple image og the gym i like to call a teaser image of the interior of the gym so the user gets an idea of what to expect and what kind of enviroment the gym offers.
-- User story covered: 3
+### Logout
+- User can log out before leaving the site
+- Logged out message will be seen
+- Fully responsive
 
 ![interior-teaser](docs/features/teaser.PNG)
 
-### Map
-- The map which give the location for the gym with an easy click.
-- User story covered: 2
+### Program
+- Information on what the program stands for
+- Aniaml cards of feature animals with images aand animal status
+- paginated for easy navogation
+- Read button to get more details on the animal
+- Programs can be added, edited and deleted by the staff/organization
+- Fully responsive
 
 ![map](docs/features/map4.PNG)
 
-### Footer
-- This footer which is set to be informative, giving the gym's contact information, phone number and emial address to contact us. Along with this we also have the social media icon links in which the gym can be found on.
-- User story covered: 6 and 9
+### Read program
+- Here you find a more detailed information about the animal chosen
+- There is a list on what you vcan do to help this animal
+- There is a button to return to the list
+- There is a button to go to enroolment form
+- Fully responsive
 
 
 ![footer](docs/features/footer.PNG)
 
-### About Us
-- The About us section of the site located on the second page tells alot. We have the images on the left which shows some of the faetures of the gym complimenting the three paragraphs which explain who, why and the mission of the gym which i think make it stand out from the regular.
-- User story covered: 4 and 7
+### User enrollment list
+- Must be registered or logged in to see 
+- Paginated list of user enrollment
+- Each card are consist of a edit and cancel button
+- Fully responsive
 
 ![about-us](docs/features/aboutus.PNG)
 
-### Membership Cards
-- Membership Cards section can also be found on the second page showing the different memberships the gym have to offer student, retired or normal.
-- User story covered: 8
+### Enrollment editing
+- Here is the enrollment form displaying the fields fill with the current booking and ready to be changed
+- Submit and update message will be seen  
+- Fully responsive
 
 ![membership-cards](docs/features/membership.PNG)
 
-### Signup Form
-- The signup form is found on the last page which shows the needed information of entry, membership option drop down and a text area for any questions to quarries while signing up.
-- User story covered:5 and 11
+### Cancel enrollment
+- Here the canceling confirmation card is diaplayed
+- The card have a button to return if user change their minds and a button tp cancel
+- A confirmation message will be dispalyed when the canalation is completed
+- Fully responsive
 
 ![signup-form](docs/features/signupform.PNG)
 
-### 404 Page
-- The 404 page displays when a user enters a URL that does not match. The main purpose of this page is to let users know that an error has occurred and they have the menu bar available to go back to the website. 
-The page is fully responsive on mobile and tablet.
-- User story covered: 11
+### Contact page
+- User can contact us by filling out this form
+- User must enter their names and email and the message in the text field
+- Message will display when the form is submitted
+- Google map address is present for our office location
+- Fully responsive
 
 ![404-page](docs/features/test-user-story/404page.PNG)
+
+### Blog
+- Fully responsive
+- Display blog posts made by staff/organisation
+- Blog post are paginated
+- Click on the post to read the post details
+
+### Blog details
+- Blog details show more detials about the blog
+- The featured image is displayed
+- Fully responsive
+
+### Blog commenting
+- only registered or logged in User get the option to leave comment
+- Comment cand be done in the text field but needs to be approved
+- When commented are made the submitted the comment awiting approval message is displayed 
+- Comments are approved by staff/organisation for monitering purposes
+- Fully responsive 
+
+### Booking
+- Here the is the bookig form to enter your name and the aniaml, job. time and date User want to do their program
+- Only registered or looged on user are allow to enroll in a program
+- The form is made easier by displaying the list of Jobs, work times, animals and date picker
+- There are also a descriptive list of the offered Jobs
+- A con firmation messagge will display after for is submited
+- Only registered or logged in User get the option to leave comment
+- Comment cand be done in the text field but needs to be approved
+- Fully responsive 
+
 
 ## Validation
 
 ### HTML Validation
+- The W3C Markup Validation Service was used to validate the HTML of the website.
 
-<details><summary>Home page</summary>
-<img src="/docs/features/wireframes/validations/indexhtml-validation.JPG">
+<details><summary>Home</summary>
+<img src="">
 </details>
-<details><summary>About page</summary>
-<img src="/docs/features/wireframes/validations/trainhtml-validation.JPG">
+<details><summary>Program</summary>
+<img src="">
 </details>
-<details><summary>Signup page</summary>
+<details><summary>Program details</summary>
 <img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
 </details>
-<details><summary>404 page</summary>
-<img src="docs/features/wireframes/validations/validation404.PNG">
+<details><summary>My Booking</summary>
+<img src="">
+</details>
+<details><summary>Booking Edit</summary>
+<img src="">
+</details>
+details><summary>Booking Cancel</summary>
+<img src="">
+</details>
+details><summary>Contact Us</summary>
+<img src="">
+</details>
+details><summary>Blog</summary>
+<img src="">
+</details>
+details><summary>Blog details</summary>
+<img src="">
+</details>
+details><summary>Register</summary>
+<img src="">
+</details>
+details><summary>Login</summary>
+<img src="">
+</details>
+details><summary>Logout</summary>
+<img src="">
+</details>
+details><summary>Enroll</summary>
+<img src="">
+</details>
+<details><summary>403, 404, 500</summary>
+<img src="">
 </details>
 
 ### CSS Validation
+- The W3C Jigsaw service was used for CSS Validation. 
 
-<details><summary>Style</summary>
-<img src="/docs/features/wireframes/validations/stylecss-validation.JPG">
-</details>
-<details><summary>Whole page</summary>
-<img src="/docs/features/wireframes/validations/wholepagecss-validation.JPG">
+<details><summary>style.css</summary>
+<img src="">
 </details>
 
-### Accessibility
+### JavaSript Validation
+
+- The JSHint JS Validation Service was used to validate the Javascript.
+
+<details><summary>script.js</summary>
+<img src="">
+</details>
+
+### Pep8 Validation
+
+- PEP8 Validation Service was used to check the code for PEP8 requirements. 
+
+#### Homeapp
+
+<details><summary>admin.py</summary>
+<img src="">
+</details>
+<details><summary>forms.py</summary>
+<img src="">
+</details>
+<details><summary>models.py</summary>
+<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+</details>
+<details><summary>tests.py</summary>
+<img src="">
+</details>
+<details><summary>urls.py</summary>
+<img src="">
+</details>
+details><summary>view.py</summary>
+<img src="">
+</details>
+
+#### Programsapp
+
+<details><summary>admin.py</summary>
+<img src="">
+</details>
+<details><summary>forms.py</summary>
+<img src="">
+</details>
+<details><summary>models.py</summary>
+<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+</details>
+<details><summary>tests.py</summary>
+<img src="">
+</details>
+<details><summary>urls.py</summary>
+<img src="">
+</details>
+<details><summary>view.py</summary>
+<img src="">
+</details>
+
+#### Bookingapp
+
+<details><summary>admin.py</summary>
+<img src="">
+</details>
+<details><summary>forms.py</summary>
+<img src="">
+</details>
+<details><summary>models.py</summary>
+<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+</details>
+<details><summary>tests.py</summary>
+<img src="">
+</details>
+<details><summary>urls.py</summary>
+<img src="">
+</details>
+<details><summary>view.py</summary>
+<img src="">
+</details>
+
+#### Blogapp
+
+<details><summary>admin.py</summary>
+<img src="">
+</details>
+<details><summary>forms.py</summary>
+<img src="">
+</details>
+<details><summary>models.py</summary>
+<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+</details>
+<details><summary>tests.py</summary>
+<img src="">
+</details>
+<details><summary>urls.py</summary>
+<img src="">
+</details>
+<details><summary>view.py</summary>
+<img src="">
+</details>
+
+### Chrome ligthouse tool
+
+- Lighthouse was used to test the performance, accessibility, best practice and SEO of the site.
 
 <details><summary>Home</summary>
-<img src="/docs/features/wireframes/validations/accesssibility-home.PNG">
+<img src="">
 </details>
-<details><summary>About Us</summary>
-<img src="/docs/features/wireframes/validations/accessibilty-about.PNG">
+<details><summary>Program</summary>
+<img src="">
 </details>
-<details><summary>Become a Member</summary>
-<img src="/docs/features/wireframes/validations/accessibilty-signup.PNG">
+<details><summary>Program details</summary>
+<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+</details>
+<details><summary>My Booking</summary>
+<img src="">
+</details>
+<details><summary>Booking Edit</summary>
+<img src="">
+</details>
+<details><summary>Booking Cancel</summary>
+<img src="">
+</details>
+<details><summary>Contact Us</summary>
+<img src="">
+</details>
+<details><summary>Blog</summary>
+<img src="">
+</details>
+<details><summary>Blog details</summary>
+<img src="">
+</details>
+<details><summary>Register</summary>
+<img src="">
+</details>
+<details><summary>Login</summary>
+<img src="">
+</details>
+<details><summary>Logout</summary>
+<img src="">
+</details>
+<details><summary>Enroll</summary>
+<img src="">
+</details>
+<details><summary>403, 404, 500</summary>
+<img src="">
 </details>
 
-### Performance 
+### Waves
+- The WAVE WebAIM web accessibility evaluation tool was used to test the websites accessibility.
+
+#### Desktop
 
 <details><summary>Home</summary>
-<img src="/docs/features/wireframes/validations/performance-homepage.PNG">
+<img src="">
 </details>
-<details><summary>About Us</summary>
-<img src="/docs/features/wireframes/validations/performance-aboutuspage.PNG">
+<details><summary>Program</summary>
+<img src="">
 </details>
-<details><summary>Become a Member</summary>
-<img src="/docs/features/wireframes/validations/performance-signuppage.PNG">
+<details><summary>Program details</summary>
+<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
 </details>
+<details><summary>My Booking</summary>
+<img src="">
+</details>
+<details><summary>Booking Edit</summary>
+<img src="">
+</details>
+<details><summary>Booking Cancel</summary>
+<img src="">
+</details>
+<details><summary>Contact Us</summary>
+<img src="">
+</details>
+<details><summary>Blog</summary>
+<img src="">
+</details>
+<details><summary>Blog details</summary>
+<img src="">
+</details>
+<details><summary>Register</summary>
+<img src="">
+</details>
+<details><summary>Login</summary>
+<img src="">
+</details>
+<details><summary>Logout</summary>
+<img src="">
+</details>
+<details><summary>Enroll</summary>
+<img src="">
+</details>
+<details><summary>403, 404, 500</summary>
+<img src="">
+</details>
+
+#### Mobile
+
+<details><summary>Home</summary>
+<img src="">
+</details>
+<details><summary>Program</summary>
+<img src="">
+</details>
+<details><summary>Program details</summary>
+<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+</details>
+<details><summary>My Booking</summary>
+<img src="">
+</details>
+<details><summary>Booking Edit</summary>
+<img src="">
+</details>
+<details><summary>Booking Cancel</summary>
+<img src="">
+</details>
+<details><summary>Contact Us</summary>
+<img src="">
+</details>
+<details><summary>Blog</summary>
+<img src="">
+</details>
+<details><summary>Blog details</summary>
+<img src="">
+</details>
+<details><summary>Register</summary>
+<img src="">
+</details>
+<details><summary>Login</summary>
+<img src="">
+</details>
+<details><summary>Logout</summary>
+<img src="">
+</details>
+<details><summary>Enroll</summary>
+<img src="">
+</details>
+<details><summary>403, 404, 500</summary>
+<img src="">
+</details>
+
 
 ### Performing tests on various devices 
 
