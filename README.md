@@ -137,11 +137,16 @@
 
 
 ### Structure
-This website was structured with the gym logo which give a gym it character but also with the regular easy to use nav bar, a body of information and the regular footer which give the final characteristics of a funtional webpage. The wedsite has three pages:
+This website was structured with the animal logo which give a wild life characteristic but also with the regular easy to use nav bar, a body of information and the regular footer which give the final characteristics of a funtional webpage. ***:
 
 - Home 
-- About page
-- Become a member page
+- Program page
+- My bookings page
+- Contact us page
+- Blog page
+- Register page
+- Login/Logout page
+- Enroll page
 
 ### Wireframes
 
@@ -170,7 +175,10 @@ This website was structured with the gym logo which give a gym it character but 
 ### Languages
 
 - HTML
-- CSSc
+- CSS
+- Javascript
+- Python
+- Django
 
 ### Libraries & Tools
 
