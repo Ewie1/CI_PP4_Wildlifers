@@ -179,20 +179,81 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 ### Wireframes
 
+
 <details><summary>Home</summary>
-<img src="/docs/features/wireframes/wireframehomepage.png">
-<img src="/docs/features/wireframes/wireframehomepagepad.png">
-<img src="/docs/features/wireframes/wireframehomepagepadiphone.png">
+<img src="">
+<img src="">
+<img src="">
 </details>
-<details><summary>About</summary>
-<img src="/docs/features/wireframes/wireframeaboutuspage.png">
+<details><summary>Program</summary>
+<img src="">
 <img src="/docs/features/wireframes/wireframeaboutuspagepad.png">
-<img src="/docs/features/wireframes/wireframeaboutuspagepadiphone.png">
+<img src="">
 </details>
-<details><summary>Signup</summary>
-<img src="/docs/features/wireframes/wireframesignuppage.png">
-<img src="/docs/features/wireframes/wireframesignuppagepad.png">
-<img src="/docs/features/wireframes/wireframesignuppagepadiphone.png">
+<details><summary>Program Read</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>My Bookings</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>Booking Edit</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>Booking Cancel</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>Contact</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>Blog</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>Blog Details</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>Register</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>Login</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>Logout</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>Enroll</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>403</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+<details><summary>500</summary>
+<img src="">
+<img src="">
+<img src="">
 </details>
 <details><summary>404 page</summary>
 <img src="docs/features/wireframes/wireframe404.png">
