@@ -110,16 +110,22 @@
 The font was chosen from Google Font but I mostly used simple stanard font 
 
 ### Structure
-This website was structured with the animal logo which give a wild life characteristic but also with the regular easy to use nav bar, a body of information and the regular footer which give the final characteristics of a funtional webpage. ***:
+This website was structured with the animal logo which give a wild life characteristic but also with the regular easy to use nav bar, a body of information and the regular footer which give the final characteristics of a funtional webpage.
 
-- Home 
-- Program page
-- My bookings page
-- Contact us page
-- Blog page
-- Register page
-- Login/Logout page
-- Enroll page
+The site Navbar is a black with a logo to to the lefzt which navigate to te home, links to the site pages on the right witha drop style nav which have links for registration, login and booking. At the bottom of the page there is the footer which contains office location informtion and social links.
+
+- The site is consist of these pages:
+ - Home page that contains information and images to share about wild life with 2 nav buttons to register and enroll in program.
+ - The program page which display a paginated list of animals the programs represent, the status and option to read more about them 
+ - A page to read more about the selected animal with a button to return to the aniaml list and a button to booking form
+ - My bookings page if user is looged in shows a paginated list of that users enrollment programs with option buttons to edit or cancel the enrollment 
+ - The contact us page display the contact form on which user can send us a message and also contain a map location of our Stockholm office
+ - The blog page show a list of site blog post wth the option to view the blog
+ - The blog page view show blog post details craeted date and comments, if the suer is logged in a comment for is present to allow suer to leave a comment on the post
+ - The registration page displays the registration form for user to access and use site features
+ - The login page displays a form to give return user an easier was to log in to sue site features
+ - The Enroll page displays a for for users to make a booking with choices or date, time, animal, Jobs,etc. 
+
 
 ### Wireframes
 
