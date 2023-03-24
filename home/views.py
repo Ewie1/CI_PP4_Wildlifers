@@ -26,10 +26,10 @@ def contact(request):
         your_message = request.POST['your-message']
 
         send_mail(
-            'Message from' + your_name,  # subject
-            your_message,  # message 
-            your_email,  # from_email 
-            [os.environ.get('EMAIL_HOST_USER')] # recipient_list
+            'Message from' + your_name,
+            your_message,
+            your_email,  
+            [os.environ.get('EMAIL_HOST_USER')]
              )
         messages.success(request, 'You message have been sent')
 

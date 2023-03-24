@@ -3,8 +3,6 @@
 # 3rd party:
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-
-
 # Internal
 from .models import Animal, Country, Survival_category, Program
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

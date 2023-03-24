@@ -909,17 +909,7 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 ### Heroku
 This application has been deployed from GitHub to Heroku by following the steps:
 
-1. Create or log in to your account at heroku.com
-2. Create a new app, add a unique app name (this project is named "guess-that-tvshow") and choose your region
-3. Click on create app
-4. Go to "Settings"
-5. Under Config Vars store any sensitive data you saved in .json file. Name 'Key' field, copy the .json file and paste it to 'Value' field. Also add a key 'PORT' and value '8000'.
-6. Add required buildpacks (further dependencies). For this project, I set up 'Python' and 'node.js' in that order.
-7. Go to "Deploy" and select "GitHub" in "Deployment method"
-8. To link up our Heroku app to our Github repository code enter your repository name, click 'Search' and then 'Connect' when it shows below
-9.  Choose the branch you want to buid your app from
-10. If prefered, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository
-11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a 'View' button to take you to your deployed link.
+
 
 ### Forking the GitHub Repository
 1. Go to the GitHub repository

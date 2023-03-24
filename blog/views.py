@@ -1,9 +1,15 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.contrib import messages
 from django.core.paginator import Paginator
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Internal:
 from .models import Post
 from .forms import CommentForm
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class PostDisplay(generic.ListView):
@@ -22,11 +28,14 @@ class PostDisplay(generic.ListView):
         page = request.GET.get('page')
         post_listing = paginator.get_page(page)
 
-        return render(request, 'blog/blog_list.html',
+        return render(
+            request, 
+            'blog/blog_list.html',
             {
-                'posts': posts,
+                'posts': posts, 
                 'post_listing': post_listing,
-            })
+            }
+        )
 
 
 class PostDetail(View):
@@ -46,7 +55,7 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
-    
+   
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Post.objects.filter(status=1)

@@ -41,8 +41,11 @@ class EnrollView(View):
         if request.user.is_authenticated:
             email = request.user.email
             program_booking_form = EnrollForm(initial={'email': email})
-            return render(request, 'booking/bookings.html', 
-                        {'program_booking_form': program_booking_form})
+            return render(
+                request, 
+                'booking/bookings.html',
+                {'program_booking_form': program_booking_form}
+                )
         else:
             return redirect('accounts/login')
 
@@ -60,8 +63,14 @@ class EnrollView(View):
             program_booking_form = EnrollForm()
             booking.user = request.user
             messages.success(request, 'Your are booking was Successful!')
-            return render(request, 'booking/bookings.html', {'program_booking_form': program_booking_form})
-        return render(request, 'booking/bookings.html', {'program_booking_form': program_booking_form})
+            return render(
+                request, 
+                'booking/bookings.html',
+                {'program_booking_form': program_booking_form})
+        return render(
+            request,
+            'booking/bookings.html',
+            {'program_booking_form': program_booking_form})
 
 
 class Enrollments(generic.ListView):
@@ -87,11 +96,15 @@ class Enrollments(generic.ListView):
 
         if request.user.is_authenticated:
             enrollments = Enroll.objects.filter(user=request.user)
-            return render(request, 'booking/enrollment_list.html',
-            {
-                'booking': booking,
-                'enrollments': enrollments,
-                'booking_page': booking_page})
+            return render(
+                request,
+                'booking/enrollment_list.html',
+                {
+                    'booking': booking,
+                    'enrollments': enrollments,
+                    'booking_page': booking_page
+                }
+            )
         else:
             return redirect('accounts/login')
 
@@ -107,7 +120,7 @@ class EditEnrollments(SuccessMessageMixin, UpdateView):
     success_message = 'Update have been successful!'
 
     def get_success_url(self, **kwargs):
-        return reverse('enrollments') 
+        return reverse('enrollments')
 
 
 def CancelEnrollments(request, pk):
@@ -122,6 +135,8 @@ def CancelEnrollments(request, pk):
         messages.success(request, "Your plan has been deleted.")
         return redirect('enrollments')
 
-    return render(request, 'booking/enrollment_delete.html',
-                     {'enrollment': enrollment})
-    
+    return render(
+        request,
+        'booking/enrollment_delete.html',
+        {'enrollment': enrollment}
+        )

@@ -20,8 +20,11 @@ def show_all_programs_page(request):
     page = request.GET.get('page')
     program_list = program_paginator.get_page(page)
 
-    return render(request, 'programs/programs_list.html',
-        {'program_list': program_list})
+    return render(
+        request,
+        'programs/programs_list.html',
+        {'program_list': program_list}
+        )
 
 
 class ProgramDetails(View):
@@ -33,4 +36,3 @@ class ProgramDetails(View):
         program = Program.objects.get(pk=program_id)
 
         return render(request, 'programs/programs.html', {'program': program})
-    
