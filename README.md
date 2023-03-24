@@ -905,24 +905,40 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 
 
 ## Deployment
-The website was deployed using GitHub Pages by following these steps:
-1. In the GitHub repository navigate to the Settings tab
-2. On the left hand menu select Pages
-3. For the source select Branch: master
-4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at "https://ewie1.github.io/CI_PP1_GLG/index.html"
 
-You can for fork the repository by following these steps:
+### Heroku
+This application has been deployed from GitHub to Heroku by following the steps:
+
+1. Create or log in to your account at heroku.com
+2. Create a new app, add a unique app name (this project is named "guess-that-tvshow") and choose your region
+3. Click on create app
+4. Go to "Settings"
+5. Under Config Vars store any sensitive data you saved in .json file. Name 'Key' field, copy the .json file and paste it to 'Value' field. Also add a key 'PORT' and value '8000'.
+6. Add required buildpacks (further dependencies). For this project, I set up 'Python' and 'node.js' in that order.
+7. Go to "Deploy" and select "GitHub" in "Deployment method"
+8. To link up our Heroku app to our Github repository code enter your repository name, click 'Search' and then 'Connect' when it shows below
+9.  Choose the branch you want to buid your app from
+10. If prefered, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository
+11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a 'View' button to take you to your deployed link.
+
+### Forking the GitHub Repository
 1. Go to the GitHub repository
-2. Click on Fork button in upper right hand corner
-
-You can clone the repository by following these steps:
+2. Click on Fork button in top right corner
+3. You will then have a copy of the repository in your own GitHub account.
+   
+### Making a Local Clone
 1. Go to the GitHub repository 
-2. Locate the Code button above the list of files and click it 
-3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+2. Locate the Code button above the list of files and click it
+3. Highlight the "HTTPS" button to clone with HTTPS and copy the link
 4. Open Git Bash
 5. Change the current working directory to the one where you want the cloned directory
-6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)  
-7. Press Enter to create your local clone.
+6. Type git clone and paste the URL from the clipboard ($ git clone <span>https://</span>github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone
+
+[Back to Table Of Contents](#table-of-content)
+
+## Deployment
+
 
 ## Credits
 
