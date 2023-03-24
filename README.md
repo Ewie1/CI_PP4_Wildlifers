@@ -109,7 +109,9 @@
 ### Fonts
 The font was chosen from Google Font but I mostly used simple stanard font 
 
-### Structure
+## Structure
+
+### Website pages
 This website was structured with the animal logo which give a wild life characteristic but also with the regular easy to use nav bar, a body of information and the regular footer which give the final characteristics of a funtional webpage.
 
 The site Navbar is a black with a logo to to the lefzt which navigate to te home, links to the site pages on the right witha drop style nav which have links for registration, login and booking. At the bottom of the page there is the footer which contains office location informtion and social links.
@@ -126,6 +128,54 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
  - The login page displays a form to give return user an easier was to log in to sue site features
  - The Enroll page displays a for for users to make a booking with choices or date, time, animal, Jobs,etc. 
 
+### Database
+
+-
+
+#### Usermodel
+- This contains user information and was config by Django Allauth biult in library
+
+#### Programsmodel
+- animal_name(Foriegnkey)
+- animal_category(Foriegnkey)
+- country
+- image
+- description
+
+#### Animalmodel
+- name
+
+#### Survivalcategorymodel
+- category
+
+#### Enrollmodel
+- create_date
+- start_date
+- user
+- name
+- email
+- volunteer_job
+- work_time
+- animal_name
+
+#### Commentmodel
+- post(Foriegnkey)
+- name
+- email
+- body
+- created_on
+- approved
+
+#### Postlistmodel
+- title
+- slug
+- author(Foriegnkey)
+- updated_on
+- content
+- feature_image
+- excerpt
+- created_on
+- status
 
 ### Wireframes
 

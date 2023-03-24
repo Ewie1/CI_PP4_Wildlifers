@@ -24,13 +24,6 @@ class Animal (models.Model):
         return self.name
 
 
-class Country (models.Model):
-    """
-    Class for animal's country
-    """
-    country = CountryField(blank=True)
-
-
 class Survival_category (models.Model):
     """
     Class for animal's country
