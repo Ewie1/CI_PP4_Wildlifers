@@ -9,7 +9,7 @@ from .forms import CommentForm
 class PostDisplay(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = 'blog_list.html' ##
+    template_name = 'blog_list.html'
     paginate_by = 4
 
     def get(self, request, *args, **kwargs):
