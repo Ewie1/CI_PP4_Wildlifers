@@ -1,0 +1,16 @@
+[
+{
+  "model": "programs.survival_category",
+  "pk": 1,
+  "fields": {
+    "category": "Endangered"
+  }
+},
+{
+  "model": "programs.survival_category",
+  "pk": 2,
+  "fields": {
+    "category": "Critical"
+  }
+}
+]

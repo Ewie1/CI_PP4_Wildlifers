@@ -52,7 +52,7 @@ class Program(models.Model):
 
     animal_name = models.ForeignKey(
         Animal,
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
         )
     animal_category = models.ForeignKey(
         Survival_category,
