@@ -37,7 +37,7 @@
             {% for comment in comments %}
             <div class="col-sm-12 mt-3 ">
                 <p > <b> <span style="color: rgb(56, 142, 60);"> {{ comment.name }} </span></b> says:</p>
-                <p> <em> {{ comment.created_date }}</em> </p>
+                <p> <em> {{ comment.created_on }}</em> </p>
                 <p class="text-muted"> {{ comment.body }} </p>
                 <br>
             </div>
