@@ -404,19 +404,33 @@ footer h3 {
     text-decoration: none;
 }
 
-/* Style for enrollment cancel confirmation card */
-/*.confirmation-form {
-    height: 600px;
-    text-align: center;
-    padding-top: 200px;
-}*/
+.delete-buttons a {
+    padding: 7px;
+    background: rgb(27, 121, 32);
+    width: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
 
-/*Style for enrollment form page*/
+.delete-buttons a:hover {
+    color: #fff; 
+    background: rgb(56, 142, 60);
+    transition: .5s ease-in-out; 
+}
+
+
+/*Style for booking/enrollment form*/
 
 .booking-form-page-wrap {
     background: rgba(240, 240, 240, 0.888);
     padding-bottom: 40px;
     margin-bottom: -20px;
+}
+
+.booking-form-page-wrap p {
+    margin-top: 30px;
+    font-size: 1.2rem;
 }
 
 .booking-image {
@@ -430,17 +444,12 @@ footer h3 {
     padding-top: 150px;
 }
 
-.booking-form-page-wrap p {
-    margin-top: 30px;
-    font-size: 1.2rem;
-}
-
-.enrollment-form {
+/*.enrollment-form {
     height: 600px;
     background: #EFEBE9;
     text-align: center;
     padding-top: 100px; 
-}
+}*/
 
 .jobs ul {
     list-style:none;
@@ -450,7 +459,8 @@ footer h3 {
     font-weight: 700;
 }
 
-/*Style for user bookings page*/
+/*Stlye for user bookings list*/
+
 .booking-list-background {
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat center fixed;
     background-size: cover;
@@ -464,7 +474,14 @@ footer h3 {
     height: 350px;
 }
 
-/* Style for enrollment cancel confirmation card */
+.booking-list h3 {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+
+/* Style for Delete confirmation page*/
+
 .confirmation-form {
     height: 600px;
     text-align: center;
@@ -477,30 +494,20 @@ footer h3 {
     display: inline;
 }
 
-/*Style for user  Booking*/
+/*Style for user booking card buttons*/
 
-.btn-user-booking {
+/*.btn-user-booking {
     background: rgb(56, 142, 60);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
 }
 
 .btn-user-booking:hover {
     color: #fff;
     background: rgb(27, 121, 32);
+}*/
 
-}
-
-
-
-
-/*Program page*/
-
-.program-view-image {
-    
-}
-    
 /* Style for Blog post*/
 
 .blog-title a{
@@ -525,10 +532,6 @@ footer h3 {
         margin-top: 100px;
     }
 
-    .program-view-image {
-        
-    }
-
     .home-text1 {
         font-size: 0.8rem;
     }
@@ -546,10 +549,6 @@ footer h3 {
 
     .homepage-program-link {
         margin-top: 50px;
-    }
-
-    .program-view-image {
-        width: ;
     }
     
 }

@@ -23,9 +23,9 @@
         </div>-->
         <div class="container">
             <div class="row justify-content-center">
-                <div class=" booking-list col-sm-12 col-md-8 col-lg-4 rounded-3 text-center text-black m-3">
-                    <div class="col-md">
-                        <h2 class="m-3">{{  booking.name }}</h2>
+                <div class="booking-list col-sm-12 col-md-8 col-lg-4 rounded-3 text-center text-black m-3">
+                    <div class="col-md delete-buttons">
+                        <h3 class="m-3">{{  booking.volunteer_job }}</h3>
                         <hr>
                         <p>
                             <b>Name:</b> {{ booking.name }}
@@ -42,8 +42,8 @@
                         <p>
                             <b>Work-Time:</b> {{ booking.work_time }}
                         </p>
-                        <a href="{% url 'enrollment_editing' booking.pk  %}" class="btn btn-user-booking">Edit</a>
-                        <a href="{% url 'enrollment_cancel' booking.pk  %}" class="btn btn-user-booking" onclick="" id="btn-delete">Delete</a>
+                        <a href="{% url 'enrollment_editing' booking.pk  %}">Edit</a>
+                        <a href="{% url 'enrollment_cancel' booking.pk  %}">Delete</a>
                     </div>
                 </div>
             </div>

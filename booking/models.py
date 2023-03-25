@@ -48,7 +48,7 @@ class Enroll(models.Model):
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user", null=True)
     name = models.CharField(
-        max_length=50,
+        max_length=30,
         null=True
         )
     email = models.EmailField(
@@ -56,7 +56,7 @@ class Enroll(models.Model):
         default=""
         )
     volunteer_job = models.CharField(
-        max_length=100,
+        max_length=30,
         choices=volunteer_jobs,
         blank=False
     )
@@ -66,7 +66,7 @@ class Enroll(models.Model):
         blank=False
     )
     animal_name = models.CharField(
-        max_length=100,
+        max_length=30,
         choices=animal_names,
         blank=False
         )
