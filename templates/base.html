@@ -39,7 +39,7 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/programs">Programs</a>
+              <a class="nav-link active" href="{% url 'programs' %}">Programs</a>
             </li>
             <!--User must be authenticated to view bookings-->
             {% if user.is_authenticated %}
@@ -55,12 +55,12 @@
               <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="">Blog</a>
+              <a class="nav-link active" href="{% url 'blog' %}">Blog</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown Link
+                Get Logged In
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
@@ -69,7 +69,7 @@
                 {% else %}
                 <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
                 {% endif %}
-                <li><a class="dropdown-item" href="{% url 'enrollview' %}">Bookings</a></li>
+                <li><a class="dropdown-item" href="{% url 'enrollview' %}">Get Enrolled</a></li>
               </ul>
             </li>
           </ul>

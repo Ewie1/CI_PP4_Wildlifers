@@ -2,7 +2,8 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
 from django.shortcuts import render
-from django.views.generic import View
+from django.views import generic
+from django.views.generic import ListView, View
 from django.core.paginator import Paginator
 from django.contrib import messages
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -11,20 +12,26 @@ from .models import Program
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-def show_all_programs_page(request):
-    """
-    Function to show 
-    and paginted all programs
-    """
-    program_paginator = Paginator(Program.objects.all(), 3)
-    page = request.GET.get('page')
-    program_list = program_paginator.get_page(page)
+class ProgramList(generic.ListView):
+    model = Program
+    queryset = Program.objects.all().order_by('id')
+    template_name = 'programs_list.html'
+    paginated_by = 4
 
-    return render(
-        request,
-        'programs/programs_list.html',
-        {'program_list': program_list}
-        )
+    def get(self, request, *args, **kwargs):
+        """
+        Function to show 
+        and paginated all programs
+        """
+        program_paginator = Paginator(Program.objects.all(), 3)
+        page = request.GET.get('page')
+        program_list = program_paginator.get_page(page)
+
+        return render(
+            request,
+            'programs/programs_list.html',
+            {'program_list': program_list}
+            )
 
 
 class ProgramDetails(View):

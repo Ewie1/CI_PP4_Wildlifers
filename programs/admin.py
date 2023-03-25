@@ -4,11 +4,10 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 # Internal
-from .models import Animal, Country, Survival_category, Program
+from .models import Animal, Survival_category, Program
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 admin.site.register(Animal)
-admin.site.register(Country)
 admin.site.register(Survival_category)
 
 
