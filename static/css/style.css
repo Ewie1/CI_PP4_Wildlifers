@@ -43,7 +43,6 @@ body {
 }
 
 .nav-item a:hover {
-    border-bottom: 1px solid #EFEBE9;
     transition: .20s ease-in-out;
 } 
 

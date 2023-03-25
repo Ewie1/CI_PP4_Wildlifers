@@ -47,7 +47,7 @@ class PostDetail(View):
 
         return render(
             request,
-            "blog_story",
+            "blog/blog_story.html",
             {
                 "post": post,
                 "comments": comments,

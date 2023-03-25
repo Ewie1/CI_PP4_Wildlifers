@@ -18,10 +18,10 @@
                                 <img class="card-img-top"
                                     src="">
                                 {% else %}
-                                <a href="{% url 'read_post' post.slug %}"><img class="card-img-top" src=" {{ post.featured_image.url }}"></a>
+                                <a href="{% url 'post_detail' post.slug %}"><img class="card-img-top" src=" {{ post.featured_image.url }}"></a>
                                 {% endif %}
                                 <div class="blog-title">
-                                    <a href="{% url 'read_post' post.slug %}" class="post-link">
+                                    <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                         <h2 class="card-title">{{ post.title }}</h2>
                                         <p class="card-text">{{ post.excerpt }}</p>
                                     </a>
