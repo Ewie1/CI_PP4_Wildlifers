@@ -6,5 +6,4 @@ setTimeout(function () {
     alert.close();
   }, 3000);
 
-setTimeout()
 

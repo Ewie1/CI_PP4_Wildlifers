@@ -21,7 +21,6 @@ body {
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679074205/background-remover_vinz0k.png') no-repeat center;
     background-size: cover;
     border-radius: 50%;
-   /* background: #EFEBE9;*/
 }
 
 .logo p {
@@ -39,8 +38,14 @@ body {
 }
 
 .dropdown-menu a:hover {
-    background-color: #EFEBE9;
+    background-color: #dedede;
+    transition: .5s ease-in-out;
 }
+
+.nav-item a:hover {
+    border-bottom: 1px solid #EFEBE9;
+    transition: .20s ease-in-out;
+} 
 
 /* Style for signup and log in messages*/
 #msg {
@@ -49,7 +54,7 @@ body {
     position: absolute;
 }
 
-/*Stlye homepage headings*/
+/*Stlye headings*/
 h1 {
     font-weight: 900;
     text-transform: uppercase;
@@ -67,7 +72,6 @@ h2 {
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    color: #FFFF;
     text-align: center;
 }
 
@@ -118,15 +122,15 @@ h2 {
 }
 
 .homepage-program-link a, .join-us a {
-    background: rgb(56, 142, 60);
+    background: rgb(27, 121, 32);
     border-radius: 10px;
     padding: 15px;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 .homepage-program-link a:hover, .join-us a:hover {
-    background:  rgb(27, 121, 32);
+    background:   rgb(56, 142, 60);
     transition: .5s ease-in-out;
 }
 
@@ -185,17 +189,9 @@ footer h3 {
     background: black;
 }
 
-/* Style for program background*/
-.program-container {
-    background-size: cover;
-   /* height: calc(100vh - 164px);*/
-   background: #EFEBE9;
-}
-
 
 /* Style for program card display*/
 .program-page-image {
-   /* background:  rgba(240, 240, 240, 0.888);*/
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg')center no-repeat fixed;
     margin-bottom: 60px;
     background-size: cover;
@@ -207,25 +203,24 @@ footer h3 {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 100px;
-    
 }
 
-.program-overlay {
+/*.program-overlay {
     z-index: -1;
     height: 300px;
     background: rgba(125, 125, 125, 0.5);
     margin-top: -90px;
-}
+}*/
 
-.program-card {
+/*.program-card {
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
     margin-top: 100px;
-}
+}*/
 
-.card-image {
+/*.card-image {
     height: 240px;
     width:300px
-}
+}*/
 
 .animal-cards h4 {
     font-weight: 700;
@@ -236,27 +231,17 @@ footer h3 {
 .program-view-button  {
     margin-top: 30px;
     margin-left: 150px;
-   /* background: rgb(0, 82, 0);
-    padding: 8px;
-    width: 120px;*/
     text-align: center;
 
 }
 
 .program-view-button a {
     text-decoration: none;
-    color: rgb(56, 142, 60);
+    color: rgb(27, 121, 32);
     text-transform: uppercase;
 }
 
-
-.program-view-buttons {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-/*Style for program pagination nav bar*/
+/*Style for program pagination */
 .pagination {
     margin-bottom: -17px;
 }
