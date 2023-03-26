@@ -447,6 +447,7 @@ footer h3 {
     height: 300px;
     background:url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg')no-repeat center fixed; 
     background-size: cover;
+    margin-bottom: -17px;
 }
 
 .booking-heading {
