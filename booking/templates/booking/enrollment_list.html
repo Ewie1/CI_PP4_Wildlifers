@@ -3,16 +3,15 @@
 {% block content %}
 <div  class="booking-list-background">
     <div class="container">
-        
         {% if not user.is_authenticated %}
         <p>Please login</p>
-        <div class="card col-sm-12 booking-list-body"></div>
-            <p>You have no registered bookings</p>
         <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
                 Page</a></button>
         {% else %}
-        <h1 class="text-center  p-3">Your Bookings:</h1>
-        {% for booking in booking_page %}
+        <h1 class="text-center mt-5 p-3">Your Bookings:</h1>
+        <div class="row justify-content-center mt-5">
+        <div class="card col-sm-12 col-lg-8 col-lg-4 text-center booking-list-body">
+            {% for booking in booking_page %}
         <!--<div id="delete" class="modal">
             <div class="modal-content">
                 <p>Are You Sure You Want To Delete This '{{ obj }}'?</p>
@@ -51,27 +50,38 @@
                 </div>
             </div>
         </div>
+    
         {% endfor %}
         {% endif %}
-<!--Pgaination-->
-<nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
-        {% if booking_page.has_previous %}
-        <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
-        <li class="page-item"><a class="page-link" href="?page={{ booking_page.previous_page_number }}">&laquo;</a>
-        </li>
-        {% endif %}
-        <li class="page-link pagination-arrow">
-            Page {{ booking_page.number }} of {{ booking_page.paginator.num_pages }}
-        </li>
-        {% if booking_page.has_next %}
-        <li class="page-item"><a class="page-link" href="?page={{ booking_page.next_page_number }}">&raquo;</a></li>
-        <li class="page-item"><a class="page-link" href="?page={{ booking_page.paginator.num_pages}}">Last</a></li>
-        {% endif %}
-    </ul>
-</nav>
-</div>
-    
+        </div>
+        </div>
+    </div>
+    <!--Pgaination-->
+<div class="container">
+    <div class="row">
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if booking_page.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ booking_page.previous_page_number }}">&laquo;</a>
+            </li>
+            {% endif %}
+            <li class="page-link pagination-arrow">
+                Page {{ booking_page.number }} of {{ booking_page.paginator.num_pages }}
+            </li>
+            {% if booking_page.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ booking_page.next_page_number }}">&raquo;</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ booking_page.paginator.num_pages}}">Last</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    </div>
+    </div>
+    <div class="container g-0">
+        <div class="row program-page-image justify-content-center rounded-3 mt-3 ">
+            <h2>Manage your bookings</h2>
+        </div>
+    </div>
     </div>
 </div>
 {% endblock %}

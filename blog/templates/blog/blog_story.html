@@ -3,7 +3,7 @@
 {% block content %}
 
 {% load bootstrap_tags %}
-<div class="">
+<div class="bg-dark blog-post-body">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-sm-12">
@@ -32,7 +32,7 @@
 <!--comment-->
 <div class="container">
     <div class="row">
-        <div class="col-sm-12  blog-hr rounded-3">
+        <div class="col-sm-12  blog-hr rounded-3 text-white">
              <h3>Comments:</h3>
             {% for comment in comments %}
             <div class="col-sm-12 mt-3 ">
@@ -50,8 +50,8 @@
 <!--Add comments-->
 <div class="container comment-form-margin">
     <div class="row justify-content-center">
-        <div class="col-sm-6 col-md">
-            <div class="card-body text-center">
+        <div class="col-sm-8 col-md">
+            <div class="card-body text-center text-white">
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
@@ -60,7 +60,7 @@
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
-                <p>What's your thoughts: <span style="color: rgb(56, 142, 60);"> <b> {{ user.username }}</b></span> </p>
+                <p>What's your thoughts <span style="color: rgb(56, 142, 60);"> <b> {{ user.username }}</b></span> </p>
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | as_bootstrap }}
                     {% csrf_token %}

@@ -460,11 +460,16 @@ footer h3 {
 
 /*Stlye for user bookings list*/
 
-.booking-list-background {
+/*.booking-list-background {
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat center fixed;
     background-size: cover;
     background-position: center;
     margin-bottom: -17px;
+}*/
+
+.booking-list-body{
+    height: 800px;
+    background: rgba(240, 240, 240, 0.888);
 }
 
 .booking-list{
@@ -508,6 +513,10 @@ footer h3 {
 }*/
 
 /* Style for Blog post*/
+
+.blog-post-body {
+    height: 800px;
+}
 
 .blog-title a{
     text-decoration: none;
