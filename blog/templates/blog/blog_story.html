@@ -22,10 +22,9 @@
             {% else %}
             <img src="{{ post.featured_image.url }}" width="100%" height="70%">
             {% endif %}
-            <div class="bg-white p-3 form-outline mt-3">
+            <p class="bg-white form-outline mt-3">
             {{ post.content| safe }}
-            {{ post.image.url }}
-            </div>
+            </p>
         </div>
     </div>
 </div>

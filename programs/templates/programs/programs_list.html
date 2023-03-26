@@ -5,7 +5,7 @@
 
 {% load programapp_tags %}
 <section>
-    <div class="container g-0">
+    <div class="container">
         <div class="row program-page-image justify-content-center rounded-3 mt-3 ">
             <h2>Take Action!</h2>
         </div>
@@ -20,6 +20,7 @@
                 </p></em>
             </div>
         </div>
+    </div>    
 </section>
 <!--Code for filter input-->
 <!--<section>
@@ -38,14 +39,15 @@
         </div>
     </div>
 </section>-->
+<section>
 <div class="container justify-content-center  py-5 ">
     <div class="row">
         <div class="col-sm-12">
     {% for program in program_list %}
     <div class=" card  m-4 me-md mx-auto col-sm-12 mb-3" style="max-width: 600px;">
-        <div class="row g-0">
+        <div class="row">
             <div class="col-md">
-                <img src="{{ program.image.url }}" class="img-fluid rounded-start card-image" alt="{{ program.animal_name }}">
+                <img src="{{ program.image.url }}" class="img-fluid rounded-start" alt="{{ program.animal_name }}">
             </div>
             <div class="col-md">
                 <div class="card-body animal-cards">
@@ -56,6 +58,7 @@
                         Classified: {{ program.animal_category }}<br>
                         Country: {{ program.country.name }}
                     </p>
+                </div>    
                     <div class="program-view-button">
                         <!-- <h2>Join the fight</h2>-->
                         <a href="{% url 'show_program' program.id %}"> <b>Read</b></a>
@@ -64,7 +67,10 @@
             </div>
         </div>
     </div>
-    
+        </div>
+    </div>
+</div>
+</section>
 
 
     {% endfor %}
