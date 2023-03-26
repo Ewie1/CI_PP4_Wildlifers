@@ -8,7 +8,7 @@
         <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
                 Page</a></button>
         {% else %}
-        <h1 class="text-center mt-5 p-3">Your Bookings:</h1>
+        <h2 class="text-center mt-5 p-3">Your Bookings:</h2>
         <div class="row justify-content-center mt-5">
         <div class="card col-sm-12 col-lg-8 col-lg-4 text-center booking-list-body">
             {% for booking in booking_page %}

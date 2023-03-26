@@ -514,9 +514,6 @@ footer h3 {
 
 /* Style for Blog post*/
 
-.blog-post-body {
-    height: 800px;
-}
 
 .blog-title a{
     text-decoration: none;
@@ -547,6 +544,11 @@ footer h3 {
     .home-text2 {
         font-size: 0.8rem;
     }
+
+    .blog-post-body {
+        height: 800px;
+    }
+    
 
 }
 
