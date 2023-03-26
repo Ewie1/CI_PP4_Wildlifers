@@ -67,7 +67,7 @@ h2 {
 /*Style hero image*/
 #hero-image {
     height: 400px;
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat fixed;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677238747/samples/animals/giantpanda_sjl5v9.jpg') no-repeat fixed;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -82,7 +82,7 @@ h2 {
 .accompany-image1 {
     height: 300px;
     width: 400px;
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677238747/samples/animals/giantpanda_sjl5v9.jpg')no-repeat;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677709016/yfog91lorwexabxwc4we.jpg')no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -258,11 +258,13 @@ footer h3 {
 
 /*Style for contact page*/
 
-.contact-page-background {
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat center fixed;
+/*.contact-page-background {
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679857674/Amur_hbovul.webp') no-repeat center;
     background-size: cover;
-    background-position: center;
-}
+    height: 100px;
+    width: 100%;
+    margin-top: 60px;
+}*/
 
 .contact-page-section {
     overflow: hidden;
@@ -295,19 +297,28 @@ footer h3 {
 }
 
 /* Style for signup, login and logout forms*/
-.form-page-wrap {
+/*.form-page-wrap {
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat center fixed;
     background-size: cover;
     background-position: center;
-}
+}*/
 
 .register-form,
 .login-form,
 .booking-form,
 .contact-form {
+    background: rgba(240, 240, 240, 0.888);
     padding-bottom: 30px;
     margin-bottom: -16px;
     overflow: hidden;
+}
+
+.login-form {
+    background: rgba(240, 240, 240, 0.888);
+    padding-bottom: 30px;
+    margin-bottom: -16px;
+    overflow: hidden;
+    height: 800px;
 }
 
 .register-form h1,
