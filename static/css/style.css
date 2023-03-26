@@ -358,10 +358,10 @@ footer h3 {
 
 /*Style for logout page*/
 .logout-form {
-    height: 600px;
+    height: 800px;
     text-align: center;
     padding-top: 200px;
-    color: #fff;
+    background: rgba(240, 240, 240, 0.888);
 }
 
 /* Style for form a links*/

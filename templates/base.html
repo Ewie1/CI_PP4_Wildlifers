@@ -42,17 +42,8 @@
               <a class="nav-link active" href="{% url 'programs' %}">Programs</a>
             </li>
             <!--User must be authenticated to view bookings-->
-            {% if user.is_authenticated %}
             <li class="nav-item">
               <a class="nav-link active" href="{% url 'enrollments' %}"> My Bookings</a>
-            </li>
-            {% else %}
-            <li class="nav-item">
-              <a class="nav-link active" href="{% url 'account_signup' %}"> My Bookings</a>
-            </li>
-            {% endif %}
-            <li class="nav-item">
-              <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#">Blog</a>
@@ -60,18 +51,23 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Get Logged In
+                Get Registered
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
-                {% if user.is_authenticated %}
-                <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
-                {% else %}
-                <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
-                {% endif %}
+                <li><a class="dropdown-item" href="{% url 'contact' %}">Contact</a></li>
                 <li><a class="dropdown-item" href="{% url 'enrollview' %}">Get Enrolled</a></li>
               </ul>
             </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'account_logout' %}">Logout</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'account_login' %}">Login</a>
+            </li>
+            {% endif %}
           </ul>
         </div>
       </div>
@@ -129,9 +125,9 @@
         <div class="col-md">
           <div class="row contact-us">
             <div class=" text-center">
-              <h3 class="uppercase">Contact Information</h3>
-              <p><a href="{% url 'contact' %}"><i class="fa-solid fa-envelope"></i></a> wildlifers@gmail.com</p>
-              <p><i class="fa-solid fa-phone"></i> +46 736776322</p>
+              <h3 class="uppercase">Our Office</h3>
+              <p><a href="{% url 'contact' %}"><i class="fa-solid fa-envelope"></i> Contact us</a></p>
+              <p><i class="fa-solid fa-phone"></i> +46 756776334</p>
               <p><i class="fa-solid fa-location-dot"></i> Fleminggatan3 112 26 <br> Stockholm <br> Sweden</p>
             </div>
           </div>
