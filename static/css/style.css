@@ -540,6 +540,14 @@ footer h3 {
 .list li {
     list-style: none;
 }
+.error-page-wrap {
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679926159/404-image_d8qjw0.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    margin-bottom: -17px;
+}
+
 @media screen and (max-width: 1200px) {
 
     .homepage-program-link {

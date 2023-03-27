@@ -47,6 +47,8 @@ class EnrollView(View):
                 {'program_booking_form': program_booking_form}
                 )
         else:
+            messages.error(
+                request, 'You must be Registered or Logged in to Enroll')
             return redirect('accounts/login')
 
     def post(self, request):
@@ -106,7 +108,10 @@ class Enrollments(generic.ListView):
                 }
             )
         else:
-            return redirect('accounts/login')
+            messages.error(
+                request,
+                'You must be Registered or Logged in to see Enrollments')
+            return render(request, 'home/index.html')
 
 
 class EditEnrollments(SuccessMessageMixin, UpdateView):
