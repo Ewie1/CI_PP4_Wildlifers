@@ -581,6 +581,50 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 - Lighthouse was used to test the performance, accessibility, best practice and SEO of the site.
 
+#### Mobile
+<details><summary>View results</summary>
+
+Page  | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%)
+------------  | ------------ | ------------- | ------------- | -------------
+home/templates/home/index.html | 99 | 100 | 92 | 100 |
+home/templates/home/contact.html | 99 | 100 | 92 | 100 |
+programs/templates/programs/programs.html | 99 | 100 | 92 | 100 |
+programs/templates/programs/programs_list.html | 75 | 98 | 92 | 100 |
+booking/templates/booking/bookings.html | 99 | 100 | 92 | 100 |
+booking/templates/booking/enrollment_list.html | 99 | 93 | 92 | 100 |
+booking/templates/booking/enrollment_editing.html | 99 | 92 | 92 | 100 |
+booking/templates/booking/enrollment_delete.html | 98 | 93 | 92 | 100 |
+blog/templates/blog/blog_list.html | 99 | 98 | 92 | 100 |
+blog/templates/blog/blog_story.html | 97 | 98 | 92 | 100 |
+templates/account/login.html | 98 | 100 | 92 | 92 |
+templates/account/logout.html | 99 | 100 | 92 | 100 |
+templates/account/signup.html | 99 | 100 | 92 | 100 |
+
+</details>
+
+#### Desktop
+<details><summary>View results</summary>
+
+Page  | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%)
+------------  | ------------ | ------------- | ------------- | -------------
+home/templates/home/index.html | 99 | 100 | 92 | 100 |
+home/templates/home/contact.html | 100 | 100 | 92 | 100 |
+programs/templates/programs/programs.html | 100 | 100 | 92 | 100 |
+programs/templates/programs/programs_list.html | 99 | 96 | 92 | 100 |
+booking/templates/booking/bookings.html | 100 | 100 | 92 | 100 |
+booking/templates/booking/enrollment_list.html | 100 | 93 | 92 | 100 |
+booking/templates/booking/enrollment_editing.html | 100 | 93 | 92 | 100 |
+booking/templates/booking/enrollment_delete.html | 100 | 93 | 92 | 100 |
+blog/templates/blog/blog_list.html | 100 | 98 | 92 | 100 |
+blog/templates/blog/blog_story.html | 100 | 98 | 92 | 100 |
+templates/account/login.html | 100 | 100 | 92 | 90 |
+templates/account/logout.html | 100 | 100 | 92 | 100 |
+templates/account/signup.html | 100 | 100 | 92 | 100 |
+
+</details>
+
+
+
 <details><summary>Home</summary>
 <img src="">
 </details>
