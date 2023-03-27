@@ -432,7 +432,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - The W3C Markup Validation Service was used to validate the HTML of the website.
 
 <details><summary>Home</summary>
-<img src="">
+<img src="/docs/validation/home-page.JPG">
 </details>
 <details><summary>Program</summary>
 <img src="">
@@ -586,17 +586,17 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 Page  | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%)
 ------------  | ------------ | ------------- | ------------- | -------------
-home/templates/home/index.html | 99 | 100 | 92 | 100 |
-home/templates/home/contact.html | 99 | 100 | 92 | 100 |
-programs/templates/programs/programs.html | 99 | 100 | 92 | 100 |
-programs/templates/programs/programs_list.html | 75 | 98 | 92 | 100 |
-booking/templates/booking/bookings.html | 99 | 100 | 92 | 100 |
-booking/templates/booking/enrollment_list.html | 99 | 93 | 92 | 100 |
-booking/templates/booking/enrollment_editing.html | 99 | 92 | 92 | 100 |
-booking/templates/booking/enrollment_delete.html | 98 | 93 | 92 | 100 |
-blog/templates/blog/blog_list.html | 99 | 98 | 92 | 100 |
-blog/templates/blog/blog_story.html | 97 | 98 | 92 | 100 |
-templates/account/login.html | 98 | 100 | 92 | 92 |
+home/templates/home/index.html | 92 | 100 | 100 | 100 |
+home/templates/home/contact.html | 93 | 97 | 100 | 100 |
+programs/templates/programs/programs.html | 98 | 100 | 100 | 100 |
+programs/templates/programs/programs_list.html | 92 | 97 | 92 | 100 |
+booking/templates/booking/bookings.html | 94 | 97 | 100 | 100 |
+booking/templates/booking/enrollment_list.html | 97 | 98 | 100 | 100 |
+booking/templates/booking/enrollment_editing.html | 94 | 98 | 92 | 100 |
+booking/templates/booking/enrollment_delete.html | 98 | 93 | 100 | 100 |
+blog/templates/blog/blog_list.html | 93 | 98 | 100 | 100 |
+blog/templates/blog/blog_story.html | 97 | 98 | 100 | 100 |
+templates/account/login.html | 98 | 100 | 92 | 100 |
 templates/account/logout.html | 99 | 100 | 92 | 100 |
 templates/account/signup.html | 99 | 100 | 92 | 100 |
 
