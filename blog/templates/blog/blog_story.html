@@ -31,19 +31,19 @@
 
 <!--comment-->
 <div class="container mt-5">
-    <div class="row">
-        <div class="col-sm-12  blog-hr rounded-3 text-white">
+    <div class="row blog-hr">
+        <div class="col-sm-12 col-md-6  rounded-3 text-white">
              <h3>Comments:</h3>
             {% for comment in comments %}
             <div class="col-sm-12 mt-3 ">
                 <p > <b> <span style="color: rgb(56, 142, 60);"> {{ comment.name }} </span></b> says:</p>
-                <p> <em> {{ comment.created_on }}</em> </p>
-                <p class="text-muted"> {{ comment.body }} </p>
+                <p> {{ comment.body }} </p>
+                <p class="text-muted"> <em> {{ comment.created_on }}</em> </p>
                 <br>
             </div>
             {% endfor %}
-            <hr>
         </div>
+        <hr>
     </div>
 </div>
 
@@ -62,8 +62,8 @@
                 <h3>Leave a comment:</h3>
                 <p>What's your thoughts <span style="color: rgb(56, 142, 60);"> <b> {{ user.username }}</b></span> </p>
                 <form method="post" style="margin-top: 1.3em;">
-                    {{ comment_form | as_bootstrap }}
                     {% csrf_token %}
+                    {{ comment_form | as_bootstrap }}
                     <button type="submit" class="btn form-btns btn-lg">Submit</button>
                 </form>
                 {% endif %}
