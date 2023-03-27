@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-    <div class="container-fluid contact-form ">
-        <div class="row d-flex justify-content-center mt-5 mb-5">
-            <div class="col-12 col-md-8 col-lg-8">
-                <h2 class="text-center mt-5 mb-5">Send Us A Message <hr> </h2>
-                <div class="card rounded-3 text-black" style="background: rgba(240, 240, 240, 0.888);">
+<!---Contact form-->
+<div class="container-fluid contact-form ">
+    <div class="row d-flex justify-content-center mt-5 mb-5">
+        <div class="col-12 col-md-8 col-lg-8">
+            <h2 class="text-center mt-5 mb-5">
+                Send Us A Message
+            </h2>
+            <hr>
+            <div class="card rounded-3 text-black" style="background: rgba(240, 240, 240, 0.888);">
                 <div class="row g-0">
                     <div class="col-lg-12">
                         <div class="card-body p-md-4 mx-md-4">
@@ -16,13 +19,12 @@
                                 <div class="col-sm-12">
                                     <div class="col-md-6">
                                         <label for="your-name" class="form-label">Name*</label>
-                                        <input type="text" class="form-control" id="your-name"
-                                            name="your-name">
+                                        <input type="text" class="form-control" id="your-name" name="your-name">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="your-email" class="form-label">Your Email*</label>
-                                        <input type="email" class="form-control" id="your-email"
-                                            name="your-email" required>
+                                        <input type="email" class="form-control" id="your-email" name="your-email"
+                                            required>
                                     </div>
                                     <div class="col-12">
                                         <label for="your-message" class="form-label">Your
@@ -38,12 +40,12 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
     </div>
-
-<section class="contact-page-section g-0">
+</div>
+<!--Map-->
+<div class="contact-page-section g-0">
     <div class="container-fluid g-0">
         <div class="row">
             <div class="col-sm-12">
@@ -52,5 +54,5 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 {% endblock %}

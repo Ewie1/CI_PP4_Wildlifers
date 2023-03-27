@@ -3,67 +3,67 @@
 
 {% block content %}
 <section>
-           {% if user.is_authenticated %}
-            <div class="container-fluid booking-form">
-                <div class="row d-flex justify-content-start mb-5">
-                    <div class="col-12 col-md-8 col-lg-8">
-                        <h2 class="text-center mt-5">Enrollment Update: <hr> </h2>
-                        <div class="row g-0">
-                            <div class="col-lg-12 rounded-3">
-                                <div class="card-body p-md-4 mx-md-4">
-                                    <p class="card-title text-center"> <b> Change your schedule  here:</b> </p>
-                                    <form action="{% url 'enrollment_editing' enroll.pk %}" method="POST"
-                                        enctype="multipart/form-data">
-                                        {% csrf_token %}
-                                        <div>
-                                            {{ form | as_bootstrap }}
-                                        </div>
-                                        <div>
-                                            <button class="btn form-btns" type="submit">Update</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  {% if user.is_authenticated %}
+  <div class="container-fluid booking-form">
+    <div class="row d-flex justify-content-start mb-5">
+      <div class="col-12 col-md-8 col-lg-8">
+        <h2 class="text-center mt-5">Enrollment Update: </h2>
+        <hr>
+        <div class="row g-0">
+          <div class="col-lg-12 rounded-3">
+            <div class="card-body p-md-4 mx-md-4">
+              <p class="card-title text-center"> <b> Change your schedule here:</b> </p>
+              <form action="{% url 'enrollment_editing' enroll.pk %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div>
+                  {{ form | as_bootstrap }}
                 </div>
-            <div class="row d-flex justify-content-center mb-5 jobs">
-                <div class="col-12 col-md-8 col-lg-5">
-                  <div class="card text-black">
-                    <h3 class="text-center mt-3">JOBS</h3>
-                    <ul>
-                      <li>
-                        <i class="fa-solid fa-check"></i><b>Animal Identifier:</b> <br>
-                        Search and send us photos/videos of endangered animals in your region
-                      </li>
-                      <li>
-                        <i class="fa-solid fa-check"></i><b>Fund Raiser:</b> <br>
-                        Give a small donation to help fund the Wildlifers efforts
-                      </li>
-                      <li>
-                        <i class="fa-solid fa-check"></i><b>Transcriber:</b> <br>
-                        Help researchers with documentations by transcribing field notes
-                      </li>
-                      <li>
-                        <i class="fa-solid fa-check"></i><b>Reseacher Assitant:</b> <br>
-                        Answer calls, read and redirect email to your region researcher
-                      </li>
-                    </ul>
-                  </div>
+                <div>
+                  <button class="btn form-btns" type="submit">Update</button>
                 </div>
-              </div>
-            {% endif %}
-        </div>
-        <div class="container-fluid g-0">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="booking-image">
-                  <div class="">
-                    <h1 class="text-center booking-heading"> <em> Save an Animal Today!</em></h1>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-5 jobs">
+      <div class="col-12 col-md-8 col-lg-5">
+        <div class="card text-black">
+          <h3 class="text-center mt-3">JOBS</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i><b>Animal Identifier:</b> <br>
+              Search and send us photos/videos of endangered animals in your region
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i><b>Fund Raiser:</b> <br>
+              Give a small donation to help fund the Wildlifers efforts
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i><b>Transcriber:</b> <br>
+              Help researchers with documentations by transcribing field notes
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i><b>Reseacher Assitant:</b> <br>
+              Answer calls, read and redirect email to your region researcher
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  <div class="container-fluid g-0">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="booking-image">
+          <div class="">
+            <h1 class="text-center booking-heading"> <em> Save an Animal Today!</em></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}

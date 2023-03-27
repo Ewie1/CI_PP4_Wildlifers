@@ -14,7 +14,6 @@ body {
 }
 
 /*Style navigation bar*/
-
 .logo {
     height: 50px;
     width: 50px;
@@ -93,7 +92,6 @@ h2 {
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1677234626/samples/animals/homepage-image_o86p9d.jpg')no-repeat;
     background-size: cover;
     background-position: center;
-     
 }
 
 /*Style home page paragraphs*/
@@ -203,18 +201,6 @@ footer h3 {
     margin-top: 100px;
 }
 
-/*.program-overlay {
-    z-index: -1;
-    height: 300px;
-    background: rgba(125, 125, 125, 0.5);
-    margin-top: -90px;
-}*/
-
-/*.program-card {
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
-    margin-top: 100px;
-}*/
-
 .card-image {
     height: 240px;
     width:300px
@@ -224,6 +210,13 @@ footer h3 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1.2rem;
+}
+
+/*Style for program read page*/
+
+.read-program-image {
+    width: 80%;
+    height: 300px;
 }
 
 .program-view-button  {
@@ -255,15 +248,6 @@ footer h3 {
     color: rgb(0, 82, 0);
 }
 
-/*Style for contact page*/
-
-/*.contact-page-background {
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679857674/Amur_hbovul.webp') no-repeat center;
-    background-size: cover;
-    height: 100px;
-    width: 100%;
-    margin-top: 60px;
-}*/
 
 .contact-page-section {
     overflow: hidden;
@@ -294,13 +278,6 @@ footer h3 {
     width: 100%;
     height: 400px;
 }
-
-/* Style for signup, login and logout forms*/
-/*.form-page-wrap {
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat center fixed;
-    background-size: cover;
-    background-position: center;
-}*/
 
 .register-form,
 .login-form,
@@ -453,12 +430,6 @@ footer h3 {
     padding-top: 150px;
 }
 
-/*.enrollment-form {
-    height: 600px;
-    background: #EFEBE9;
-    text-align: center;
-    padding-top: 100px; 
-}*/
 
 .jobs ul {
     list-style:none;
@@ -467,15 +438,6 @@ footer h3 {
 .jobs h3 {
     font-weight: 700;
 }
-
-/*Stlye for user bookings list*/
-
-/*.booking-list-background {
-    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg') no-repeat center fixed;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: -17px;
-}*/
 
 .booking-list-body{
     height: 800px;
@@ -507,22 +469,17 @@ footer h3 {
     display: inline;
 }
 
-/*Style for user booking card buttons*/
-
-/*.btn-user-booking {
-    background: rgb(56, 142, 60);
-    border: none;
-    border-radius: 5px;
-    color: #fff;
+/* Style for Blog post*/
+.blog-image {
+    width: 100%;
+    height: 70%;
 }
 
-.btn-user-booking:hover {
-    color: #fff;
-    background: rgb(27, 121, 32);
-}*/
-
-/* Style for Blog post*/
-
+.blog-heading h1 {
+    color: white; 
+    border-top: 1px solid white; 
+    font-weight: 300;
+}
 
 .blog-title a{
     text-decoration: none;
@@ -539,6 +496,7 @@ footer h3 {
 
 .list li {
     list-style: none;
+    line-height: 3rem;
 }
 .error-page-wrap {
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679926159/404-image_d8qjw0.jpg')no-repeat;

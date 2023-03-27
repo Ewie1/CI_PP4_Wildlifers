@@ -11,7 +11,9 @@
   <div class="container-fluid login-form">
     <div class="row mt-5 d-flex justify-content-center mb-5">
       <div class="col-12 col-md-8 col-lg-6">
-        <h1 class="text-center mt-5 mb-5">Get Logged In <hr> </h1>
+        <h1 class="text-center mt-5 mb-5">Get Logged In
+        </h1>
+        <hr>
         <div class="card rounded-3 text-black" style="background: rgba(240, 240, 240, 0.888);">
           <div class="row g-0">
             <div class="col-lg-12">
@@ -24,13 +26,14 @@
                   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                   {% endif %}
                   <div class="text-center">
-                  <button class="form-btns" type="submit">Login</button>
+                    <button class="form-btns" type="submit">Login</button>
                   </div>
                 </form>
 
                 <div class="d-flex align-items-center justify-content-center pb-3">
                   <p class="mb-0 mt-3">{% blocktrans %}
-                    Don't have an account? Click <a class="link" href="{{ signup_url }}"> <b>here</b></a> to sign up.</p>
+                    Don't have an account? Click <a class="link" href="{{ signup_url }}"> <b>here</b></a> to sign up.
+                  </p>
                   {% endblocktrans %}
                 </div>
               </div>

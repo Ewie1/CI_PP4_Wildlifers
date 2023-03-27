@@ -18,9 +18,9 @@
         <div class="col-md-8 col-lg-8 mx-auto mt-5 rounded p-3" style="background: rgba(240, 240, 240, 0.888);">
             <h2 class="text-center" style="color: rgb(27, 121, 32);"> <em>  {{ post.title }}</em></h2>
             {% if "placeholder" in post.featured_image.url %}
-            <img src="" width="100% " >
+            <img src="/workspace/CI_PP4_Wildlifers/static/images/Amur.webp" class="blog-image" alt="blog paots default image" >
             {% else %}
-            <img src="{{ post.featured_image.url }}" width="100%" height="70%">
+            <img src="{{ post.featured_image.url }}" width="100%" height="70%" alt="blog post image">
             {% endif %}
             <p class="bg-white form-outline mt-3">
             {{ post.content| safe }}
