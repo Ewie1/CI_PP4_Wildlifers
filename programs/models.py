@@ -52,3 +52,9 @@ class Program(models.Model):
     image = CloudinaryField(
         'image',
         default='placeholder')
+
+    class Meta:
+        ordering = ['-id']
+
+    def __str__(self):
+        return str(self.animal_name)

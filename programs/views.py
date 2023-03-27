@@ -14,7 +14,7 @@ from .models import Program
 
 class ProgramList(generic.ListView):
     model = Program
-    queryset = Program.objects.all().order_by('id')
+    queryset = Program.objects.all().order_by('-id')
     template_name = 'programs_list.html'
     paginated_by = 2
 

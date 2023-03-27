@@ -5,10 +5,10 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
-<div class="">
+<div class="bg-light">
   <div class="container-fluid logout-form">
-    <div class="row d-flex justify-content-center mb-5">
-      <div class="col-12 col-md-8 col-lg-6">
+    <div class="row d-flex justify-content-center mb-5 ">
+      <div class="col-12 col-md-8 col-lg-6 bg-darker rounded-3">
         <h1 class="text-center">Logout<hr> </h1>
         <div class="row g-0">
           <div class="col-lg-12">
@@ -20,7 +20,7 @@
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="form-btns" type="submit">{% trans 'Sign Out' %}</button>
+                <button class="btn-cancel" type="submit">{% trans 'Sign Out' %}</button>
               </form>
 
             </div>
