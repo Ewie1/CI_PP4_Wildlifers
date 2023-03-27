@@ -21,10 +21,10 @@
                             <div class="card-body text-center" style="background: rgba(240, 240, 240, 0.888);">
                                 <div class="image-container">
                                     {% if "placeholder" in post.featured_image.url %}
-                                    <img class="card-img-top" src="">
+                                    <img class="card-img-top" src="/static/images/amur.webp" alt="blog post default image">
                                     {% else %}
                                     <a href="{% url 'post_detail' post.slug %}"><img class="card-img-top"
-                                            src=" {{ post.featured_image.url }}"></a>
+                                            src=" {{ post.featured_image.url }}" alt="blog post image"></a>
                                     {% endif %}
                                     <div class="blog-title">
                                         <a href="{% url 'post_detail' post.slug %}" class="post-link">
