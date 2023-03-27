@@ -4,7 +4,7 @@
 <div  class="booking-list-background">
     <div class="container">
       
-        <h2 class="text-center mt-5 p-3">Your Bookings: <hr> </h2>
+        <h2 class="text-center mt-5 p-3">My Schedule: <hr> </h2>
         <p class="text-center">
            <em> Here you can see, change or cancel your enrollments. <br>
             Give us a thumds up when the tasks are completed!</em>
@@ -29,6 +29,7 @@
                     <div class="col-md delete-buttons">
                         <h3 class="m-3">{{  booking.volunteer_job }}</h3>
                         <hr>
+                       <span class="text-muted">{{booking.created_date}}</span> 
                         <p>
                             <b>Name:</b> {{ booking.name }}
                         </p>

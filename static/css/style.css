@@ -499,14 +499,13 @@ footer h3 {
 /* Style for Delete confirmation page*/
 
 .confirmation-form {
-    height: 600px;
+    height: 800px;
     text-align: center;
     padding-top: 200px;
 }
 
 .delete-confirmation {
     background: rgba(240, 240, 240, 0.888);
-    height: 200px;
     display: inline;
 }
 
