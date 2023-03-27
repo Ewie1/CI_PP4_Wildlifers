@@ -62,7 +62,7 @@ class EnrollView(View):
             booking.save()
             program_booking_form = EnrollForm()
             booking.user = request.user
-            messages.success(request, 'Your are booking was Successful!')
+            messages.success(request, 'Your enrollment was Successful!')
             return render(
                 request, 
                 'booking/bookings.html',
@@ -90,7 +90,7 @@ class Enrollments(generic.ListView):
         """
         booking = Enroll.objects.all()
         user = request.user
-        paginator = Paginator(Enroll.objects.filter(user=request.user), 3)
+        paginator = Paginator(Enroll.objects.all(), 3)
         page = request.GET.get('page')
         booking_page = paginator.get_page(page)
 
@@ -132,7 +132,7 @@ def CancelEnrollments(request, pk):
 
     if request.method == 'POST':
         enrollment.delete()
-        messages.success(request, "Your plan has been deleted.")
+        messages.success(request, "Your enrollment have been deleted.")
         return redirect('enrollments')
 
     return render(
