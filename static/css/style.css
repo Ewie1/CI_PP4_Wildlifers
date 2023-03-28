@@ -376,6 +376,7 @@ footer h3 {
 
 .form-btns:hover {
     background: rgb(56, 142, 60);
+    color: #fff;
     transition: .5s ease-in-out;
 }
 

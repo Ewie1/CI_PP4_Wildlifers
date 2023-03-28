@@ -63,6 +63,9 @@ class PostDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
+        """
+        A function to view and make blog post comments
+        """
 
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
