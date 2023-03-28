@@ -332,20 +332,9 @@ footer h3 {
     margin-top: 1.5rem;
   }
 
-/*Style for logout page*/
-.logout-form {
-    height: 800px;
-    text-align: center;
-    padding-top: 200px;
-    background: rgba(240, 240, 240, 0.888);
-}
 
-/* Style for form a links*/
-.register-form a,
-.login-form a {
-    text-decoration: none;
-    color: rgb(0, 82, 0);
-}
+
+
 
 /*.register-form h1,
 .login-form h1,
@@ -457,15 +446,14 @@ footer h3 {
 }
 
 
-/* Style for Delete confirmation page*/
-
+/*Style for logout page*/
 .confirmation-form {
     height: 800px;
     text-align: center;
     padding-top: 200px;
 }
 
-.delete-confirmation {
+.logout-confirmation {
     background: rgba(240, 240, 240, 0.888);
     display: inline;
 }
@@ -488,6 +476,12 @@ footer h3 {
 }
 .blog-hr hr {
     border: 2px solid rgb(56, 142, 32);
+}
+
+.blog-hr a {
+    text-decoration: none;
+    color: rgb(27, 121, 32);
+    font-size: 1.5rem;
 }
 
 .comment-form-margin {
