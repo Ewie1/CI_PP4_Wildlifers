@@ -187,6 +187,7 @@ footer h3 {
 }
 
 
+
 /* Style for program card display*/
 .program-page-image {
     background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1679050465/rainforest-sunset2_nkdcgr.jpg')center no-repeat fixed;
@@ -195,9 +196,9 @@ footer h3 {
     height: 300px;
 }
 
-.card-position {
+/*.card-position {
     margin-left: 230px;
-}
+}*/
 
 .program-page-image h2 {
     text-align: center;
@@ -205,16 +206,16 @@ footer h3 {
     margin-top: 100px;
 }
 
-.card-image {
+/*.card-image {
     height: 240px;
     width:300px
-}
+}*/
 
-.animal-cards h4 {
+/*.animal-cards h4 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1.2rem;
-}
+}*/
 
 /*Style for program read page*/
 
@@ -223,6 +224,7 @@ footer h3 {
     height: 300px;
     margin-left: 30px;
 }
+
 
 .program-view-button  {
     margin-top: 30px;
@@ -293,6 +295,8 @@ footer h3 {
     overflow: hidden;
 }
 
+
+
 .login-form {
     background: rgba(240, 240, 240, 0.888);
     padding-bottom: 30px;
@@ -303,7 +307,8 @@ footer h3 {
 
 .register-form h1,
 .login-form h1,
-.contact-form h1 {
+.contact-form h1,
+.page-wrap h1 {
     text-align: center;
     margin: 30px;
     font-style: italic;
@@ -340,8 +345,7 @@ footer h3 {
 /*Style for allauth forms label*/
 .control-label {
     margin-top: 1.5rem;
-  }
-
+}
 
 
 
@@ -467,6 +471,7 @@ footer h3 {
     background: rgba(240, 240, 240, 0.888);
     display: inline;
 }
+
 
 /* Style for Blog post*/
 .blog-post-body {

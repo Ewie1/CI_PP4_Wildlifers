@@ -432,43 +432,41 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - The W3C Markup Validation Service was used to validate the HTML of the website.
 
 <details><summary>Home</summary>
-<img src="/docs/validation/home-page.JPG">
+<img src="/docs/validation/html-home-page.JPG">
 </details>
 <details><summary>Program</summary>
-<img src="">
+<img src="/docs/validation/html-program-page-validation.JPG">
 </details>
 <details><summary>Program details</summary>
-<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+<img src="/docs/validation/html-program-view-page-validation.JPG">
 </details>
 <details><summary>My Booking</summary>
-<img src="">
+<img src="/docs/validation/html-mybooking-page-validation.JPG">
 </details>
 <details><summary>Booking Edit</summary>
-<img src="">
+<img src="/docs/validation/html-booking-edit-page-validation.JPG">
 </details>
-<details><summary>Booking Cancel</summary>
-<img src="">
 </details>
 <details><summary>Contact Us</summary>
-<img src="">
+<img src="/docs/validation/html-contact-page-validation.JPG">
 </details>
 <details><summary>Blog</summary>
-<img src="">
+<img src="/docs/validation/html-blog-page-validation.JPG">
 </details>
 <details><summary>Blog details</summary>
-<img src="">
+<img src="docs/validation/html-blog-detail-page-validation.JPG">
 </details>
 <details><summary>Register</summary>
-<img src="">
+<img src="docs/validation/html-register-page-validation.JPG">
 </details>
 <details><summary>Login</summary>
-<img src="">
+<img src="docs/validation/html-login-page-validation.JPG">
 </details>
 <details><summary>Logout</summary>
-<img src="">
+<img src="docs/validation/html-logout-page-validation.JPG">
 </details>
 <details><summary>Enroll</summary>
-<img src="">
+<img src="docs/validation/html-enroll-validation.JPG">
 </details>
 <details><summary>403, 404, 500</summary>
 <img src="">
@@ -495,29 +493,22 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 #### Homeapp
 
-<details><summary>admin.py</summary>
-<img src="">
-</details>
-<details><summary>forms.py</summary>
-<img src="">
-</details>
-<details><summary>models.py</summary>
-<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
-</details>
+
+
 <details><summary>tests.py</summary>
 <img src="">
 </details>
 <details><summary>urls.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-home-url-validation.JPG">
 </details>
 <details><summary>view.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-home-view-validation.JPG">
 </details>
 
 #### Programsapp
 
 <details><summary>admin.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-program-admin-validation.JPG">
 </details>
 <details><summary>forms.py</summary>
 <img src="">
@@ -529,52 +520,52 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 <img src="">
 </details>
 <details><summary>urls.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-program-url-validation.JPG">
 </details>
 <details><summary>view.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-program-view-validation.JPG">
 </details>
 
 #### Bookingapp
 
 <details><summary>admin.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-booking-admin-validation.JPG">
 </details>
 <details><summary>forms.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-booking-form-validation.JPG">
 </details>
 <details><summary>models.py</summary>
-<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+<img src="/docs/validation/pyth-booking-model-validation.JPG">
 </details>
 <details><summary>tests.py</summary>
 <img src="">
 </details>
 <details><summary>urls.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-booking-url-validation.JPG">
 </details>
 <details><summary>view.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-booking-view-validation.JPG">
 </details>
 
 #### Blogapp
 
 <details><summary>admin.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-blog-admin-validation.JPG">
 </details>
 <details><summary>forms.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-blog-form-validation.JPG">
 </details>
 <details><summary>models.py</summary>
-<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+<img src="/docs/validation/pyth-blog-model-validation.JPG">
 </details>
 <details><summary>tests.py</summary>
 <img src="">
 </details>
 <details><summary>urls.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-blog-url-validation.JPG">
 </details>
 <details><summary>view.py</summary>
-<img src="">
+<img src="/docs/validation/pyth-blog-view-validation.JPG">
 </details>
 
 ### Chrome ligthouse tool

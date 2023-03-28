@@ -83,7 +83,7 @@ class Enrollments(generic.ListView):
     model = Enroll
     queryset = Enroll.objects.filter().order_by('-name')
     template_name = 'booking/enrollment_list.html'
-    paginate_by = 3
+    paginate_by = 2
 
     def get(self, request, *args, **kwargs):
         """
@@ -92,7 +92,7 @@ class Enrollments(generic.ListView):
         """
         booking = Enroll.objects.all()
         user = request.user
-        paginator = Paginator(Enroll.objects.all(), 3)
+        paginator = Paginator(Enroll.objects.all(), 2)
         page = request.GET.get('page')
         booking_page = paginator.get_page(page)
 
