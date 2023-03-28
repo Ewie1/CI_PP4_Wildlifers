@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="booking-list-background">
+<div class="contact-form">
     <div class="container">
         <div class="row g-0">
             <div class="col-sm-12">
@@ -14,22 +14,10 @@
             <em> Here you can see, change or cancel your enrollments. <br>
                 Give us a thumds up when the tasks are completed!</em>
         </p>
+        
         <div class="row justify-content-center mt-5">
             <div class="card col-sm-12 col-lg-8 col-lg-4 text-center booking-list-body">
                 {% for booking in booking_page %}
-                <!--<div id="delete" class="modal">
-            <div class="modal-content">
-                <p>Are You Sure You Want To Delete This '{{ obj }}'?</p>
-                <div class="col-sm-6 join-us">
-                    <a href="{% url 'enrollments' %}" class="btn-booking">Go Back</a>
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="submit" class="btn-booking" value="Confirm"></input>
-                  </div>
-            </div>
-        </div>-->
-        <!--Booking list-->
-        <!-- Modal for deleting  enrollment -->
 	    <div class="modal fade py-5" id="deleteModal" tabindex="-1" aria-hidden="true">
 	        <div class="modal-dialog">
 	            <div class="modal-content">
@@ -46,6 +34,7 @@
 	            </div>
 	        </div>
 	    </div>
+
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="booking-list col-sm-12 col-md-8 col-lg-4 rounded-3 text-center text-black m-3">

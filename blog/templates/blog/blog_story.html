@@ -15,17 +15,17 @@
 <!---Post-->
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-8 mx-auto mt-5 rounded p-3">
+        <div class="col-md-8 col-lg-6 mx-auto mt-5 rounded p-3">
             <h2 class="text-center" style="color: rgb(27, 121, 32);"> <em>  {{ post.title }}</em></h2>
             {% if "placeholder" in post.featured_image.url %}
-            <img src="/static/images/forrest.jpg" class="blog-image" alt="blog paots default image" >
+            <img src="/static/images/forrest.jpg" class="card-img-top" alt="blog paots default image" >
             {% else %}
-            <img src="{{ post.featured_image.url }}" width="100%" height="70%" alt="blog post image">
+            <img src="{{ post.featured_image.url }}" class="card-img-top rounded" alt="blog post image">
             {% endif %}
-            <p class=" text-white form-outline mt-3">
-            {{ post.content| safe }}
-            </p>
         </div>
+        <p class="form-outline mt-3">
+            {{ post.content| safe }}
+        </p>
     </div>
 </div>
 
