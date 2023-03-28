@@ -3,7 +3,7 @@
 {% block content %}
 
 {% load bootstrap_tags %}
-<div class="bg-dark">
+<div class="bg-light">
 <div class="container">
     <div class="row justify-content-center blog-heading">
         <div class="col-sm-8 mt-5">
@@ -15,10 +15,10 @@
 <!---Post-->
 <div class="container">
     <div class="row justify-content-center">
-        <div class="card col-md-8 col-lg-8 mx-auto mt-5 rounded p-3" style="background: rgba(240, 240, 240, 0.888);">
+        <div class="col-md-8 col-lg-8 mx-auto mt-5 rounded p-3">
             <h2 class="text-center" style="color: rgb(27, 121, 32);"> <em>  {{ post.title }}</em></h2>
             {% if "placeholder" in post.featured_image.url %}
-            <img src="/static/images/Deer-animal-logo-by-DEEMKA-STUDIO.jpg" class="blog-image" alt="blog paots default image" >
+            <img src="/static/images/forrest.jpg" class="blog-image" alt="blog paots default image" >
             {% else %}
             <img src="{{ post.featured_image.url }}" width="100%" height="70%" alt="blog post image">
             {% endif %}
@@ -32,7 +32,7 @@
 <!--comment-->
 <div class="container mt-5">
     <div class="row blog-hr">
-        <div class="col-sm-12 col-md-6  rounded-3 text-white">
+        <div class="col-sm-12 col-md-6  rounded-3">
              <h3>Comments:</h3>
             {% for comment in comments %}
             <div class="col-sm-12 mt-3 ">
@@ -52,7 +52,7 @@
 <div class="container comment-form-margin">
     <div class="row justify-content-center">
         <div class="col-sm-8 col-md">
-            <div class="card-body text-center text-white">
+            <div class="card-body text-center">
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval

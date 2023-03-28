@@ -19,7 +19,7 @@ class PostDisplay(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'blog_list.html'
-    paginate_by = 4
+    paginate_by = 2
 
     def get(self, request, *args, **kwargs):
         """
@@ -27,7 +27,7 @@ class PostDisplay(generic.ListView):
         paginated by 4 per page
         """
         posts = Post.objects.all()
-        paginator = Paginator(Post.objects.all(), 4)
+        paginator = Paginator(Post.objects.all(), 2)
         page = request.GET.get('page')
         post_listing = paginator.get_page(page)
 

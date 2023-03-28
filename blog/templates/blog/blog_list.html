@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="bg-dark">
+<div class="bg-light">
     <div class="container-fluid">
         <div class="row">
             <div class="container">
@@ -18,12 +18,12 @@
                     {% for post in post_listing %}
                     {% if post.status %}
                     <div class="col-md-4">
-                        <div class="card mb-4">
-                            <div class="card-body text-center" style="background: rgba(240, 240, 240, 0.888);">
+                        <div class="mb-4">
+                            <div class="card-body text-center">
                                 <div class="image-container">
                                     {% if "placeholder" in post.featured_image.url %}
                                     <a href="{% url 'post_detail' post.slug %}"><img
-                                        src="/static/images/Deer-animal-logo-by-DEEMKA-STUDIO.jpg"
+                                        src="/static/images/forrest.jpg"
                                         class="card-img-top rounded img-fluid" alt="default blog post photo"></a>
                 
                                    <!--- <img class="blog-image" src="/static/images/amur.webp" alt="blog post default image">-->
