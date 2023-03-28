@@ -6,5 +6,8 @@ from django.apps import AppConfig
 
 
 class HomeConfig(AppConfig):
+    """
+    A class for configuring the home app
+    """
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'home'

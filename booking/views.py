@@ -42,7 +42,7 @@ class EnrollView(View):
             email = request.user.email
             program_booking_form = EnrollForm(initial={'email': email})
             return render(
-                request, 
+                request,
                 'booking/bookings.html',
                 {'program_booking_form': program_booking_form}
                 )
@@ -57,7 +57,7 @@ class EnrollView(View):
         and post to database
         """
         program_booking_form = EnrollForm(data=request.POST)
-        
+
         if program_booking_form.is_valid():
             booking = program_booking_form.save(commit=False)
             booking.user = request.user
@@ -66,7 +66,7 @@ class EnrollView(View):
             booking.user = request.user
             messages.success(request, 'Your enrollment was Successful!')
             return render(
-                request, 
+                request,
                 'booking/bookings.html',
                 {'program_booking_form': program_booking_form})
         return render(
@@ -77,7 +77,7 @@ class EnrollView(View):
 
 class Enrollments(generic.ListView):
     """
-    Class to display booking information 
+    Class to display booking information
     of the logged in user
     """
     model = Enroll
@@ -87,7 +87,7 @@ class Enrollments(generic.ListView):
 
     def get(self, request, *args, **kwargs):
         """
-        Display logged in user bookings 
+        Display logged in user bookings
         paginated by 3 per page
         """
         booking = Enroll.objects.all()

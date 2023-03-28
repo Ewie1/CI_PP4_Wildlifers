@@ -7,6 +7,7 @@ from django.urls import path
 from . import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# Urls to see program lists and detail pages
 urlpatterns = [
     path('programs', views.ProgramList.as_view(), name='programs'),
     path('show_program/<program_id>',

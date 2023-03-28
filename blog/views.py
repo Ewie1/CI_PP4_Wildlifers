@@ -13,6 +13,9 @@ from .forms import CommentForm
 
 
 class PostDisplay(generic.ListView):
+    """
+    A class to display published blog posts
+    """
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'blog_list.html'
@@ -20,7 +23,7 @@ class PostDisplay(generic.ListView):
 
     def get(self, request, *args, **kwargs):
         """
-        Display logged in user bookings 
+        Display logged in user bookings
         paginated by 4 per page
         """
         posts = Post.objects.all()
@@ -29,16 +32,19 @@ class PostDisplay(generic.ListView):
         post_listing = paginator.get_page(page)
 
         return render(
-            request, 
+            request,
             'blog/blog_list.html',
             {
-                'posts': posts, 
+                'posts': posts,
                 'post_listing': post_listing,
             }
         )
 
 
 class PostDetail(View):
+    """
+    A class for user to read blog posts
+    """
 
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -55,7 +61,7 @@ class PostDetail(View):
                 'comment_form': CommentForm()
             },
         )
-   
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Post.objects.filter(status=1)

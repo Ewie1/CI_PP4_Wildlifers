@@ -10,6 +10,9 @@ from booking.models import Enroll
 
 @admin.register(Enroll)
 class EnrollAdmin(admin.ModelAdmin):
+    """
+    A class for admin to manage Enrollments
+    """
     list_filter = (
         'user',
         'start_date',

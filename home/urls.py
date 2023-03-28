@@ -7,6 +7,8 @@ from django.urls import path
 from . import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
+# Urls to see home and contact pages
 urlpatterns = [
     path('', views.home, name="home"),
     path('contact', views.contact, name="contact")

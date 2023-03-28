@@ -10,6 +10,9 @@ STATUS = (0, 'Draft'), (1, 'Published')
 
 
 class Post(models.Model):
+    """
+    A class to display blog posts
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -29,6 +32,10 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    """
+    A class Comment for login user leave comments
+    on blog posts
+    """
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=80)

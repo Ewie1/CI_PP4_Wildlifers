@@ -7,6 +7,7 @@ from django.urls import path
 from booking import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# Urls to show enrollment create, list, edit, delete pages
 urlpatterns = [
       path('enrollview', views.EnrollView.as_view(), name='enrollview'),
       path('enrollments',

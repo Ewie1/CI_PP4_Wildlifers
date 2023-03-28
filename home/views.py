@@ -28,7 +28,7 @@ def contact(request):
         send_mail(
             'Message from' + your_name,
             your_message,
-            your_email,  
+            your_email,
             [os.environ.get('EMAIL_HOST_USER')]
              )
         messages.success(request, 'You message have been sent')
