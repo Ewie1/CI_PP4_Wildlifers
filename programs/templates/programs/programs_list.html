@@ -26,12 +26,11 @@
 </section>
 
 <!----Animal cards-->
-
-    <div class="container   py-5 ">
-        <div class="row justify-content-center">
+    <div class="container py-5 ">
+        <div class="row  row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3">
             <div class="col">
                 {% for program in program_list %}
-                <div class="card m-4 me-md mx-auto col-sm-12 mb-3" style="width: 18rem;">
+                <div class="card m-3 col-sm-12 mb-3" style="width: 18rem;">
                     <img src="{{ program.image.url }}" class="card-img-top" alt="{{ program.animal_name }}">
                     <div class="card-body">
                       <h5 class="card-title">{{ program.animal_name }}</h5>
@@ -49,7 +48,7 @@
         </div>
         </div>
     </div>
-
+    
 
 
 

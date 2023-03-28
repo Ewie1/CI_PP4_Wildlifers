@@ -195,6 +195,10 @@ footer h3 {
     height: 300px;
 }
 
+.card-position {
+    margin-left: 230px;
+}
+
 .program-page-image h2 {
     text-align: center;
     font-size: 2.5rem;
