@@ -2,27 +2,18 @@
 
 {% block content %}
 <!--Hero image-->
-<section>
-    <div class="container-fluid">
-        <div class="row">
+<div class="container-fluid contact-form ">
+    <div class="container-fluid g-0">
+        <div class="row  d-flex">
             <div class="col-sm-12" id="hero-image">
                 <h1>Be a wildlife Hero</h1>
                 <p>Protect your nature. Stop extinction</p>
             </div>
         </div>
     </div>
-    <!--- <div class="cotainer">
-        <div class="row">
-          <div class="col-sm-12"  id="hero-image">
-            <h3>Welcome to Trainer bookings:</h3>
-            <p>Please fill out the form below</p>
-          </div>
-        </div>
-      </div>
-      <div class="overlay"></div> -->
-</section>
-<!--Content description and image-->
-<section>
+    
+    <!--Content description and image-->
+
     <div class="container">
         <div class="row">
             <div class="col-md shadow mt-3 md-3 accompany-image1"></div>
@@ -37,19 +28,19 @@
             </div>
         </div>
     </div>
-</section>
-<!---Memembership button-->
-<div>
-    <div class="container">
-        <div class="row mt-4">
-            <div class="col-md join-us">
-                <a href="{% url 'account_signup' %}">Become a member</a>
+
+    <!---Memembership button-->
+    <div>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md join-us">
+                    <a href="{% url 'account_signup' %}">Become a member</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!--Content description and image-->
-<section>
+    <!--Content description and image-->
+
     <div class="container">
         <div class="row">
             <div class="col-md md-3 mt-3 home-text2 text-center">
@@ -64,10 +55,10 @@
             <div class="col-md shadow mt-3 md-3 accompany-image2"></div>
         </div>
     </div>
-</section>
-<!--Bottom image-->
-<section class="homepage-program-link text-center">
-    <div class="container">
+
+    <!--Bottom image-->
+
+    <div class="container homepage-program-link text-center">
         <div class="row mt-3">
             <div class="col-md mt-3">
                 <h2>Join a program</h2>
@@ -76,7 +67,8 @@
                 <div class="home-bottom-image"></div>
             </div>
         </div>
-    </div>
-</section>
+  
+  </div>
+</div>
 
 {% endblock %}

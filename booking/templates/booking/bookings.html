@@ -3,16 +3,18 @@
 {% block content %}
 
 
-<div class="booking-form-page-wrap">
-  <div class="container">
+<div class="contact-form">
+  <div class="container g-0">
+    
     <div class="row d-flex justify-content-start mb-5">
       <div class="col-12 col-md-8 col-lg-8">
         <h2 class="text-center mt-5">
           Create Your Schedule Here:
         </h2>
         <hr>
+        <div class="container">
         <div class="row g-0">
-          <div class="col-lg-12 rounded-3">
+          <div class="card col-lg-12 rounded-3">
             <div class="card-body p-md-4 mx-md-4">
               <p class="card-title text-center">Please read the jobs descriptions below before creating a schedule.</p>
               <form class=" m-3" method="POST" enctype="multipart/form-data">
@@ -25,9 +27,11 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="container">
   <div class="row d-flex justify-content-center mb-5 jobs">
     <div class="col-12 col-md-8 col-lg-5">
       <div class="card text-black">
@@ -55,14 +59,11 @@
   </div>
 </div>
 <div class="container-fluid g-0">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="booking-image">
-        <div class="">
+  <div class="row booking-image mt-3">
+      <div class="b">
           <h1 class="text-center booking-heading"> <em> Save an Animal Today!</em></h1>
-        </div>
       </div>
-    </div>
   </div>
 </div>
+
 {% endblock %}
