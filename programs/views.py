@@ -19,14 +19,14 @@ class ProgramList(generic.ListView):
     model = Program
     queryset = Program.objects.all().order_by('-id')
     template_name = 'programs_list.html'
-    paginated_by = 2
+    paginated_by = 4
 
     def get(self, request, *args, **kwargs):
         """
         Function to show
         and paginated all programs
         """
-        program_paginator = Paginator(Program.objects.all(), 2)
+        program_paginator = Paginator(Program.objects.all(), 4)
         page = request.GET.get('page')
         program_list = program_paginator.get_page(page)
 

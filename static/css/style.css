@@ -221,8 +221,10 @@ footer h3 {
 
 .program-view-button  {
     margin-top: 30px;
-    margin-left: 150px;
     text-align: center;
+    color: rgb(27, 121, 32);
+    text-transform: uppercase;
+    text-decoration: none;
 
 }
 

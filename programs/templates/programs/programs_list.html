@@ -24,58 +24,34 @@
         </div>
     </div>
 </section>
-<!--Code for filter input-->
-<!--<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 m-3">
-                <form action="GET">
-                    {{ filtered_programs.form.as_p }}
-                    {% csrf_token %}
 
-                    <div class="search-button">
-                        <button type="submit" class="button">Search</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>-->
 <!----Animal cards-->
-<section>
-    <div class="container justify-content-center  py-5 ">
-        <div class="row">
-            <div class="col-sm-12">
+
+    <div class="container   py-5 ">
+        <div class="row justify-content-center">
+            <div class="col">
                 {% for program in program_list %}
-                <div class=" card  m-4 me-md mx-auto col-sm-12 mb-3" style="max-width: 600px;">
-                    <div class="row">
-                        <div class="col-md">
-                            <img src="{{ program.image.url }}" class="img-fluid rounded-start" alt="{{ program.animal_name }}">
-                        </div>
-                        <div class="col-md">
-                            <div class="card-body animal-cards">
-                                <h4 class="card-title">{{ program.animal_name }}</h4>
-                                <p class="card-text">
-                                    Endanger 
-                                </p><br>
-                                    <hr>
-                                <p>
-                                    Classified: {{ program.animal_category }}<br>
-                                    Country: {{ program.country.name }}
-                                </p>
-                            </div>
-                            <div class="program-view-button">
-                                <a href="{% url 'show_program' program.id %}"> <b>Read</b></a>
-                            </div>
-                        </div>
+                <div class="card m-4 me-md mx-auto col-sm-12 mb-3" style="width: 18rem;">
+                    <img src="{{ program.image.url }}" class="card-img-top" alt="{{ program.animal_name }}">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ program.animal_name }}</h5>
+                      <p class="card-text"> Endanger </p>
+                      <p class="card-text"> 
+                        Classified: {{ program.animal_category }}<br>
+                        Country: {{ program.country.name }}
+                    </p>
+                      <a href="{% url 'show_program' program.id %}" class="btn btn-success">Read</a>
                     </div>
                 </div>
             </div>
+            <div class="col">
+            {% endfor %}
+        </div>
         </div>
     </div>
-</section>
 
-{% endfor %}
+
+
 
 <!--Pgaination-->
 <nav aria-label="Page navigation">
