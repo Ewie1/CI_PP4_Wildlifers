@@ -939,7 +939,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | Select animal card | animal description page present with an enroll button to the bottom | Works as expected |
    | Select Enroll on Navbar | Enroll page will be present | Works as expected |
     <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedcontactinfo1.jpg">
+     <img src="docs/testing/test-story-animal-detail.JPG">
     </details>
 
 7. As a site user I want to be able to register an account so I can enroll in a program
@@ -949,8 +949,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | Go to Get registered click register | Registration page will be displayed | Works as expected |
 
   <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
-     <img src="docs/features/aboutus.PNG">
+     <img src="docs/testing/test-navbar-register.JPG">
   </details>
 
 8. As a site user I want my registration information to be saved so that I only need to log in when I return
@@ -959,8 +958,8 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    |------------|---------------------|-------------------|
    | 1 | 2 | Works as expected |
   <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
-     <img src="docs/features/test-user-story/inkedcards.jpg">
+     <img src="">
+     <img src="">
   </details>
 
 9.  As a site user I want to be able to view a list of my current enrollments so I can plan for them 
@@ -969,7 +968,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    |------------|---------------------|-------------------|
    | Got to 'Get Registered' click on 'My Bookings' | A list of User'e booking will display | Works as expected |
   <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedsociallinks.jpg">
+     <img src="docs/feature/feature-mybookings.png">
    </details>
 
 
@@ -981,8 +980,9 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | Click 'Edit button' | Edit form will display with this enrollment information ready to be changed | Works as expected |
    | Click submit | Enrollment wil be updated with upkdate confirmation message present | Works as expected |
   <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/inkedsignupnav.jpg">
-    <img src="/docs/features/test-user-story/inkedcardoptions.PNG">
+    <img src="docs/testing/test-story-enrollment-editing.png">
+    <img src="docs/testing/test-edit-enrollment1.png">
+    <img src="docs/testing/test-story-edit-message1.jpg">
   </details>
 
 11. As a site user I want to be able to cancel any of my enrollments
@@ -993,10 +993,13 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     | Click 'Delete button' | delete confirmation modal will display | Works as expected |
     | Click Delete | Enrollment will delete and a enrollment delete message will display | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/404page.PNG">
+    <img src="docs/testing/test-navbar-register.JPG">
+    <img src="docs/testing/tets-mybookings-page.JPG">
+    <img src="docs/testing/test-story-enrollment-delete.png">
+    <img src="docs/testing/test-story-delete-message.jpg">
     </details>
 
-12.  As a site user I want to see messages when I enter, update or delete data entries
+12.  As a site user I want to get messages when I enter, update or delete data entries
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
@@ -1008,14 +1011,18 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | Submit Enrollmet | Enrolled message will display | Works as expected |
 
   <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/inkedsignupnav.jpg">
-    <img src="docs/features/comments.PNG">
+    <img src="">
+    <img src="">
   </details>
 
 13.  As a site owner I want the user to be able to send us messages/emails through a contact form
     | **Step** | **Expected Result** | **Actual Result** |
     |------------|---------------------|-------------------|
     |  Got to 'Get Registered' click on 'Contact' | Contact form will be displayed with message field | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/testing/test-navbar-contact-page.JPG">
+    
+  </details>
 
 14. I want my site to be fully responsive
 
@@ -1030,18 +1037,12 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     <img src="">
     </details>
 
-15. I want a paginated list of exercises so that I can easily select an exercise to view
+15. 
 
     |**Step** | **Expected Result** | **Actual Result**|
     |------------ | ------------ | ------------ |
-    |Navigate to exercise page in the navigation bar | Displays the list of all exercises paginated by 12 | Works as expected |
-    |Click on the '»' symbol to go to the next page | Displays next available page | Works as expected |
-    |Click on the '' to jump to the last page | Displays last page | Works as expected  |
-    |Click on the '«' symbol to go to the previous page | Displays previous available page | Works as expected |
-    |Click on the '' to jump to the first page | Displays first page | Works as expected  |
-    |Put a filter on exercises and select only exercises for legs from the body part filter and click 'Search' | Displays only exercises | matching the search criteria | Works as expected |
-    |Test '' & '' symbols to jump to the last / first page | Displays last / first page available | Works as expected |
-
+    
+    
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/intteaser.jpg">
      </details>
@@ -1075,7 +1076,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     |------------|---------------------|-------------------|
     | Go to blog on navbar | A list of blog post will display | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
+    <img src="docs/testing/test-story-pagination2.png">
     </details>
 
 19. As a site user to want to read blog details
@@ -1083,7 +1084,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     |------------|---------------------|-------------------|
     | Click on a blog image in blog list | Blog details will display | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
+    <img src="docs/testing/test-story-blog-details.png">
     </details>
 
 20. As a site user I want to have blog commenting options 
@@ -1091,7 +1092,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     |------------|---------------------|-------------------|
     | Login, click on blog post | Comment form will display for commenting | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
+    <img src="docs/testing/test-story- blog commenting.png">
     </details>
 
 21. As a owner I want to control commnets posted
@@ -1099,7 +1100,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     |------------|---------------------|-------------------|
     | Comment  | 2 | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
+    <img src="docs/testing/test-story-blog-commenting-approve.jpg">
     </details>
 
 
