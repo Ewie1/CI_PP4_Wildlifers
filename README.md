@@ -884,7 +884,12 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+   | Navigate to program page  | List of imaged animal cards are visible  | Works as expected |
+   | Go through paginated list | Cards are paginated by 4 on different pages | Works as expected |
+   | Clickread on card | aniaml detail will display with option to enroll or go back to list | Works as expected |
+  
+  
+   
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
@@ -893,7 +898,8 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+   | Go to profram page | Description on how to contribute is visible | Works as expected |
+
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/inkedfeatureslist.jpg">
     </details>
@@ -901,145 +907,177 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 5. As a site user I want to be able to paginate through the list easily
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+   | Go to the bottom of any list | pagaination nav present | Works as expected |
+   | Clic on arrow | the next page of list will display | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/signupform.PNG">
     </details>
 
-6. As a site user I should have the option of enrolling in a program when I am reading about an 
-  animal I like   
+6. As a site user I should have the option of enrolling in a program when I am reading about an animal I like   
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
-     <details><summary>Screenshots</summary>
+   | Select animal card | animal description page present with an enroll button to the bottom | Works as expected |
+   | Select Enroll on Navbar | Enroll page will be present | Works as expected |
+    <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedcontactinfo1.jpg">
-     </details>
+    </details>
 
 7. As a site user I want to be able to register an account so I can enroll in a program
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+   | Go to Get registered click register | Registration page will be displayed | Works as expected |
 
-     <details><summary>Screenshots</summary>
+  <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
      <img src="docs/features/aboutus.PNG">
-     </details>
+  </details>
 
-8. As a site user I want my registration information t be saved so that I only need to log in when I return
+8. As a site user I want my registration information to be saved so that I only need to log in when I return
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
    | 1 | 2 | Works as expected |
-     <details><summary>Screenshots</summary>
+  <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
      <img src="docs/features/test-user-story/inkedcards.jpg">
-     </details>
+  </details>
 
 9.  As a site user I want to be able to view a list of my current enrollments so I can plan for them 
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
-     <details><summary>Screenshots</summary>
+   | Got to 'Get Registered' click on 'My Bookings' | A list of User'e booking will display | Works as expected |
+  <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedsociallinks.jpg">
-     </details>
+   </details>
 
 
-10. As a site user I want to be able to upade and change my enrollments
+10. As a site user I want to be able to update and change my enrollments
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
-    <details><summary>Screenshots</summary>
+   | Got to 'Get Registered' click on 'My Bookings' | A list of User'e booking will display, Bookings in list will have editing button | Works as expected |
+   | Click 'Edit button' | Edit form will display with this enrollment information ready to be changed | Works as expected |
+   | Click submit | Enrollment wil be updated with upkdate confirmation message present | Works as expected |
+  <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/inkedsignupnav.jpg">
     <img src="/docs/features/test-user-story/inkedcardoptions.PNG">
-    </details>
+  </details>
 
 11. As a site user I want to be able to cancel any of my enrollments
 
     | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+    |------------|---------------------|-------------------|
+    | Got to 'Get Registered' click on 'My Bookings' | A list of User'e booking will display, Bookings in list will have editing button | Works as expected |
+    | Click 'Delete button' | delete confirmation modal will display | Works as expected |
+    | Click Delete | Enrollment will delete and a enrollment delete message will display | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/404page.PNG">
     </details>
 
 12.  As a site user I want to see messages when I enter, update or delete data entries
 
-    | **Step** | **Expected Result** | **Actual Result** |
+   | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
-     <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedsignupnav.jpg">
-     <img src="docs/features/comments.PNG">
-     </details>
+   | Submit Register form | Registered message will display | Works as expected |
+   | Submit Loginform | Logged in message will display | Works as expected |
+   | Submit update form | Updated message will display | Works as expected |
+   | Sumit logout| Logged out message will display | Works as expected |
+   | Submit delete Enrollment | Deleted message will display | Works as expected |
+   | Submit Enrollmet | Enrolled message will display | Works as expected |
+
+  <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/inkedsignupnav.jpg">
+    <img src="docs/features/comments.PNG">
+  </details>
 
 13.  As a site owner I want the user to be able to send us messages/emails through a contact form
     | **Step** | **Expected Result** | **Actual Result** |
     |------------|---------------------|-------------------|
-    | 1 | 2 | Works as expected |
+    |  Got to 'Get Registered' click on 'Contact' | Contact form will be displayed with message field | Works as expected |
 
-14. As a site owner I want user to get messages when register, login , logout, enroll 
-   | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
-    <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
-    </details> 
+14. I want my site to be fully responsive
 
-15. As a site owner I want user to have confirmantion action before canceling enrollments
-    | **Step** | **Expected Result** | **Actual Result** |
-    |------------|---------------------|-------------------|
-    | 1 | 2 | Works as expected |
+    |**Step** | **Expected Result** | **Actual Result**
+    |------------ | ------------ | ------------ |
+    |Change device screen size using chrome dev tools | The web functionality remains the same on various screen sizes | Works as expected |
+
+    <details><summary>Screenshot</summary>
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+    </details>
+
+15. I want a paginated list of exercises so that I can easily select an exercise to view
+
+    |**Step** | **Expected Result** | **Actual Result**|
+    |------------ | ------------ | ------------ |
+    |Navigate to exercise page in the navigation bar | Displays the list of all exercises paginated by 12 | Works as expected |
+    |Click on the '»' symbol to go to the next page | Displays next available page | Works as expected |
+    |Click on the '' to jump to the last page | Displays last page | Works as expected  |
+    |Click on the '«' symbol to go to the previous page | Displays previous available page | Works as expected |
+    |Click on the '' to jump to the first page | Displays first page | Works as expected  |
+    |Put a filter on exercises and select only exercises for legs from the body part filter and click 'Search' | Displays only exercises | matching the search criteria | Works as expected |
+    |Test '' & '' symbols to jump to the last / first page | Displays last / first page available | Works as expected |
+
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/intteaser.jpg">
      </details>
 
 16. As a site owner want user to see data entry vaildation when registering
-   | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+    |**Step** | **Expected Result** | **Actual Result**
+    |------------ | ------------ | ------------ |
+    |Click on the 'Log in' on the nav bar and 'Register' from the drop-down menu | Displays Registration page | Works as expected |
+    |Input username shorter than 4 characters (eg. xyz) | Prevents registration. Shows warning message to lenghten username text  | Works as expected |
+    |Input username which has already been taken (eg. Admin) | Prevents registration. Displays 'A user with that username already exists.' message | Works as expected |
+    |Input incorrect format of email | Shows warning message to include '@' in the email. Prevents registration | Works as expected |
+    |Input 'newuser12' password |  Prevents registration. Displays 'The password is too similar to the username' message | Works as expected |
+    |Input '12345678' as a password | Prevents registration. Displays 'This password is entirely numeric' message | Works as expected |
+    |Input 'testing' as a password | Prevents registration. Displays 'This password is too short. It must contain at least 8 characters' message | Works as expected |
+    |Input two different values in 'Password' and 'Password (again)' fields | Prevents registration. Displays 'You must type the same password each time.' message | Works as expected |
+
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
 
 17. As a site ownerI want site to be fully responsive 
-   | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+    | **Step** | **Expected Result** | **Actual Result** |
+    |------------|---------------------|-------------------|
+    | 1 | 2 | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
 
-18. As a site user I want o see a blog list
-   | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+18. As a site user I want to see a blog list
+    | **Step** | **Expected Result** | **Actual Result** |
+    |------------|---------------------|-------------------|
+    | Go to blog on navbar | A list of blog post will display | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
 
 19. As a site user to want to read blog details
-   | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+    | **Step** | **Expected Result** | **Actual Result** |
+    |------------|---------------------|-------------------|
+    | Click on a blog image in blog list | Blog details will display | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
 
 20. As a site user I want to have blog commenting options 
-   | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+    | **Step** | **Expected Result** | **Actual Result** |
+    |------------|---------------------|-------------------|
+    | Login, click on blog post | Comment form will display for commenting | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
 
 21. As a owner I want to control commnets posted
-   | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
+    | **Step** | **Expected Result** | **Actual Result** |
+    |------------|---------------------|-------------------|
+    | Comment  | 2 | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
