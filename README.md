@@ -587,8 +587,6 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 #### Homeapp
 
-
-
 <details><summary>tests.py</summary>
 <img src="">
 </details>
@@ -641,7 +639,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 <img src="/docs/validation/pyth-booking-view-validation.JPG">
 </details>
 
-#### Blogapp
+#### Blog app
 
 <details><summary>admin.py</summary>
 <img src="/docs/validation/pyth-blog-admin-validation.JPG">
@@ -880,7 +878,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | **Step** | **Expected result** | **Actual Result** |
    |-------------|------------|---------------------|
    | Click on 'Home' on navigation bar | Home page will load | Work as expected |
-   | Click on 'Programs' on navigation bar | Programs page will loag |  Work as expected |
+   | Click on 'Programs' on navigation bar | Programs page will load |  Work as expected |
    | Click on 'Enroll' on navigation bar | Enroll page/login will load if logged in |  Work as expected |
    | Click on 'Blog' on navigation bar | Blog page will load |  Work as expected |
    | Click on 'Get Registered' on navigation bar select 'Register' | Register page will load |  Work as expected |
@@ -889,7 +887,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | Click on 'Logout' on navigation bar | Logout page will load |  Work as expected | 
 
      <details><summary>Screenshots</summary>
-     <img src="">
+     <img src="/docs/testing/test-navbar-home-page.JPG">
      <img src="">
      <img src="">
      <img src="">
@@ -1234,7 +1232,7 @@ I store mine in env.py
 <img src="">
 </details>
 
-7. Add localhost, and ci-pp4-the-diplomat.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
+7. Add localhost, and wildlifers.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
 
 8. Run "python3 manage.py showmigrations" to check the status of the migrations
 
