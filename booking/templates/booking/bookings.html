@@ -5,7 +5,7 @@
 
 <div class="contact-form">
   <div class="container g-0">
-    
+
     <div class="row d-flex justify-content-start mb-5">
       <div class="col-12 col-md-8 col-lg-8">
         <h2 class="text-center mt-5">
@@ -13,57 +13,58 @@
         </h2>
         <hr>
         <div class="container">
-        <div class="row g-0">
-          <div class="card col-lg-12 rounded-3">
-            <div class="card-body p-md-4 mx-md-4">
-              <p class="card-title text-center">Please read the jobs descriptions below before creating a schedule.</p>
-              <form class=" m-3" method="POST" enctype="multipart/form-data">
-                {{ program_booking_form | as_bootstrap }}
+          <div class="row g-0">
+            <div class="card col-lg-12 rounded-3">
+              <div class="card-body p-md-4 mx-md-4">
+                <p class="card-title text-center">Please read the jobs descriptions below before creating a schedule.
+                </p>
+                <form class=" m-3" method="POST" enctype="multipart/form-data">
+                  {{ program_booking_form | as_bootstrap }}
 
-                {% csrf_token %}
-                <button type="submit" class="form-btns">Submit</button>
+                  {% csrf_token %}
+                  <button type="submit" class="form-btns">Submit</button>
 
-              </form>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-  <div class="row d-flex justify-content-center mb-5 jobs">
-    <div class="col-12 col-md-8 col-lg-5">
-      <div class="card text-black">
-        <h3 class="text-center mt-3">JOBS</h3>
-        <ul>
-          <li>
-            <i class="fa-solid fa-check"></i><b>Animal Identifier:</b> <br>
-            Search and send us photos/videos of endangered animals in your region
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i><b>Fund Raiser:</b> <br>
-            Give a small donation to help fund the Wildlifers efforts
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i><b>Transcriber:</b> <br>
-            Help researchers with documentations by transcribing field notes
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i><b>Reseacher Assitant:</b> <br>
-            Answer calls, read and redirect email to your region researcher
-          </li>
-        </ul>
+    <div class="row d-flex justify-content-center mb-5 jobs">
+      <div class="col-12 col-md-8 col-lg-5">
+        <div class="card text-black">
+          <h3 class="text-center mt-3">JOBS</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i><b>Animal Identifier:</b> <br>
+              Search and send us photos/videos of endangered animals in your region
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i><b>Fund Raiser:</b> <br>
+              Give a small donation to help fund the Wildlifers efforts
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i><b>Transcriber:</b> <br>
+              Help researchers with documentations by transcribing field notes
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i><b>Reseacher Assitant:</b> <br>
+              Answer calls, read and redirect email to your region researcher
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="container-fluid g-0">
-  <div class="row booking-image mt-3">
-      <div class="b">
-          <h1 class="text-center booking-heading"> <em> Save an Animal Today!</em></h1>
+  <div class="container-fluid g-0">
+    <div class="row booking-image mt-3">
+      <div>
+        <h1 class="text-center booking-heading"> <em> Save an Animal Today!</em></h1>
       </div>
+    </div>
   </div>
-</div>
 
-{% endblock %}
+  {% endblock %}

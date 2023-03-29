@@ -22,53 +22,52 @@
             </p>
         </div>
     </div>
-        <!----Animal cards-->
-        <div class="row  row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
-            <div class="col">
-                {% for program in program_list %}
-                <div class="card mt-5 col-sm-12 mb-">
-                    <img src="{{ program.image.url }}" class="card-img-top" alt="{{ program.animal_name }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ program.animal_name }}</h5>
-                        <p class="card-text"> Endanger </p>
-                        <p class="card-text">
-                            Classified: {{ program.animal_category }}<br>
-                            Country: {{ program.country.name }}
-                        </p>
-                        <a href="{% url 'show_program' program.id %}" class="btn btn-success">Read</a>
-                    </div>
+    <!----Animal cards-->
+    <div class="row  row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col">
+            {% for program in program_list %}
+            <div class="card mt-5 col-sm-12 mb-">
+                <img src="{{ program.image.url }}" class="card-img-top" alt="{{ program.animal_name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ program.animal_name }}</h5>
+                    <p class="card-text"> Endanger </p>
+                    <p class="card-text">
+                        Classified: {{ program.animal_category }}<br>
+                        Country: {{ program.country.name }}
+                    </p>
+                    <a href="{% url 'show_program' program.id %}" class="btn btn-success">Read</a>
                 </div>
             </div>
-            <div class="col">
-                {% endfor %}
-            </div>
         </div>
-        <!--Pgaination-->
-        <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center">
-                {% if program_list.has_previous %}
-                <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
-                <li class="page-item"><a class="page-link"
-                        href="?page={{ program_list.previous_page_number }}">&laquo;</a>
-                </li>
-                {% endif %}
-                <li class="page-link pagination-arrow">
-                    Page {{ program_list.number }} of {{ program_list.paginator.num_pages }}
-                </li>
-                {% if program_list.has_next %}
-                <li class="page-item"><a class="page-link" href="?page={{ program_list.next_page_number }}">&raquo;</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="?page={{ program_list.paginator.num_pages}}">Last</a>
-                </li>
-                {% endif %}
-            </ul>
-        </nav>
-        <!--Bottom image-->
-        <div class="container-fluid g-0">
-            <div class="row program-page-image justify-content-center rounded-3 mt-3 ">
-                <h2>Take Action!</h2>
-            </div>
+        <div class="col">
+            {% endfor %}
         </div>
     </div>
-</div>    
-    {% endblock %}
+    <!--Pgaination-->
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if program_list.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ program_list.previous_page_number }}">&laquo;</a>
+            </li>
+            {% endif %}
+            <li class="page-link pagination-arrow">
+                Page {{ program_list.number }} of {{ program_list.paginator.num_pages }}
+            </li>
+            {% if program_list.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ program_list.next_page_number }}">&raquo;</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="?page={{ program_list.paginator.num_pages}}">Last</a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+    <!--Bottom image-->
+    <div class="container-fluid g-0">
+        <div class="row program-page-image justify-content-center rounded-3 mt-3 ">
+            <h2>Take Action!</h2>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

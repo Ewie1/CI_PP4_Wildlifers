@@ -677,8 +677,8 @@ booking/templates/booking/bookings.html | 94 | 97 | 100 | 100 |
 booking/templates/booking/enrollment_list.html | 97 | 98 | 100 | 100 |
 booking/templates/booking/enrollment_editing.html | 94 | 98 | 92 | 100 |
 booking/templates/booking/enrollment_delete.html | 98 | 93 | 100 | 100 |
-blog/templates/blog/blog_list.html | 93 | 98 | 100 | 100 |
-blog/templates/blog/blog_story.html | 97 | 98 | 100 | 100 |
+blog/templates/blog/blog_list.html | 87 | 98 | 83 | 100 |
+blog/templates/blog/blog_story.html | 87 | 98 | 83 | 100 |
 templates/account/login.html | 98 | 100 | 92 | 100 |
 templates/account/logout.html | 99 | 100 | 92 | 100 |
 templates/account/signup.html | 99 | 100 | 92 | 100 |
@@ -698,8 +698,8 @@ booking/templates/booking/bookings.html | 100 | 100 | 92 | 100 |
 booking/templates/booking/enrollment_list.html | 100 | 93 | 92 | 100 |
 booking/templates/booking/enrollment_editing.html | 100 | 93 | 92 | 100 |
 booking/templates/booking/enrollment_delete.html | 100 | 93 | 92 | 100 |
-blog/templates/blog/blog_list.html | 100 | 98 | 92 | 100 |
-blog/templates/blog/blog_story.html | 100 | 98 | 92 | 100 |
+blog/templates/blog/blog_list.html | 87 | 98 | 83 | 100 |
+blog/templates/blog/blog_story.html |  | 98 | 92 | 100 |
 templates/account/login.html | 100 | 100 | 92 | 90 |
 templates/account/logout.html | 100 | 100 | 92 | 100 |
 templates/account/signup.html | 100 | 100 | 92 | 100 |
