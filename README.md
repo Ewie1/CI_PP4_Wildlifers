@@ -887,16 +887,14 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | Click on 'Logout' on navigation bar | Logout page will load |  Work as expected | 
 
      <details><summary>Screenshots</summary>
-     <img src="/docs/testing/test-navbar-home-page.JPG">
-     <img src="">
-     <img src="">
-     <img src="">
-     <img src="">
-     <img src="">
-     <img src="">
-     <img src="">
-     <img src="">
-     <img src="">
+     <img src="docs/testing/test-navbar-home-page.JPG">
+     <img src="docs/testing/test-navbar-program-page.JPG">
+     <img src="docs/testing/test-navbar-enroll-page.JPG">
+     <img src="docs/testing/test-navbar-blog-page.JPG">
+     <img src="docs/testing/test-navbar-register.JPG">
+     <img src="docs/testing/test-navbar-contact-page.JPG">
+     <img src="docs/testing/tets-mybookings-page.JPG">
+     <img src="docs/testing/test-navbar-logout-page.JPG">
      </details>
 
 3. As a site user have access to a list of animals of which I can register and help
@@ -905,12 +903,12 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    |------------|---------------------|-------------------|
    | Navigate to program page  | List of imaged animal cards are visible  | Works as expected |
    | Go through paginated list | Cards are paginated by 4 on different pages | Works as expected |
-   | Clickread on card | aniaml detail will display with option to enroll or go back to list | Works as expected |
+   | Click read on card | aniaml detail will display with option to enroll or go back to list | Works as expected |
   
-  
-   
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
+    <img src="docs/testing/test-navbar-program-page.JPG">
+    <img src="docs/testing/test-story-animal-list.JPG">
+    <img src="docs/testing/test-story-animal-detail.JPG">
     </details>
 
 4.  As a site user I want to know how I can contribute 
@@ -920,7 +918,8 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | Go to profram page | Description on how to contribute is visible | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/inkedfeatureslist.jpg">
+    <img src="docs/testing/test-story-program-text.jpg">
+    <img src="docs/testing/test-story-job-list.png">
     </details>
 
 5. As a site user I want to be able to paginate through the list easily
@@ -929,7 +928,9 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | Go to the bottom of any list | pagaination nav present | Works as expected |
    | Clic on arrow | the next page of list will display | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/signupform.PNG">
+    <img src="docs/testing/test-story-pagination.png">
+    <img src="docs/testing/test-story-pagination1.png">
+    <img src="docs/testing/test-story-pagination2.png">
     </details>
 
 6. As a site user I should have the option of enrolling in a program when I am reading about an animal I like   
