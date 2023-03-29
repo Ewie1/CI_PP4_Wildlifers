@@ -125,9 +125,6 @@
 
 </details>
 
-
-
-
 ## Design
 
 
@@ -1136,10 +1133,6 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 - Bug: hero image overlay half way over the image  onthe big screen and overflowing into the ethos section
    Fix: adjusted padding bottom and confirmed issue was no longer present
 
-### Forking the GitHub Repository
-1. Go to the GitHub repository
-2. Click on Fork button in top right corner
-3. You will then have a copy of the repository in your own GitHub account.
 
 
 ## Configuration
@@ -1170,8 +1163,6 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 ### Heroku
 This application has been deployed from GitHub to Heroku by following the steps:
 
-
-
 ### Forking the GitHub Repository
 1. Go to the GitHub repository
 2. Click on Fork button in top right corner
@@ -1188,7 +1179,8 @@ This application has been deployed from GitHub to Heroku by following the steps:
 
 [Back to Table Of Contents](#table-of-content)
 
-## Heroku Deployment
+
+### Heroku Deployment
 
 [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
 
@@ -1196,27 +1188,26 @@ This application has been deployed from Github using Heroku. Here's how:
 
 1. Create an account at heroku.com
 <details>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-01.PNG">
+<img src="">
 </details>
 
 2. Create an app, give it a name for such as ci-pp4-the-diplomat, and select a region
 <details>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-02.PNG">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-03.PNG">
+<img src="">
+<img src="">
 </details>
 
 3. Under resources search for postgres, and add a Postgres database to the app
 <details>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-04.PNG">
+<img src="">
 </details>
-
 
 Heroku Postgres
 
 1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
 <details>
 <img src="">
-<img src=">
+<img src="">
 </details>
 
 2. Install the plugins dj-database-url and psycopg2-binary.
