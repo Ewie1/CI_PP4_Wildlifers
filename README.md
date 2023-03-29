@@ -304,7 +304,8 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - The navbar switch to hamburger menu when use on smaller screens
 - Fully responsive
 
-![logo-and-nav]()
+![logo-and-nav](docs/feature/feature-navbar.JPG)
+![logo-and-nav](docs/feature/feature-nav-dropdown.JPG)
 
 ### Home page
 - The home page is consist og images and descriptions relating to wildlife 
@@ -312,7 +313,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Fully responsive
 
 
-![heros](docs/features/heros.PNG) 
+![home](docs/feature/feature-home-page.png) 
 
 ### Footer
 - The footer is consist of social media link
@@ -320,7 +321,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - the footer is displayed at the bottom of the page
 - Fully responsive
 
-![gym-features](docs/features/feature.PNG)
+![footer](docs/feature/feature-footer.JPG)
 
 ### Sign up/Register
 - The registration page is consist of a form to enter user details
@@ -328,7 +329,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - The form also instructions on how to register
 - registered message will be seen
 - Fully responsive
-![easy-nav](docs/features/easynav.PNG)
+![signup/register](docs/feature/feature-registration.png)
 
 ### Login
 - Easy for return users to get in
@@ -336,14 +337,14 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Logged in messsage will be seen
 - Fully responsive
 
-![opem-times](docs/features/opentimes.PNG)
+![login](docs/feature/feature-login-required.JPG)
 
 ### Logout
 - User can log out before leaving the site
 - Logged out message will be seen
 - Fully responsive
 
-![interior-teaser](docs/features/teaser.PNG)
+![logout](docs/feature/feature-logout.JPG)
 
 ### Program
 - Information on what the program stands for
@@ -353,7 +354,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Programs can be added, edited and deleted by the staff/organization
 - Fully responsive
 
-![map](docs/features/map4.PNG)
+![program]()
 
 ### Read program
 - Here you find a more detailed information about the animal chosen
@@ -363,7 +364,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Fully responsive
 
 
-![footer](docs/features/footer.PNG)
+![read-program](docs/feature/feature-animal-details.png)
 
 ### User enrollment list
 - Must be registered or logged in to see 
@@ -371,14 +372,14 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Each card are consist of a edit and cancel button
 - Fully responsive
 
-![about-us](docs/features/aboutus.PNG)
+![enrollment-list](docs/feature/feature-mybookings.png)
 
 ### Enrollment editing
 - Here is the enrollment form displaying the fields fill with the current booking and ready to be changed
 - Submit and update message will be seen  
 - Fully responsive
 
-![membership-cards](docs/features/membership.PNG)
+![enrollment-editing](docs/feature/feature-edit-enrollment.png)
 
 ### Cancel enrollment
 - Here the canceling confirmation card is diaplayed
@@ -386,7 +387,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - A confirmation message will be dispalyed when the canalation is completed
 - Fully responsive
 
-![signup-form](docs/features/signupform.PNG)
+![cancel-enrollment](docs/feature/feature-cancel-enrollment.JPG)
 
 ### Contact page
 - User can contact us by filling out this form
@@ -395,7 +396,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Google map address is present for our office location
 - Fully responsive
 
-![404-page](docs/features/test-user-story/404page.PNG)
+![contact-page](docs/feature/feature-contact-us.png)
 
 ### Blog
 - Fully responsive
@@ -403,10 +404,14 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Blog post are paginated
 - Click on the post to read the post details
 
+![blog]()
+
 ### Blog details
 - Blog details show more detials about the blog
 - The featured image is displayed
 - Fully responsive
+
+![blog-details]()
 
 ### Blog commenting
 - only registered or logged in User get the option to leave comment
@@ -414,6 +419,8 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - When commented are made the submitted the comment awiting approval message is displayed 
 - Comments are approved by staff/organisation for monitering purposes
 - Fully responsive 
+
+![program]()
 
 ### Booking
 - Here the is the bookig form to enter your name and the aniaml, job. time and date User want to do their program
@@ -425,6 +432,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Comment cand be done in the text field but needs to be approved
 - Fully responsive 
 
+![program]()
 
 ## Validation
 
@@ -476,7 +484,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - The W3C Jigsaw service was used for CSS Validation. 
 
 <details><summary>style.css</summary>
-<img src="">
+<img src="/docs/validation/css-validation.JPG">
 </details>
 
 ### JavaSript Validation
@@ -484,7 +492,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - The JSHint JS Validation Service was used to validate the Javascript.
 
 <details><summary>script.js</summary>
-<img src="">
+<img src="/docs/validation/javascript-validation.JPG">
 </details>
 
 ### Pep8 Validation

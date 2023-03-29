@@ -196,35 +196,19 @@ footer h3 {
     height: 300px;
 }
 
-/*.card-position {
-    margin-left: 230px;
-}*/
-
 .program-page-image h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 100px;
 }
 
-/*.card-image {
-    height: 240px;
-    width:300px
-}*/
-
-/*.animal-cards h4 {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-}*/
 
 /*Style for program read page*/
-
 .read-program-image {
     width: 80%;
     height: 300px;
     margin-left: 30px;
 }
-
 
 .program-view-button  {
     margin-top: 30px;
@@ -232,7 +216,6 @@ footer h3 {
     color: rgb(27, 121, 32);
     text-transform: uppercase;
     text-decoration: none;
-
 }
 
 .program-view-button a {
@@ -242,7 +225,6 @@ footer h3 {
 }
 
 /*Style for program pagination */
-
 .page-link {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -295,8 +277,6 @@ footer h3 {
     overflow: hidden;
 }
 
-
-
 .login-form {
     background: rgba(240, 240, 240, 0.888);
     padding-bottom: 30px;
@@ -326,12 +306,6 @@ footer h3 {
     color: rgb(0, 82, 0);
 }
 
-/*.register-card {
-    
-    border-radius: 20px;
-    box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
 .booking-card {
     border-radius: 20px;
     box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.2);
@@ -340,31 +314,12 @@ footer h3 {
 .contact-card {
     border-radius: 20px;
     box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.2);
-}*/
+}
 
 /*Style for allauth forms label*/
 .control-label {
     margin-top: 1.5rem;
 }
-
-
-
-
-/*.register-form h1,
-.login-form h1,
-.logout-form h3,
-.booking-header h3 {
-    font-weight: 900;
-}
-
-
-
-.register-form a:hover,
-.login-form a:hover {
-    color: rgb(0, 82, 0);
-    border-bottom: 1px solid rgb(0, 82, 0);
-    transition: 0.5s;
-}*/
 
 /*Style for all form buttons*/
 .form-btns {
@@ -409,9 +364,7 @@ footer h3 {
     transition: .5s ease-in-out; 
 }
 
-
 /*Style for booking/enrollment form*/
-
 .booking-form-page-wrap {
     background: rgba(240, 240, 240, 0.888);
     padding-bottom: 40px;
@@ -433,7 +386,6 @@ footer h3 {
 .booking-heading {
     padding-top: 150px;
 }
-
 
 .jobs ul {
     list-style:none;
@@ -459,7 +411,6 @@ footer h3 {
     font-size: 1.2rem;
 }
 
-
 /*Style for logout page*/
 .confirmation-form {
     height: 800px;
@@ -471,7 +422,6 @@ footer h3 {
     background: rgba(240, 240, 240, 0.888);
     display: inline;
 }
-
 
 /* Style for Blog post*/
 .blog-post-body {
@@ -540,10 +490,6 @@ footer h3 {
         font-size: 0.8rem;
     }
 
-    .blog-post-body {
-        
-    }
-    
 }
 
 @media only screen and (max-width: 600px) {
