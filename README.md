@@ -77,7 +77,7 @@
 1. As a site user I awnt to see a wild life scheme to site
 2. As a user I want to have easy navigation to the site features 
 3. As a site user have access to a list of animals of which I can register and help
-4. As a site user I want to read about these animals and their status of extinction
+4. As a site user I want to know how I can contribute
 5. As a site user I want to be able to paginate through the list easily
 6. As a site user I should have the option of enrolling in a program when I am reading about an 
   animal I like
@@ -86,7 +86,10 @@
 9. As a site user I want to be able to view a list of my current enrollments so I can plan for them
 10. As a site user I want to be able to upade and change my enrollments
 11. As a site user I want to be able to cancel any of my enrollments
-12. As a site user I want to see messages when I enter, update or delete data entries   
+12. As a site user I want to see messages when I enter, update or delete data entries  
+18. As a site user I want o see a blog list
+19. As a site user to want to read blog details
+20. As a site user I want to have blog commenting options 
  
 #### Returning User
  
@@ -99,6 +102,7 @@
 15. As a site owner I want user to have confirmantion action before canceling enrollments
 16. T want user to see data entry vaildation when registering
 17. I want site to be fully responsive  
+21. As a owner I want to control commnets posted
 
 ## Design
 
@@ -306,12 +310,10 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
-</details>
-
-
 ![logo-and-nav](docs/feature/feature-navbar.JPG)
 ![logo-and-nav](docs/feature/feature-nav-dropdown.JPG)
+
+</details>
 
 ### Home page
 - The home page is consist og images and descriptions relating to wildlife 
@@ -320,11 +322,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
+![home](docs/feature/feature-home-page.png) 
 
 </details>
-
-
-![home](docs/feature/feature-home-page.png) 
 
 ### Footer
 - The footer is consist of social media link
@@ -334,11 +334,8 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
-</details>
-
-
 ![footer](docs/feature/feature-footer.JPG)
+</details>
 
 ### Sign up/Register
 - The registration page is consist of a form to enter user details
@@ -349,10 +346,8 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
-</details>
-
 ![signup/register](docs/feature/feature-registration.png)
+</details>
 
 ### Login
 - Easy for return users to get in
@@ -362,10 +357,8 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
-</details>
-
 ![login](docs/feature/feature-login-required.JPG)
+</details>
 
 ### Logout
 - User can log out before leaving the site
@@ -374,10 +367,10 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
+![logout](docs/feature/feature-logout.JPG)
 
 </details>
 
-![logout](docs/feature/feature-logout.JPG)
 
 ### Program
 - Information on what the program stands for
@@ -389,10 +382,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
+![program]()
 </details>
 
-![program]()
 
 ### Read program
 - Here you find a more detailed information about the animal chosen
@@ -403,10 +395,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
+![read-program](docs/feature/feature-animal-details.png)
 
 </details>
-
-![read-program](docs/feature/feature-animal-details.png)
 
 ### User enrollment list
 - Must be registered or logged in to see 
@@ -416,10 +407,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
+![enrollment-list](docs/feature/feature-mybookings.png)
 </details>
 
-![enrollment-list](docs/feature/feature-mybookings.png)
 
 ### Enrollment editing
 - Here is the enrollment form displaying the fields fill with the current booking and ready to be changed
@@ -428,10 +418,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
+![enrollment-editing](docs/feature/feature-edit-enrollment.png)
 
 </details>
-
-![enrollment-editing](docs/feature/feature-edit-enrollment.png)
 
 ### Cancel enrollment
 - Here the canceling confirmation card is diaplayed
@@ -441,10 +430,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
+![cancel-enrollment](docs/feature/feature-cancel-enrollment.JPG)
 
 </details>
-
-![cancel-enrollment](docs/feature/feature-cancel-enrollment.JPG)
 
 ### Contact page
 - User can contact us by filling out this form
@@ -455,10 +443,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
+![contact-page](docs/feature/feature-contact-us.png)
 </details>
 
-![contact-page](docs/feature/feature-contact-us.png)
 
 ### Blog
 - Fully responsive
@@ -468,10 +455,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
+![blog]()
 </details>
 
-![blog]()
 
 ### Blog details
 - Blog details show more detials about the blog
@@ -480,10 +466,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
+![blog-details]()
 </details>
 
-![blog-details]()
 
 ### Blog commenting
 - only registered or logged in User get the option to leave comment
@@ -494,10 +479,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
+![program]()
 </details>
 
-![program]()
 
 ### Booking
 - Here the is the bookig form to enter your name and the aniaml, job. time and date User want to do their program
@@ -511,10 +495,9 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-
+![program]()
 </details>
 
-![program]()
 
 ## Validation
 
@@ -861,126 +844,212 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 1. Mannual testing
 2. Automative testing
 
-1. As  a first time user I expect a bright feel energetic gym feel
+1. As a site user I awnt to see a wild life scheme to site
 
    | **Step** | **Expected result** | **Actual Result** |
    |-------------|------------|---------------------|
-   | 1 | 2 | 3 | 
+   | Visit page:https://wildlifers.herokuapp.com/| Home page tells about the wht the site represent with photos to match | Work as Expected | 
 
    <details><summary>Screenshots</summary>
-   <img src="docs/features/brightenergy.PNG">
+   <img src="docs/feature/feature-home-page.png">
    </details>
 
-2.  As a firstime user I want to know the location of the gym
+2. As a user I want to have easy navigation to the site features 
 
-    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-    |-------------|------------|---------------------|-------------------|
-    | Map | Scroll down on first page and click the google mag  | Goolge show gym location in the city | Works as expected |
+   | **Step** | **Expected result** | **Actual Result** |
+   |-------------|------------|---------------------|
+   | Click on 'Home' on navigation bar | Home page will load | Work as expected |
+   | Click on 'Programs' on navigation bar | Programs page will loag |  Work as expected |
+   | Click on 'Enroll' on navigation bar | Enroll page/login will load if logged in |  Work as expected |
+   | Click on 'Blog' on navigation bar | Blog page will load |  Work as expected |
+   | Click on 'Get Registered' on navigation bar select 'Register' | Register page will load |  Work as expected |
+   | Click on 'Get Registered' on navigation bar select 'Contact'| Contact page will load |  Work as expected |
+   | Click on 'Get Registered' on navigation bar select 'My Bookings' | 'Must be logged in message'/Enrollment list will load  |  Work as expected |
+   | Click on 'Logout' on navigation bar | Logout page will load |  Work as expected | 
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedlocatmap.jpg">
+     <img src="">
+     <img src="">
+     <img src="">
+     <img src="">
+     <img src="">
+     <img src="">
+     <img src="">
+     <img src="">
+     <img src="">
+     <img src="">
      </details>
 
-3. As a first time user I want to see the gym interior
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Gym interior image | Scroll down on home page | Find pictures of the gym interior | Works as expected |
+3. As a site user have access to a list of animals of which I can register and help
+
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
 
-4. As a first time user I want to know what training programs are available 
+4.  As a site user I want to know how I can contribute 
 
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Trian with us and Gym comforts list | Scroll down on home page  | Readable intriguing list | Works as expected |
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/inkedfeatureslist.jpg">
     </details>
 
-5. As a returning user I want to know where to sign up
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Signup From | Cick signup button,Nav bar | Directed to signup page | Works as expected |
-
+5. As a site user I want to be able to paginate through the list easily
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/signupform.PNG">
     </details>
 
-6. As a returning user i want contact information   
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Footer  on all pages | On any page scroll to the footer | See phone number and email address | Works as expected |
-
+6. As a site user I should have the option of enrolling in a program when I am reading about an 
+  animal I like   
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedcontactinfo1.jpg">
      </details>
 
-7. As a returning user I was to know the reason and the mission of the gym
+7. As a site user I want to be able to register an account so I can enroll in a program
 
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |   
-   |-------------|------------|---------------------|-------------------|
-   | About Us pragraph | Navigate to the us page in menu bar  | Read  | Works as expected |
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
      <img src="docs/features/aboutus.PNG">
      </details>
 
-8. As a returning user I want to know about the membership and options available
+8. As a site user I want my registration information t be saved so that I only need to log in when I return
 
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Membership Cards | Navigate to the About Uspage Scrooll down | Read | Works as expectd |
-
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
      <img src="docs/features/test-user-story/inkedcards.jpg">
      </details>
 
-9. As a returning user, I want to see the gym's social media followings 
+9.  As a site user I want to be able to view a list of my current enrollments so I can plan for them 
 
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Footer - social media section | On any page scroll to the bottom | Click on social media links | Works as expected | 
-
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedsociallinks.jpg">
      </details>
 
 
-10. As a siteowner I want the users to not only sign up but have membership option
+10. As a site user I want to be able to upade and change my enrollments
 
-    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-    |-------------|------------|---------------------|-------------------|
-    | Signup Form | U Navigate sign up page click dropdown option| Choose from drop down option | Works as expected |
-
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/inkedsignupnav.jpg">
     <img src="/docs/features/test-user-story/inkedcardoptions.PNG">
     </details>
 
-11. As a owner I want user to have a cutomized 404 error page if the wedsite fail to load
+11. As a site user I want to be able to cancel any of my enrollments
 
-    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-    |-------------|------------|---------------------|-------------------|
-    | 404 error page | On non-matched URL| Choose from drop down option | Works as expected |
-
+    | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/404page.PNG">
     </details>
 
-12. As a site owner I want users to leave comments upon sign up
+12.  As a site user I want to see messages when I enter, update or delete data entries
 
-    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-    |-------------|------------|---------------------|-------------------|
-    | Signup form | Navigate to signup page | Leave comments | Works as expected |
-
+    | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedsignupnav.jpg">
      <img src="docs/features/comments.PNG">
      </details>
-    
+
+13.  As a site owner I want the user to be able to send us messages/emails through a contact form
+    | **Step** | **Expected Result** | **Actual Result** |
+    |------------|---------------------|-------------------|
+    | 1 | 2 | Works as expected |
+
+14. As a site owner I want user to get messages when register, login , logout, enroll 
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/intteaser.jpg">
+    </details> 
+
+15. As a site owner I want user to have confirmantion action before canceling enrollments
+    | **Step** | **Expected Result** | **Actual Result** |
+    |------------|---------------------|-------------------|
+    | 1 | 2 | Works as expected |
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/intteaser.jpg">
+     </details>
+
+16. As a site owner want user to see data entry vaildation when registering
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/intteaser.jpg">
+    </details>
+
+17. As a site ownerI want site to be fully responsive 
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/intteaser.jpg">
+    </details>
+
+18. As a site user I want o see a blog list
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/intteaser.jpg">
+    </details>
+
+19. As a site user to want to read blog details
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/intteaser.jpg">
+    </details>
+
+20. As a site user I want to have blog commenting options 
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/intteaser.jpg">
+    </details>
+
+21. As a owner I want to control commnets posted
+   | **Step** | **Expected Result** | **Actual Result** |
+   |------------|---------------------|-------------------|
+   | 1 | 2 | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/intteaser.jpg">
+    </details>
+
+
+
+## Design
+
+
+
 ## Bugs
   List of bugs found and fixes used ti mitigate them.
 
