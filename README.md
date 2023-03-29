@@ -206,28 +206,28 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 
 <details><summary>Home</summary>
-<img src="">
-<img src="">
+<img src="/docs/wireframe/browser-wireframe-home.png">
+<img src="/docs/wireframe/tablet-wireframe-home.png">
 <img src="">
 </details>
 <details><summary>Program</summary>
-<img src="">
-<img src="/docs/features/wireframes/wireframeaboutuspagepad.png">
+<img src="/docs/wireframe/browser-wireframe-program.png">
+<img src="docs/wireframe/tablet-wireframe-program.png">
 <img src="">
 </details>
 <details><summary>Program Read</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-program-read.png">
+<img src="docs/wireframe/tablet-wireframe-program-read.png">
 <img src="">
 </details>
 <details><summary>My Bookings</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-mybookings.png">
+<img src="docs/wireframe/tablet-wireframe.mybooking.png">
 <img src="">
 </details>
 <details><summary>Booking Edit</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-enroll-editing.png">
+<img src="docs/wireframe/tablet-wireframe-enroll-editing.png">
 <img src="">
 </details>
 <details><summary>Booking Cancel</summary>
@@ -236,38 +236,38 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 <img src="">
 </details>
 <details><summary>Contact</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-contact.png">
+<img src="docs/wireframe/tablet-wireframe-contact.png">
 <img src="">
 </details>
 <details><summary>Blog</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-blog.png">
+<img src="docs/wireframe/tablet-wireframe-blog.png">
 <img src="">
 </details>
 <details><summary>Blog Details</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-blog-display.png">
+<img src="docs/wireframe/tablet-wireframe-blog-display.png">
 <img src="">
 </details>
 <details><summary>Register</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-register.png">
+<img src="docs/wireframe/tablet-wireframe-register.png">
 <img src="">
 </details>
 <details><summary>Login</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-login.png">
+<img src="docs/wireframe/tablet-wireframe-login.png">
 <img src="">
 </details>
 <details><summary>Logout</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-logout.png">
+<img src="docs/wireframe/tablet-wireframe.logout.png">
 <img src="">
 </details>
 <details><summary>Enroll</summary>
-<img src="">
-<img src="">
+<img src="docs/wireframe/browser-wireframe-enroll.png">
+<img src="docs/wireframe/tablet-wireframe-enroll.png">
 <img src="">
 </details>
 <details><summary>403</summary>
