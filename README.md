@@ -1,4 +1,4 @@
-# Good Life Gym
+# Wildlifers
 (Developer: Ewart Hestick)
 
 ![Mockup image]()
@@ -103,6 +103,30 @@
 16. T want user to see data entry vaildation when registering
 17. I want site to be fully responsive  
 21. As a owner I want to control commnets posted
+
+### Kanban, Epics & User Stories
+- GitHub Kanban was used to track all open user stories
+- Epic was created using the milestones feature
+- Mistaken all issues were load into one epic instead of seperate page Epics
+
+<details><summary>Epic</summary>
+
+![Epic](docs/testing/epic.JPG)
+
+</details>
+<details><summary>User Story</summary>
+
+![User Story](docs/testing/user-story.JPG)
+
+</details>
+<details><summary>Kanban</summary>
+
+![Kanban](docs/testing/kanban.JPG)
+
+</details>
+
+
+
 
 ## Design
 
@@ -1112,6 +1136,11 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 - Bug: hero image overlay half way over the image  onthe big screen and overflowing into the ethos section
    Fix: adjusted padding bottom and confirmed issue was no longer present
 
+### Forking the GitHub Repository
+1. Go to the GitHub repository
+2. Click on Fork button in top right corner
+3. You will then have a copy of the repository in your own GitHub account.
+
 
 ## Configuration
 
@@ -1159,7 +1188,100 @@ This application has been deployed from GitHub to Heroku by following the steps:
 
 [Back to Table Of Contents](#table-of-content)
 
-## Deployment
+## Heroku Deployment
+
+[Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
+
+This application has been deployed from Github using Heroku. Here's how:
+
+1. Create an account at heroku.com
+<details>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-01.PNG">
+</details>
+
+2. Create an app, give it a name for such as ci-pp4-the-diplomat, and select a region
+<details>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-02.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-03.PNG">
+</details>
+
+3. Under resources search for postgres, and add a Postgres database to the app
+<details>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-04.PNG">
+</details>
+
+
+Heroku Postgres
+
+1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
+<details>
+<img src="">
+<img src=">
+</details>
+
+2. Install the plugins dj-database-url and psycopg2-binary.
+
+3. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+<details>
+<img src="">
+</details>
+
+4. Create a Procfile with the text: web: gunicorn the_diplomat.wsgi
+<details>
+<img src="">
+</details>
+
+5. In the settings.py ensure the connection is to the Heroku postgres database, no indentation if you are not using a seperate test database.
+I store mine in env.py
+<details>
+<img src="">
+<img src="">
+</details>
+
+6. Ensure debug is set to false in the settings.py file
+<details>
+<img src="">
+</details>
+
+7. Add localhost, and ci-pp4-the-diplomat.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
+
+8. Run "python3 manage.py showmigrations" to check the status of the migrations
+
+9. Run "python3 manage.py migrate" to migrate the database
+
+10. Run "python3 manage.py createsuperuser" to create a super/admin user
+
+11. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+
+12. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+
+13. Install gunicorn and add it to the requirements.txt file using the command pip3 freeze > requirements.txt
+
+14. Disable collectstatic in Heroku before any code is pushed using the command heroku config:
+<details>
+<img src="">
+<img src="">
+</details>
+
+
+15. Ensure the following environment variables are set in Heroku
+<details>
+<img src="">
+</details>
+
+16. Connect the app to GitHub, and enable automatic deploys from main if you wish
+<details>
+<img src="">
+<img src="">
+</details>
+
+17. Click deploy to deploy your application to Heroku for the first time
+
+18. Click on the link provided to access the application
+
+19. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+<hr>
+
 
 
 ## Credits
