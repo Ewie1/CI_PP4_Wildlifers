@@ -3,7 +3,7 @@
 
 ![Mockup image]()
 
-[Live webpage]()
+[Live webpage](https://wildlifers.herokuapp.com/)
 
 
 ## Table of Contents
@@ -960,11 +960,11 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 ## Bugs
   List of bugs found and fixes used ti mitigate them.
 
+- Bug: the data in the database no longer fit the new schema due to model changes
+  Fix: performed data dump reset datebase in SQL app, restored data and run migrations
+- Bug: Django collectstatic -input, static file was not updating causing deployment fail error
+  Fix: performed python manage.py collectstatic in terminal which resolve issue
 - Bug: 
-  Fix: with from the slack community i was refered to unicorn revealer which showed my opentimes width was too much. Adjusted this and issue was fixed
-- Bug: during accessibilty test my good practice points were low
-  Fix: using the unicorn revealer again imanaged to find my logo image had margin space and my about us text had border radius value that were unneccessary. Adjusted these issues and my score got better
-- Bug: during html validation signup.html error, signup form "for" value and "id" value were not matching  
     Fix: Change both value to the same which rectified error
 - Bug: html validation for index.hmtl warnings for lack of heading h1-h6 in section tags
   Fix: removed unneccesary section tags
@@ -1087,8 +1087,6 @@ This application has been deployed from Github using Heroku. Here's how:
 20. View build logs for error
 
 21. Click app to view website
-
-
 
 
 ## Credits
