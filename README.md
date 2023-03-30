@@ -82,27 +82,24 @@
 6. As a site user I should have the option of enrolling in a program when I am reading about an 
   animal I like
 7. As a site user I want to be able to register an account so I can enroll in a program
-8. As a site user I want my registration information t be saved so that I only need to log in when I return
-9. As a site user I want to be able to view a list of my current enrollments so I can plan for them
-10. As a site user I want to be able to upade and change my enrollments
-11. As a site user I want to be able to cancel any of my enrollments
-12. As a site user I want to see messages when I enter, update or delete data entries  
-18. As a site user I want o see a blog list
-19. As a site user to want to read blog details
-20. As a site user I want to have blog commenting options 
+8. As a site user I want to be able to view a list of my current enrollments so I can plan for them
+9. As a site user I want to be able to updade and change my enrollments
+10. As a site user I want to be able to cancel any of my enrollments
+11. As a site user I want to see messages when I enter, update or delete data entries  
+15. As a site user I want o see a blog list
+16. As a site user to want to read blog details
+17. As a site user I want to have blog commenting options 
  
 #### Returning User
  
- 5. As  a return user I want the site to remember me
+ 19. As  a return user I want the site to remember me
 
 #### Site Owner 
-13. As a site owner I want the user to be able to send us messages/emails through a contact form
-14. As a site owner I want user to get messages when register, login , logout, enroll  
-  in a program, edit enrollment, delete enroolment or send us messages through the contact form.
-15. As a site owner I want user to have confirmantion action before canceling enrollments
-16. T want user to see data entry vaildation when registering
-17. I want site to be fully responsive  
-21. As a owner I want to control commnets posted
+12. As a site owner I want the user to be able to send us messages/emails through a contact form
+13. I want site to be fully responsive  
+14. I want user to see data entry vaildation when registering
+18. As a owner I want to control commnets posted
+
 
 ### Kanban, Epics & User Stories
 - GitHub Kanban was used to track all open user stories
@@ -910,10 +907,11 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     </details>
 
 6. As a site user I should have the option of enrolling in a program when I am reading about an 
-   animal I like   
+    animal I like   
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | Select animal card | animal description page present with an enroll button to the bottom | Works as expected |
+   | Select animal card | animal description page present with an enroll button to the bottom | 
+     Works as expected |
    | Select Enroll on Navbar | Enroll page will be present | Works as expected |
     <details><summary>Screenshots</summary>
      <img src="docs/testing/test-story-animal-detail.JPG">
@@ -930,9 +928,8 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
      <img src="docs/testing/test-navbar-enroll-page.JPG">
   </details>
 
-
-
-9.  As a site user I want to be able to view a list of my current enrollments so I can plan for them 
+8.  As a site user I want to be able to view a list of my current enrollments so I can plan for 
+    them 
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
@@ -943,7 +940,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    </details>
 
 
-10. As a site user I want to be able to update and change my enrollments
+9. As a site user I want to be able to update and change my enrollments
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
@@ -956,7 +953,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     <img src="docs/testing/test-story-edit-message1.jpg">
   </details>
 
-11. As a site user I want to be able to cancel any of my enrollments
+10. As a site user I want to be able to cancel any of my enrollments
 
     | **Step** | **Expected Result** | **Actual Result** |
     |------------|---------------------|-------------------|
@@ -971,7 +968,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     <img src="docs/testing/test-story-delete-message.jpg">
     </details>
 
-12.  As a site user I want to get messages when I enter, update or delete data entries
+11.  As a site user I want to get messages when I enter, update or delete data entries
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
@@ -989,7 +986,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     <img src="docs/testing/test-story-enrollment-message.JPG">
   </details>
 
-13.  As a site owner I want the user to be able to send us messages/emails through a contact form
+12.  As a site owner I want the user to be able to send us messages/emails through a contact form
     | **Step** | **Expected Result** | **Actual Result** |
     |------------|---------------------|-------------------|
     |  Got to 'Get Registered' click on 'Contact' | Contact form will be displayed with message field | Works as expected |
@@ -998,7 +995,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     
   </details>
 
-14. I want my site to be fully responsive
+13. I want my site to be fully responsive
 
     |**Step** | **Expected Result** | **Actual Result**
     |------------ | ------------ | ------------ |
@@ -1009,17 +1006,8 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     <img src="docs/testing/test-story-responsive-mobile.png">
     </details>
 
-15. 
 
-    |**Step** | **Expected Result** | **Actual Result**|
-    |------------ | ------------ | ------------ |
-    
-    
-     <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/intteaser.jpg">
-     </details>
-
-16. As a site owner want user to see data entry vaildation when registering
+14. As a site owner want user to see data entry vaildation when registering
     |**Step** | **Expected Result** | **Actual Result**
     |------------ | ------------ | ------------ |
     |Click on the 'Log in' on the nav bar and 'Register' from the drop-down menu | Displays Registration page | Works as expected |
@@ -1041,7 +1029,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     <img src="docs/testing/test-story-user-exist.png">
     </details>
 
-18. As a site user I want to see a blog list
+15. As a site user I want to see a blog list
     | **Step** | **Expected Result** | **Actual Result** |
     |------------|---------------------|-------------------|
     | Go to blog on navbar | A list of blog post will display | Works as expected |
@@ -1049,31 +1037,40 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     <img src="docs/testing/test-story-pagination2.png">
     </details>
 
-19. As a site user to want to read blog details
+16. As a site user to want to read blog details
     | **Step** | **Expected Result** | **Actual Result** |
     |------------|---------------------|-------------------|
     | Click on a blog image in blog list | Blog details will display | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/testing/test-story-blog-details.png">
+    <img src="docs/feature/feature-blog-detailse.png">
     </details>
 
-20. As a site user I want to have blog commenting options 
+17. As a site user I want to have blog commenting options 
     | **Step** | **Expected Result** | **Actual Result** |
     |------------|---------------------|-------------------|
     | Login, click on blog post | Comment form will display for commenting | Works as expected |
     <details><summary>Screenshots</summary>
+    <img src="docs/feature/feature-login-required.JPG">
+    <img src="docs/testing/test-story-login-message.JPG">
     <img src="docs/testing/test-story- blog commenting.png">
     </details>
 
-21. As a owner I want to control commnets posted
+18. As a owner I want to control commnets posted
     | **Step** | **Expected Result** | **Actual Result** |
     |------------|---------------------|-------------------|
-    | Comment  | 2 | Works as expected |
+    | User submit Comment  | Comment waiting approval message is displayed | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/testing/test-story-blog-commenting-approve.jpg">
     </details>
 
-
+19. As  a return user I want the site to remember me 
+    | **Step** | **Expected Result** | **Actual Result** |
+    |------------|---------------------|-------------------|
+    | Comment  | 2 | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/feature/feature-login-required.JPG">
+    <img src="docs/testing/test-story-login-message.JPG">
+    </details>
 
 ## Design
 
