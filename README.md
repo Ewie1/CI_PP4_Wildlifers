@@ -326,8 +326,6 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - The navbar is consist of the logo and the links to all the site feature
 - The navbar is present on all pages
 - The navbar also have a drop down features login, register and booking
-- The navbar switch to hamburger menu when use on smaller screens
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
@@ -339,7 +337,6 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 ### Home page
 - The home page is consist og images and descriptions relating to wildlife 
 - The home page is also consist of a button to navigate to register and a button enroll
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
@@ -351,7 +348,6 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - The footer is consist of social media link
 - The footer also have office location and contact information 
 - the footer is displayed at the bottom of the page
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
@@ -362,8 +358,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - The registration page is consist of a form to enter user details
 - It prupose is for new users to access more site features
 - The form also instructions on how to register
-- registered message will be seen
-- Fully responsive
+
 
 <details><summary>See feature images</summary>
 
@@ -373,8 +368,6 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 ### Login
 - Easy for return users to get in
 - Fields are mandatory
-- Logged in messsage will be seen
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
@@ -383,15 +376,12 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 ### Logout
 - User can log out before leaving the site
-- Logged out message will be seen
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
 ![logout](docs/feature/feature-logout.JPG)
 
 </details>
-
 
 ### Program
 - Information on what the program stands for
@@ -403,7 +393,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-![program]()
+![program](docs/feature/feature-program-page.JPG)
 </details>
 
 
@@ -412,7 +402,6 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - There is a list on what you vcan do to help this animal
 - There is a button to return to the list
 - There is a button to go to enroolment form
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
@@ -424,18 +413,15 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Must be registered or logged in to see 
 - Paginated list of user enrollment
 - Each card are consist of a edit and cancel button
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
 ![enrollment-list](docs/feature/feature-mybookings.png)
 </details>
 
-
 ### Enrollment editing
 - Here is the enrollment form displaying the fields fill with the current booking and ready to be changed
 - Submit and update message will be seen  
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
@@ -447,7 +433,6 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Here the canceling confirmation card is diaplayed
 - The card have a button to return if user change their minds and a button tp cancel
 - A confirmation message will be dispalyed when the canalation is completed
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
@@ -460,13 +445,11 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - User must enter their names and email and the message in the text field
 - Message will display when the form is submitted
 - Google map address is present for our office location
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
 ![contact-page](docs/feature/feature-contact-us.png)
 </details>
-
 
 ### Blog
 - Fully responsive
@@ -476,31 +459,28 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-![blog]()
+![blog](docs/feature/feature-program-page.JPG)
 </details>
 
 
 ### Blog details
 - Blog details show more detials about the blog
 - The featured image is displayed
-- Fully responsive
 
 <details><summary>See feature images</summary>
 
-![blog-details]()
+![blog-details](docs/feature/feature-blog-detailse.png)
 </details>
-
 
 ### Blog commenting
 - only registered or logged in User get the option to leave comment
 - Comment cand be done in the text field but needs to be approved
 - When commented are made the submitted the comment awiting approval message is displayed 
 - Comments are approved by staff/organisation for monitering purposes
-- Fully responsive 
 
 <details><summary>See feature images</summary>
 
-![program]()
+![program](docs/feature/feature-blog-detailse.png)
 </details>
 
 
@@ -509,14 +489,10 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 - Only registered or looged on user are allow to enroll in a program
 - The form is made easier by displaying the list of Jobs, work times, animals and date picker
 - There are also a descriptive list of the offered Jobs
-- A con firmation messagge will display after for is submited
-- Only registered or logged in User get the option to leave comment
-- Comment cand be done in the text field but needs to be approved
-- Fully responsive 
 
 <details><summary>See feature images</summary>
 
-![program]()
+![program](docs/feature/feature-booking-form.png)
 </details>
 
 
