@@ -268,7 +268,6 @@ footer h3 {
 }
 
 .register-form,
-.login-form,
 .booking-form,
 .contact-form {
     background: rgba(240, 240, 240, 0.888);
@@ -286,13 +285,14 @@ footer h3 {
 }
 
 .register-form h1,
-.login-form h1,
 .contact-form h1,
+.login-form h1,
 .page-wrap h1 {
     text-align: center;
     margin: 30px;
     font-style: italic;
 }
+
 
 .register-form p,
 .login-form p {
@@ -475,6 +475,10 @@ footer h3 {
     background-position: center;
     height: 800px;
     margin-bottom: -17px;
+}
+
+.log-form-message {
+    padding-bottom: 500px;
 }
 
 @media screen and (max-width: 1200px) {
