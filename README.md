@@ -789,14 +789,16 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 
 6. As a site user I should have the option of enrolling in a program when I am reading about an 
     animal I like   
+    
     | **Step** | **Expected Result** | **Actual Result** |
-    |------------|---------------------|-------------------|
+    |------------|---------------------|-----------------|
     | Select animal card | animal description page present with an enroll button to the bottom | 
-     Works as expected |
+    Works as expected |
     | Select Enroll on Navbar | Enroll page will be present | Works as expected |
-     <details><summary>Screenshots</summary>
-       <img src="docs/testing/test-story-animal-detail.JPG">
-     </details>
+     
+    <details><summary>Screenshots</summary>
+      <img src="docs/testing/test-story-animal-detail.JPG">
+    </details>
 
 7. As a site user I want to be able to register an account so I can enroll in a program
 
@@ -1031,32 +1033,32 @@ This application has been deployed from GitHub to Heroku by following the steps:
 This application has been deployed from Github using Heroku. Here's how:
 
 1. Create an account at heroku.com
-<details>
-<img src="">
-</details>
+    <details>
+    <img src="docs/Heroku/heroku-create-app.JPG">
+    </details>
 
 2. Create an app, give it a name similar to project name, and select a region
-<details>
-<img src="">
-<img src="">
-</details>
+  <details>
+  <img src="docs/Heroku/heroku-overview.JPG">
+  </details>
 
 3. Under resources search for postgres, and add a Postgres database to the app
-<details>
-<img src="">
-</details>
+
 
 4. Create and ElephantSqul account and set up a plan with in your region
+   <details>
+   <img src="docs/Heroku/sql.JPG">
+   </details>
 
 5. Copy Url database instance from Sql account and store it in the env.py enviroment variable (os.environ["DATABASE_URL"]="<copiedURL>")
 
 6. Add a your secret key to env.py enviroment variable os.environ["SECRET_KEY"]="my_super^secret@key"
+
 7. Import env.py to settings.py  add Data base and sercert key variable to settings.py file
 
 8. Add localhost, and wildlifers.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
     <details>
-    <img src="">
-    <img src="">
+    <img src="docs/Heroku/debug-false.JPG">
     </details>
 9. Migrate change to manage.py
 
@@ -1065,6 +1067,9 @@ This application has been deployed from Github using Heroku. Here's how:
 11. Add PORT 8000 to config vars to avoid deployment failure
 
 12. Set DEBUG value to False
+   <details>
+   <img src="docs/Heroku/debug-false.JPG">
+   </details>
 
 13. Set X_FRAME_OPTION ='SAMEORIGIN'
 
@@ -1077,10 +1082,16 @@ This application has been deployed from Github using Heroku. Here's how:
 17. Check config vars for DISABLE_COLLECTSTATIC=1 is removed
 
 18. Go to deploy in the Heroku app
+    <details>
+    <img src="docs/Heroku/heroku-deploy.JPG">
+    </details>
 
 19. Clik Deploy 
 
 20. View build logs for error
+     <details>
+     <img src="docs/Heroku/heroku-build-log.JPG">
+     </details>
 
 21. Click app to view website
 
