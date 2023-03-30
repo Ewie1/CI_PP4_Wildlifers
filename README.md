@@ -1,7 +1,7 @@
 # Wildlifers
 (Developer: Ewart Hestick)
 
-![Mockup image]()
+![Mockup image](docs/feature/amiresponsive.JPG)
 
 [Live webpage](https://wildlifers.herokuapp.com/)
 
@@ -964,23 +964,19 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
   Fix: performed data dump reset datebase in SQL app, restored data and run migrations
 - Bug: Django collectstatic -input, static file was not updating causing deployment fail error
   Fix: performed python manage.py collectstatic in terminal which resolve issue
-- Bug: 
-    Fix: Change both value to the same which rectified error
+- Bug: blog post slug:slug url path was missingthe end '/' causing program page and admin pages 
+    404 error
+    Fix: Correct typo and confirm this issue was mitgated
 - Bug: html validation for index.hmtl warnings for lack of heading h1-h6 in section tags
   Fix: removed unneccesary section tags
-- Bug: html validation error for all html file h1-h6 heading, some sequence wer skipped h2-h4 and    h2-h5 
-   Fix: changed heading tag for all html file to the correct sequences
-- Bug: Wave error for color contrast on navbar and more about us button "deep orange and very dark blue"
-  Fix: change to a slightly brighter orange to mitigate issue,
-- Bug: Wave error for color conflicting contrast with cover text for the hero image on the home page
-  Fix: Add a lite background overlay wrapped in a div tag to mitigate issue
-- Bug: loading performance on the home page was low due to hero image loading time
-  Fix: replaced hero-image 
-- Bug: background image for the "Become a Member" page look streched with distorted pixels
-  Fix: Replaced "Become a Member" page backgroung image
-- Bug: hero image overlay half way over the image  onthe big screen and overflowing into the ethos section
-   Fix: adjusted padding bottom and confirmed issue was no longer present
-
+- Bug: Some stary divs were found during html validation
+   Fix: removed div and confirm alidatio to be good
+- Bug: Wave error for color contrast on site buttons 
+  Fix: change to a darker green  to mitigate issue.
+- Bug: Wave error for color conflicting contrast with commenting text-mute on the blog page
+  Fix: Remove text-mute
+- Bug: loading performance on the form page was low due to background image loading time
+  Fix: removed background image
 
 
 ## Configuration
