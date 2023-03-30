@@ -459,7 +459,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 <details><summary>See feature images</summary>
 
-![blog](docs/feature/feature-program-page.JPG)
+![blog](docs/feature/feature-blog-page.JPG)
 </details>
 
 
@@ -909,7 +909,8 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     <img src="docs/testing/test-story-pagination2.png">
     </details>
 
-6. As a site user I should have the option of enrolling in a program when I am reading about an animal I like   
+6. As a site user I should have the option of enrolling in a program when I am reading about an 
+   animal I like   
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
    | Select animal card | animal description page present with an enroll button to the bottom | Works as expected |
@@ -926,17 +927,10 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 
   <details><summary>Screenshots</summary>
      <img src="docs/testing/test-navbar-register.JPG">
+     <img src="docs/testing/test-navbar-enroll-page.JPG">
   </details>
 
-8. As a site user I want my registration information to be saved so that I only need to log in when I return
 
-   | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | 1 | 2 | Works as expected |
-  <details><summary>Screenshots</summary>
-     <img src="">
-     <img src="">
-  </details>
 
 9.  As a site user I want to be able to view a list of my current enrollments so I can plan for them 
 
@@ -944,6 +938,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    |------------|---------------------|-------------------|
    | Got to 'Get Registered' click on 'My Bookings' | A list of User'e booking will display | Works as expected |
   <details><summary>Screenshots</summary>
+    <img src="docs/feature/feature-mybookings.png">
      <img src="docs/feature/feature-mybookings.png">
    </details>
 
@@ -972,6 +967,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     <img src="docs/testing/test-navbar-register.JPG">
     <img src="docs/testing/tets-mybookings-page.JPG">
     <img src="docs/testing/test-story-enrollment-delete.png">
+    <img src="docs/feature/feature-cancel-enrollment.JPG">
     <img src="docs/testing/test-story-delete-message.jpg">
     </details>
 
@@ -979,7 +975,6 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 
    | **Step** | **Expected Result** | **Actual Result** |
    |------------|---------------------|-------------------|
-   | Submit Register form | Registered message will display | Works as expected |
    | Submit Loginform | Logged in message will display | Works as expected |
    | Submit update form | Updated message will display | Works as expected |
    | Sumit logout| Logged out message will display | Works as expected |
@@ -987,8 +982,11 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
    | Submit Enrollmet | Enrolled message will display | Works as expected |
 
   <details><summary>Screenshots</summary>
-    <img src="">
-    <img src="">
+    <img src="docs/testing/test-story-login-message.JPG">
+    <img src="docs/testing/test-story-logout-message.JPG">
+    <img src="docs/testing/test-story-edit-message1.jpg">
+    <img src="docs/testing/test-story-delete-message.jpg">
+    <img src="docs/testing/test-story-enrollment-message.JPG">
   </details>
 
 13.  As a site owner I want the user to be able to send us messages/emails through a contact form
@@ -1007,10 +1005,8 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     |Change device screen size using chrome dev tools | The web functionality remains the same on various screen sizes | Works as expected |
 
     <details><summary>Screenshot</summary>
-    <img src="">
-    <img src="">
-    <img src="">
-    <img src="">
+    <img src="docs/testing/test-story-response-tablet.png">
+    <img src="docs/testing/test-story-responsive-mobile.png">
     </details>
 
 15. 
@@ -1036,15 +1032,13 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     |Input two different values in 'Password' and 'Password (again)' fields | Prevents registration. Displays 'You must type the same password each time.' message | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
-    </details>
-
-17. As a site ownerI want site to be fully responsive 
-    | **Step** | **Expected Result** | **Actual Result** |
-    |------------|---------------------|-------------------|
-    | 1 | 2 | Works as expected |
-    <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
+    <img src="docs/testing/test-story-common-pass.png">
+    <img src="docs/testing/test-story-register-email.png">
+    <img src="docs/testing/test-story-register-pass-characters.png">
+    <img src="docs/testing/test-story-register-pass-sim.png">
+    <img src="docs/testing/test-story-register-same-pass.png">
+    <img src="docs/testing/test-story-registration-input validation.png">
+    <img src="docs/testing/test-story-user-exist.png">
     </details>
 
 18. As a site user I want to see a blog list
