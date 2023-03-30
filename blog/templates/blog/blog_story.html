@@ -36,9 +36,9 @@
              <h3>Comments:</h3>
             {% for comment in comments %}
             <div class="col-sm-12 mt-3 ">
-                <p > <b> <span style="color: rgb(56, 142, 60);"> {{ comment.name }} </span></b> says:</p>
+                <p > <b> <span> {{ comment.name }} </span></b> says:</p>
                 <p> {{ comment.body }} </p>
-                <p class="text-muted"> <em> {{ comment.created_on }}</em> </p>
+                <p> <em> {{ comment.created_on }}</em> </p>
                 <br>
             </div>
             {% endfor %}

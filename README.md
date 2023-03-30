@@ -1158,7 +1158,7 @@ This application has been deployed from Github using Heroku. Here's how:
 <img src="">
 </details>
 
-2. Create an app, give it a name for such as ci-pp4-the-diplomat, and select a region
+2. Create an app, give it a name similar to project name, and select a region
 <details>
 <img src="">
 <img src="">
@@ -1171,32 +1171,20 @@ This application has been deployed from Github using Heroku. Here's how:
 
 Heroku Postgres
 
-1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
-<details>
-<img src="">
-<img src="">
-</details>
-
 2. Install the plugins dj-database-url and psycopg2-binary.
 
-3. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+3. Run pip3 freeze > requirements.txt so that file are updated before deployment
 <details>
 <img src="">
 </details>
 
-4. Create a Procfile with the text: web: gunicorn the_diplomat.wsgi
+4. Create a Procfile with the text: web: gunicorn 'Project name'.wsgi
 <details>
 <img src="">
 </details>
 
-5. In the settings.py ensure the connection is to the Heroku postgres database, no indentation if you are not using a seperate test database.
-I store mine in env.py
-<details>
-<img src="">
-<img src="">
-</details>
 
-6. Ensure debug is set to false in the settings.py file
+5. Ensure debug is set to false in the settings.py file
 <details>
 <img src="">
 </details>
@@ -1261,9 +1249,7 @@ Media images were referenced from <a href="https://www.pexels.com/">Pexels</a> ,
 
 
 ### Code
- - My HTML code from lessons and formats from the html module and walk through project which then evolved into my owm structure as i gain more knowledge by trail and error.
- - My CSS code was also built on the concept of trail and error, google W3School wedsite tips.
-
+ 
 
 
 ## Acknowledgements
