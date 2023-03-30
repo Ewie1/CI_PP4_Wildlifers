@@ -152,7 +152,11 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 ### Database
 
--
+-The backend consists of Python built with the Django framework with a database of a Postgres for the deployed version
+
+<details><summary>Show diagram</summary>
+<img src="/docs/testing/database.JPG">
+</details>
 
 #### Usermodel
 - This contains user information and was config by Django Allauth biult in library
@@ -205,80 +209,62 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 <details><summary>Home</summary>
 <img src="/docs/wireframe/browser-wireframe-home.png">
 <img src="/docs/wireframe/tablet-wireframe-home.png">
-<img src="">
+<img src="docs/wireframe/mobile-wireframe-home.png">
 </details>
 <details><summary>Program</summary>
 <img src="/docs/wireframe/browser-wireframe-program.png">
-<img src="docs/wireframe/tablet-wireframe-program.png">
-<img src="">
+<img src="/docs/wireframe/tablet-wireframe-program.png">
+<img src="/docs/wireframe/mobile-wireframe-program.png">
 </details>
 <details><summary>Program Read</summary>
-<img src="docs/wireframe/browser-wireframe-program-read.png">
-<img src="docs/wireframe/tablet-wireframe-program-read.png">
-<img src="">
+<img src="/docs/wireframe/browser-wireframe-program-read.png">
+<img src="/docs/wireframe/tablet-wireframe-program-read.png">
+<img src="/docs/wireframe/mobile-wireframe-program-read.png">
 </details>
 <details><summary>My Bookings</summary>
 <img src="docs/wireframe/browser-wireframe-mybookings.png">
 <img src="docs/wireframe/tablet-wireframe.mybooking.png">
-<img src="">
+<img src="docs/wireframe/mobile-wireframe-mybookings.png">
 </details>
 <details><summary>Booking Edit</summary>
 <img src="docs/wireframe/browser-wireframe-enroll-editing.png">
 <img src="docs/wireframe/tablet-wireframe-enroll-editing.png">
-<img src="">
-</details>
-<details><summary>Booking Cancel</summary>
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/wireframe/mobile-wireframe-enroll-editing.png">
 </details>
 <details><summary>Contact</summary>
 <img src="docs/wireframe/browser-wireframe-contact.png">
 <img src="docs/wireframe/tablet-wireframe-contact.png">
-<img src="">
+<img src="docs/wireframe/mobile-wireframe-contact.png">
 </details>
 <details><summary>Blog</summary>
 <img src="docs/wireframe/browser-wireframe-blog.png">
 <img src="docs/wireframe/tablet-wireframe-blog.png">
-<img src="">
+<img src="docs/wireframe/mobile-wireframe-blog.png">
 </details>
 <details><summary>Blog Details</summary>
 <img src="docs/wireframe/browser-wireframe-blog-display.png">
 <img src="docs/wireframe/tablet-wireframe-blog-display.png">
-<img src="">
+<img src="docs/wireframe/mobile-wireframe-blog-display.png">
 </details>
 <details><summary>Register</summary>
 <img src="docs/wireframe/browser-wireframe-register.png">
 <img src="docs/wireframe/tablet-wireframe-register.png">
-<img src="">
+<img src="docs/wireframe/mobile-wireframe-register.png">
 </details>
 <details><summary>Login</summary>
 <img src="docs/wireframe/browser-wireframe-login.png">
 <img src="docs/wireframe/tablet-wireframe-login.png">
-<img src="">
+<img src="docs/wireframe/mobile-wireframe-login.png">
 </details>
 <details><summary>Logout</summary>
 <img src="docs/wireframe/browser-wireframe-logout.png">
 <img src="docs/wireframe/tablet-wireframe.logout.png">
-<img src="">
+<img src="docs/wireframe/mobile-wireframe-logout.png">
 </details>
 <details><summary>Enroll</summary>
 <img src="docs/wireframe/browser-wireframe-enroll.png">
 <img src="docs/wireframe/tablet-wireframe-enroll.png">
-<img src="">
-</details>
-<details><summary>403</summary>
-<img src="">
-<img src="">
-<img src="">
-</details>
-<details><summary>500</summary>
-<img src="">
-<img src="">
-<img src="">
-</details>
-<details><summary>404 page</summary>
-<img src="docs/features/wireframes/wireframe404.png">
+<img src="docs/wireframe/mobile-wireframe-enroll.png">
 </details>
 
 
@@ -642,7 +628,7 @@ The site Navbar is a black with a logo to to the lefzt which navigate to te home
 
 Page  | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%)
 ------------  | ------------ | ------------- | ------------- | -------------
-home/templates/home/index.html | 92 | 100 | 100 | 100 |
+home/templates/home/index.html | 91 | 100 | 92 | 100 |
 home/templates/home/contact.html | 93 | 97 | 100 | 100 |
 programs/templates/programs/programs.html | 98 | 100 | 100 | 100 |
 programs/templates/programs/programs_list.html | 92 | 97 | 92 | 100 |
@@ -676,145 +662,40 @@ blog/templates/blog/blog_story.html |  | 98 | 92 | 100 |
 templates/account/login.html | 100 | 100 | 92 | 90 |
 templates/account/logout.html | 100 | 100 | 92 | 100 |
 templates/account/signup.html | 100 | 100 | 92 | 100 |
-
 </details>
 
-
-
-<details><summary>Home</summary>
-<img src="">
-</details>
-<details><summary>Program</summary>
-<img src="">
-</details>
-<details><summary>Program details</summary>
-<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
-</details>
-<details><summary>My Booking</summary>
-<img src="">
-</details>
-<details><summary>Booking Edit</summary>
-<img src="">
-</details>
-<details><summary>Booking Cancel</summary>
-<img src="">
-</details>
-<details><summary>Contact Us</summary>
-<img src="">
-</details>
-<details><summary>Blog</summary>
-<img src="">
-</details>
-<details><summary>Blog details</summary>
-<img src="">
-</details>
-<details><summary>Register</summary>
-<img src="">
-</details>
-<details><summary>Login</summary>
-<img src="">
-</details>
-<details><summary>Logout</summary>
-<img src="">
-</details>
-<details><summary>Enroll</summary>
-<img src="">
-</details>
-<details><summary>403, 404, 500</summary>
-<img src="">
-</details>
 
 ### Waves
 - The WAVE WebAIM web accessibility evaluation tool was used to test the websites accessibility.
-
+- Wave accessibilty issues with heroku connection cause some page not to be tested
 #### Desktop
 
 <details><summary>Home</summary>
-<img src="">
+<img src="docs/validation/wave-home-validation.JPG">
 </details>
 <details><summary>Program</summary>
-<img src="">
-</details>
-<details><summary>Program details</summary>
-<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
-</details>
-<details><summary>My Booking</summary>
-<img src="">
-</details>
-<details><summary>Booking Edit</summary>
-<img src="">
-</details>
-<details><summary>Booking Cancel</summary>
-<img src="">
+<img src="docs/validation/waves-program-page-validation.JPG">
 </details>
 <details><summary>Contact Us</summary>
-<img src="">
+<img src="docs/validation/waves-contact-page-validation.JPG">
 </details>
 <details><summary>Blog</summary>
-<img src="">
+<img src="docs/validation/wave-blog-page-validation.JPG">
 </details>
 <details><summary>Blog details</summary>
 <img src="">
 </details>
 <details><summary>Register</summary>
-<img src="">
+<img src="docs/validation/wave-register-page-validation.JPG">
 </details>
 <details><summary>Login</summary>
-<img src="">
+<img src="docs/validation/wave-logout-page-validation.JPG">
 </details>
 <details><summary>Logout</summary>
-<img src="">
+<img src="docs/validation/wave-logout-page-validation.JPG">
 </details>
 <details><summary>Enroll</summary>
-<img src="">
-</details>
-<details><summary>403, 404, 500</summary>
-<img src="">
-</details>
-
-#### Mobile
-
-<details><summary>Home</summary>
-<img src="">
-</details>
-<details><summary>Program</summary>
-<img src="">
-</details>
-<details><summary>Program details</summary>
-<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
-</details>
-<details><summary>My Booking</summary>
-<img src="">
-</details>
-<details><summary>Booking Edit</summary>
-<img src="">
-</details>
-<details><summary>Booking Cancel</summary>
-<img src="">
-</details>
-<details><summary>Contact Us</summary>
-<img src="">
-</details>
-<details><summary>Blog</summary>
-<img src="">
-</details>
-<details><summary>Blog details</summary>
-<img src="">
-</details>
-<details><summary>Register</summary>
-<img src="">
-</details>
-<details><summary>Login</summary>
-<img src="">
-</details>
-<details><summary>Logout</summary>
-<img src="">
-</details>
-<details><summary>Enroll</summary>
-<img src="">
-</details>
-<details><summary>403, 404, 500</summary>
-<img src="">
+<img src="docs/validation/wave-enroll-page-validation.JPG">
 </details>
 
 
@@ -908,11 +789,11 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 
 6. As a site user I should have the option of enrolling in a program when I am reading about an 
     animal I like   
-   | **Step** | **Expected Result** | **Actual Result** |
-   |------------|---------------------|-------------------|
-   | Select animal card | animal description page present with an enroll button to the bottom | 
+    | **Step** | **Expected Result** | **Actual Result** |
+    |------------|---------------------|-------------------|
+    | Select animal card | animal description page present with an enroll button to the bottom | 
      Works as expected |
-   | Select Enroll on Navbar | Enroll page will be present | Works as expected |
+    | Select Enroll on Navbar | Enroll page will be present | Works as expected |
     <details><summary>Screenshots</summary>
      <img src="docs/testing/test-story-animal-detail.JPG">
     </details>
