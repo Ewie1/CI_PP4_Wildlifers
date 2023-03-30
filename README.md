@@ -794,9 +794,9 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
     | Select animal card | animal description page present with an enroll button to the bottom | 
      Works as expected |
     | Select Enroll on Navbar | Enroll page will be present | Works as expected |
-    <details><summary>Screenshots</summary>
-     <img src="docs/testing/test-story-animal-detail.JPG">
-    </details>
+     <details><summary>Screenshots</summary>
+       <img src="docs/testing/test-story-animal-detail.JPG">
+     </details>
 
 7. As a site user I want to be able to register an account so I can enroll in a program
 
