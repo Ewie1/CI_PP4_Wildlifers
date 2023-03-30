@@ -960,7 +960,7 @@ templates/account/signup.html | 100 | 100 | 92 | 100 |
 ## Bugs
   List of bugs found and fixes used ti mitigate them.
 
-- Bug: the first page had overflow to the right of the page.
+- Bug: 
   Fix: with from the slack community i was refered to unicorn revealer which showed my opentimes width was too much. Adjusted this and issue was fixed
 - Bug: during accessibilty test my good practice points were low
   Fix: using the unicorn revealer again imanaged to find my logo image had margin space and my about us text had border radius value that were unneccessary. Adjusted these issues and my score got better
@@ -1050,64 +1050,44 @@ This application has been deployed from Github using Heroku. Here's how:
 <img src="">
 </details>
 
-Heroku Postgres
+4. Create and ElephantSqul account and set up a plan with in your region
 
-2. Install the plugins dj-database-url and psycopg2-binary.
+5. Copy Url database instance from Sql account and store it in the env.py enviroment variable (os.environ["DATABASE_URL"]="<copiedURL>")
 
-3. Run pip3 freeze > requirements.txt so that file are updated before deployment
-<details>
-<img src="">
-</details>
+6. Add a your secret key to env.py enviroment variable os.environ["SECRET_KEY"]="my_super^secret@key"
+7. Import env.py to settings.py  add Data base and sercert key variable to settings.py file
 
-4. Create a Procfile with the text: web: gunicorn 'Project name'.wsgi
-<details>
-<img src="">
-</details>
+8. Add localhost, and wildlifers.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
+    <details>
+    <img src="">
+    <img src="">
+    </details>
+9. Migrate change to manage.py
 
+10. Add Secret key and Database url to Heroku Config vars
 
-5. Ensure debug is set to false in the settings.py file
-<details>
-<img src="">
-</details>
+11. Add PORT 8000 to config vars to avoid deployment failure
 
-7. Add localhost, and wildlifers.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
+12. Set DEBUG value to False
 
-8. Run "python3 manage.py showmigrations" to check the status of the migrations
+13. Set X_FRAME_OPTION ='SAMEORIGIN'
 
-9. Run "python3 manage.py migrate" to migrate the database
+14.  Run pip3 freeze > requirements.txt so that file are updated before deployment
 
-10. Run "python3 manage.py createsuperuser" to create a super/admin user
+15. Run "python3 manage.py showmigrations" to check the status of the migrations
 
-11. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+16. Run "python3 manage.py migrate" to migrate the database
 
-12. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+17. Check config vars for DISABLE_COLLECTSTATIC=1 is removed
 
-13. Install gunicorn and add it to the requirements.txt file using the command pip3 freeze > requirements.txt
+18. Go to deploy in the Heroku app
 
-14. Disable collectstatic in Heroku before any code is pushed using the command heroku config:
-<details>
-<img src="">
-<img src="">
-</details>
+19. Clik Deploy 
 
+20. View build logs for error
 
-15. Ensure the following environment variables are set in Heroku
-<details>
-<img src="">
-</details>
+21. Click app to view website
 
-16. Connect the app to GitHub, and enable automatic deploys from main if you wish
-<details>
-<img src="">
-<img src="">
-</details>
-
-17. Click deploy to deploy your application to Heroku for the first time
-
-18. Click on the link provided to access the application
-
-19. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
-<hr>
 
 
 
